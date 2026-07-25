@@ -1,0 +1,20 @@
+Hlogi: 
+
+Background and Story sheets for backstory on the general setting of the game, as well as reason for why the things like the shop is there, the streamer is there,
+why the house is haunted etc
+
+Oreabetse:
+
+Working on RPG tutorial with top-down similar to soul knight, has a set of sounds for different sound effects like keys, doors, steps, items being picked, enemy sounds etc.
+
+Idea for jumpscares to punish the player, and since its a top-down game it should cover the screen.
+
+Tega:
+
+Depending on the actions of the player, jumpscares and punishments should get worse. Getting items to fix the house and doing chores in the house is a bit more inconvenient, but you will barely get any punishments or scares. But if you play the game very aggressively and get more aggressive items, you will get punished more and get harsher jumpscares.
+
+Oreabetse:
+
+Suggestion to not give player full information (they can go in cardinal directions), so that when a player goes into a room and leaves, if they go into a door in the same direction again, it's not guaranteed that they will end up in the same room. (i.e, the rooms are basically moving.). Basically, they could leave the kitchen and go to the hallway by going south, but if they go north again, they might end up in the bathroom again.
+
+Basically using fnaf code logic to decide moving of the rooms. A number is assigned to each difficulty, depending on a random function that picks a number. If the random number is higher the number assigned to the difficulty, then the room will change. The higher difficulty is picked, the smaller the range of numbers the random function is scoped to, with a higher chance of the number being higher. The lower the difficulty, the higher the range of numbers the random function is scoped to, with a lower chance of the number being higher.
