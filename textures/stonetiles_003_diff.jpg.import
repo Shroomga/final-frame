@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cjvrlskhps0ya"
-path.s3tc="res://.godot/imported/stonetiles_003_diff.jpg-f861f71d12736594620f8b1b1257b0b3.s3tc.ctex"
+path.s3tc="res://.godot/imported/stonetiles_003_diff.jpg-6a291e6f7dc71b782fb25137054f9295.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/textures/stonetiles_003_diff.jpg"
-dest_files=["res://.godot/imported/stonetiles_003_diff.jpg-f861f71d12736594620f8b1b1257b0b3.s3tc.ctex"]
+source_file="res://textures/stonetiles_003_diff.jpg"
+dest_files=["res://.godot/imported/stonetiles_003_diff.jpg-6a291e6f7dc71b782fb25137054f9295.s3tc.ctex"]
 
 [params]
 

@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://csuknyxbqp4u7"
-path.s3tc="res://.godot/imported/crate0_diffuse.png-35bad2e56f86518e51f075122b457129.s3tc.ctex"
+path.s3tc="res://.godot/imported/crate0_diffuse.png-0f56d45097758d1860300babad78327a.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/textures/crate0_diffuse.png"
-dest_files=["res://.godot/imported/crate0_diffuse.png-35bad2e56f86518e51f075122b457129.s3tc.ctex"]
+source_file="res://textures/crate0_diffuse.png"
+dest_files=["res://.godot/imported/crate0_diffuse.png-0f56d45097758d1860300babad78327a.s3tc.ctex"]
 
 [params]
 

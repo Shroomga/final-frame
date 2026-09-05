@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bbbdnmv74c0o5"
-path.s3tc="res://.godot/imported/carpet.png-fc2de9608f5ea8cb1bf2c0952f69882f.s3tc.ctex"
+path.s3tc="res://.godot/imported/carpet.png-813159ff2a1533c7a7c9c1551c96b846.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/textures/carpet.png"
-dest_files=["res://.godot/imported/carpet.png-fc2de9608f5ea8cb1bf2c0952f69882f.s3tc.ctex"]
+source_file="res://textures/carpet.png"
+dest_files=["res://.godot/imported/carpet.png-813159ff2a1533c7a7c9c1551c96b846.s3tc.ctex"]
 
 [params]
 

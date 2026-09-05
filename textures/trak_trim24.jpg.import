@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d0agbdm728yof"
-path.s3tc="res://.godot/imported/trak_trim24.jpg-29a3acec6af83a7e3731acf515c48524.s3tc.ctex"
+path.s3tc="res://.godot/imported/trak_trim24.jpg-f34bc830aa1d1ab75074acb231ed6581.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/textures/trak_trim24.jpg"
-dest_files=["res://.godot/imported/trak_trim24.jpg-29a3acec6af83a7e3731acf515c48524.s3tc.ctex"]
+source_file="res://textures/trak_trim24.jpg"
+dest_files=["res://.godot/imported/trak_trim24.jpg-f34bc830aa1d1ab75074acb231ed6581.s3tc.ctex"]
 
 [params]
 

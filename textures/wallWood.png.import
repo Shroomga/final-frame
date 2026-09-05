@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://jny8ixd8tuhf"
-path.s3tc="res://.godot/imported/wallWood.png-1bb7460ed790147ac7d9ef654929717f.s3tc.ctex"
+path.s3tc="res://.godot/imported/wallWood.png-adde0f6a453ec8cff68170c4f77af757.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/textures/wallWood.png"
-dest_files=["res://.godot/imported/wallWood.png-1bb7460ed790147ac7d9ef654929717f.s3tc.ctex"]
+source_file="res://textures/wallWood.png"
+dest_files=["res://.godot/imported/wallWood.png-adde0f6a453ec8cff68170c4f77af757.s3tc.ctex"]
 
 [params]
 
