@@ -10,6 +10,7 @@ config_version=5
 
 [application]
 
+<<<<<<< HEAD
 config/name="Practice"
 run/main_scene="uid://ddwkpfsi0q6ha"
 config/features=PackedStringArray("4.7", "Forward Plus")
@@ -18,18 +19,27 @@ config/icon="res://art/icon.svg"
 [autoload]
 
 global="*uid://bgeu8h8vy0kom"
+=======
+config/name="FinalFrame"
+config/features=PackedStringArray("4.7", "Forward Plus")
+config/icon="res://icon.svg"
+>>>>>>> 2f50d28 (Create base for 2D game)
 
 [display]
 
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
+<<<<<<< HEAD
 window/stretch/scale=3.21
+=======
+>>>>>>> 2f50d28 (Create base for 2D game)
 
 [editor]
 
 version_control/plugin_name="GitPlugin"
 version_control/autoload_on_startup=true
 
+<<<<<<< HEAD
 [input]
 
 attack={
@@ -38,11 +48,16 @@ attack={
 ]
 }
 
+=======
+>>>>>>> 2f50d28 (Create base for 2D game)
 [physics]
 
 3d/physics_engine="Jolt Physics"
 
 [rendering]
 
+<<<<<<< HEAD
 textures/canvas_textures/default_texture_filter=0
+=======
+>>>>>>> 2f50d28 (Create base for 2D game)
 rendering_device/driver.windows="d3d12"
