@@ -1,0 +1,188 @@
+[gd_scene format=3 uid="uid://d170pla8i73a"]
+
+[ext_resource type="Texture2D" uid="uid://i383yq6a4ivj" path="res://textures/GreenCarpet2_S.jpg" id="1_4wjle"]
+[ext_resource type="Texture2D" uid="uid://jny8ixd8tuhf" path="res://textures/wallWood.png" id="2_bch1d"]
+[ext_resource type="PackedScene" uid="uid://cqe2k2fi25sxp" path="res://assets/House/props/hanger.glb" id="3_2ykvt"]
+[ext_resource type="Texture2D" uid="uid://dv3x43y5u0ke4" path="res://textures/painting4.jpg" id="3_j74pf"]
+[ext_resource type="PackedScene" uid="uid://blblafthkxwfh" path="res://assets/House/props/mirror.glb" id="4_fg2y2"]
+[ext_resource type="PackedScene" uid="uid://ct7neoj7n1pyt" path="res://assets/House/props/toilet.glb" id="5_5tyio"]
+[ext_resource type="PackedScene" uid="uid://um2sf3x253e1" path="res://assets/House/props/toiletPaper.glb" id="6_x68iw"]
+[ext_resource type="PackedScene" uid="uid://bb48x7qquo2qp" path="res://assets/House/props/trashBin.glb" id="7_uisx3"]
+[ext_resource type="PackedScene" uid="uid://cpu7bxrbn8hyu" path="res://assets/House/props/wallShelf2.glb" id="8_quu23"]
+[ext_resource type="PackedScene" uid="uid://chqsgfctso1hn" path="res://assets/House/props/carpet3.glb" id="9_gnvnv"]
+[ext_resource type="PackedScene" uid="uid://chiq3yjaw40lq" path="res://assets/House/props/cabinetSink.glb" id="10_j74pf"]
+[ext_resource type="PackedScene" uid="uid://b1pq3eo4inyo" path="res://assets/House/props/cabinetLow.glb" id="11_g031k"]
+[ext_resource type="PackedScene" uid="uid://2p64um6s1sen" path="res://assets/House/props/bathtub.glb" id="12_8sq7k"]
+[ext_resource type="Texture2D" uid="uid://csuknyxbqp4u7" path="res://textures/crate0_diffuse.png" id="13_0v1m8"]
+[ext_resource type="PackedScene" uid="uid://bvntj80iqe3ip" path="res://assets/House/props/product2.glb" id="14_kxn7k"]
+[ext_resource type="PackedScene" uid="uid://dvabfntimljpb" path="res://assets/House/props/product3.glb" id="15_8ymwb"]
+[ext_resource type="PackedScene" uid="uid://c7eooyif43sry" path="res://assets/House/props/product4.glb" id="16_rswuk"]
+[ext_resource type="PackedScene" uid="uid://cnax43q8q0hmc" path="res://assets/House/props/product5.glb" id="17_eivsf"]
+[ext_resource type="PackedScene" uid="uid://dhqg5a7oocw5s" path="res://assets/House/props/product.glb" id="18_8bkkb"]
+[ext_resource type="PackedScene" uid="uid://2ixqf3qluw8w" path="res://assets/House/props/plant.glb" id="19_vjyp3"]
+[ext_resource type="PackedScene" uid="uid://m1tgfcourv0d" path="res://assets/House/props/plant3.glb" id="20_g31bg"]
+[ext_resource type="PackedScene" uid="uid://t4besog2msbb" path="res://assets/House/props/bucket.glb" id="21_b5v4u"]
+[ext_resource type="Texture2D" uid="uid://d0agbdm728yof" path="res://textures/trak_trim24.jpg" id="23_g031k"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c51u3"]
+albedo_texture = ExtResource("1_4wjle")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rsm7m"]
+albedo_texture = ExtResource("2_bch1d")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g031k"]
+albedo_texture = ExtResource("3_j74pf")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_higll"]
+albedo_texture = ExtResource("2_bch1d")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_geg8m"]
+albedo_texture = ExtResource("2_bch1d")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jic4h"]
+albedo_texture = ExtResource("2_bch1d")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_aen2i"]
+albedo_texture = ExtResource("2_bch1d")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7fjy1"]
+albedo_texture = ExtResource("13_0v1m8")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j4aee"]
+albedo_texture = ExtResource("13_0v1m8")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oy3if"]
+albedo_texture = ExtResource("3_j74pf")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gwtrd"]
+albedo_texture = ExtResource("23_g031k")
+
+[node name="Bathroom" type="Node3D" unique_id=10958702]
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="." unique_id=586603103]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="CSGCombiner3D" unique_id=2029680188]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.09382439, 0, -0.25673902)
+size = Vector3(12.6, 1, 9.900001)
+material = SubResource("StandardMaterial3D_c51u3")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGCombiner3D" unique_id=1920696372]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.9000006, 3.3, -0.25000024)
+size = Vector3(1, 5.6, 9.900001)
+material = SubResource("StandardMaterial3D_rsm7m")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="CSGCombiner3D" unique_id=769284266]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1000005, 3.3, 4.2000003)
+material_override = SubResource("StandardMaterial3D_g031k")
+size = Vector3(12.6, 5.6, 1)
+material = SubResource("StandardMaterial3D_higll")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="CSGCombiner3D" unique_id=809541663]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.7000003, 3.3, -0.25000024)
+size = Vector3(1, 5.6, 9.900001)
+material = SubResource("StandardMaterial3D_geg8m")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="CSGCombiner3D" unique_id=24857539]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.10000062, 3.3, -4.7)
+size = Vector3(12.6, 5.6, 1)
+material = SubResource("StandardMaterial3D_jic4h")
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="CSGCombiner3D" unique_id=754946172]
+transform = Transform3D(-1.4424758e-07, 0, -2.1999998, 0, 4.3500004, 0, 3.3000004, 0, -9.616505e-08, 3.0784998, 2.7, 3.85)
+operation = 2
+size = Vector3(0.71, 1, 1.9)
+material = SubResource("StandardMaterial3D_aen2i")
+
+[node name="hanger2" parent="CSGCombiner3D" unique_id=1060192369 instance=ExtResource("3_2ykvt")]
+transform = Transform3D(-5.6824803e-08, 0, -1.3, 0, 1.3, 0, 1.3, 0, -5.6824803e-08, 0.87505317, 3.4, -4.2)
+
+[node name="hanger3" parent="CSGCombiner3D" unique_id=1686358040 instance=ExtResource("3_2ykvt")]
+transform = Transform3D(0.010106906, 0, 1.2999606, 0, 1.3, 0, -1.2999606, 0, 0.010106906, 0.11929917, 3.4, 3.7169728)
+
+[node name="mirror2" parent="CSGCombiner3D" unique_id=1321697012 instance=ExtResource("4_fg2y2")]
+transform = Transform3D(-1.1933209e-07, 0, -3.2759998, 0, 2.7299998, 0, 2.7299998, 0, -1.431985e-07, 2.9, 3.642161, -4.2000003)
+
+[node name="toilet2" parent="CSGCombiner3D" unique_id=281483929 instance=ExtResource("5_5tyio")]
+transform = Transform3D(1.32, 0, 0, 0, 1.32, 0, 0, 0, 1.32, -4.4, 0.5, -2.8999999)
+
+[node name="toiletPaper2" parent="CSGCombiner3D" unique_id=1600403028 instance=ExtResource("6_x68iw")]
+transform = Transform3D(-5.6824803e-08, 0, -1.3, 0, 1.3, 0, 1.3, 0, -5.6824803e-08, -3.9, 2, -4.2)
+
+[node name="trashBin2" parent="CSGCombiner3D" unique_id=526727486 instance=ExtResource("7_uisx3")]
+transform = Transform3D(1.1, 0, 0, 0, 1.1, 0, 0, 0, 1.1, -5.1, 0.5, -1.8000001)
+
+[node name="trashBin3" parent="CSGCombiner3D" unique_id=1204317905 instance=ExtResource("7_uisx3")]
+transform = Transform3D(-0.008544236, 0, -1.0999668, 0, 1.1, 0, 1.0999668, 0, -0.008544236, 4.412646, 0.5, -3.881772)
+
+[node name="wallShelf22" parent="CSGCombiner3D" unique_id=1834652154 instance=ExtResource("8_quu23")]
+transform = Transform3D(1.1, 0, 0, 0, 1.1, 0, 0, 0, 1.1, -5.3999996, 3, -2.9)
+
+[node name="carpet32" parent="CSGCombiner3D" unique_id=681012510 instance=ExtResource("9_gnvnv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9319112, 0.45055628, -2.8000002)
+
+[node name="carpet34" parent="CSGCombiner3D" unique_id=1263209948 instance=ExtResource("9_gnvnv")]
+transform = Transform3D(0.011190137, 0, -0.9999374, 0, 1, 0, 0.9999374, 0, 0.011190137, -2.1564417, 0.48764324, 0.32809138)
+
+[node name="carpet33" parent="CSGCombiner3D" unique_id=478553887 instance=ExtResource("9_gnvnv")]
+transform = Transform3D(-0.005897457, 0, -0.99998254, 0, 1, 0, 0.99998254, 0, -0.005897457, 2.977813, 0.46637535, -2.0551412)
+
+[node name="cabinetSink2" parent="CSGCombiner3D" unique_id=1837641958 instance=ExtResource("10_j74pf")]
+transform = Transform3D(0.0029210504, 0, -1.6765625, 0, 1.6765653, 0, 1.6765625, 0, 0.0029210504, 2.874982, 0.43072402, -4.48479)
+
+[node name="cabinetLow2" parent="CSGCombiner3D" unique_id=2079324375 instance=ExtResource("11_g031k")]
+transform = Transform3D(1.7237744, 0, -0.004679674, 0, 1.7237808, 0, 0.004679674, 0, 1.7237744, -5.6105533, 0.37740755, -0.23171997)
+
+[node name="bathtub2" parent="CSGCombiner3D" unique_id=713880537 instance=ExtResource("12_8sq7k")]
+transform = Transform3D(-6.119594e-08, 0, 1.4, 0, 1.4, 0, -1.4, 0, -6.119594e-08, -2.2, 0.5, 2.7)
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="CSGCombiner3D" unique_id=626191481]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.75, 1, 2.5500002)
+size = Vector3(1.1, 1, 2.3)
+material = SubResource("StandardMaterial3D_7fjy1")
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="CSGCombiner3D" unique_id=882856313]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3500003, 1, 2.5500002)
+size = Vector3(1.1, 1, 2.3)
+material = SubResource("StandardMaterial3D_7fjy1")
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="CSGCombiner3D" unique_id=934499222]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.25, 0.90000004, 1.4)
+size = Vector3(6.3, 1.2, 0.2)
+material = SubResource("StandardMaterial3D_j4aee")
+
+[node name="product22" parent="CSGCombiner3D" unique_id=103089974 instance=ExtResource("14_kxn7k")]
+transform = Transform3D(2.3000002, 0, 0, 0, 2.3000002, 0, 0, 0, 2.3000002, -4.9, 2.2423496, 0)
+
+[node name="product32" parent="CSGCombiner3D" unique_id=203918748 instance=ExtResource("15_8ymwb")]
+transform = Transform3D(1.1051621, 0, 0, 0, 1.1051621, 0, 0, 0, 1.1051621, -4.6986938, 1.5000849, 2.578216)
+
+[node name="product42" parent="CSGCombiner3D" unique_id=1660787636 instance=ExtResource("16_rswuk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.705595, 1.5018998, 2.8243434)
+
+[node name="product52" parent="CSGCombiner3D" unique_id=117139010 instance=ExtResource("17_eivsf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.511812, 1.4902623, 2.7392075)
+
+[node name="product2" parent="CSGCombiner3D" unique_id=1338513970 instance=ExtResource("18_8bkkb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4119267, 1.4963788, 3.115072)
+
+[node name="product3" parent="CSGCombiner3D" unique_id=1151900456 instance=ExtResource("18_8bkkb")]
+transform = Transform3D(-0.04470412, 0, -0.99900025, 0, 1, 0, 0.99900025, 0, -0.04470412, 2.4894876, 2.2409813, -4.0453863)
+
+[node name="plant2" parent="CSGCombiner3D" unique_id=803996039 instance=ExtResource("19_vjyp3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.7727246, 1.4600657, 1.8026006)
+
+[node name="plant32" parent="CSGCombiner3D" unique_id=1109309467 instance=ExtResource("20_g31bg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.42020082, 1.494089, 2.9264035)
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="CSGCombiner3D" unique_id=459293579]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.7776637, 3.5062861, -4.167572)
+size = Vector3(1.9901733, 2.182373, 0.018066406)
+material = SubResource("StandardMaterial3D_oy3if")
+
+[node name="bucket2" parent="CSGCombiner3D" unique_id=1305608504 instance=ExtResource("21_b5v4u")]
+transform = Transform3D(2.2485623, 0, 0, 0, 2.2485623, 0, 0, 0, 2.2485623, 1.4508106, 0.5017444, -3.689862)
+
+[node name="CSGBox3D11" type="CSGBox3D" parent="CSGCombiner3D" unique_id=999687183]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.7764595, 3.4999828, -4.204029)
+size = Vector3(2.1083984, 2.28862, 0.02734375)
+material = SubResource("StandardMaterial3D_gwtrd")

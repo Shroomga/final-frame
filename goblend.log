@@ -1,0 +1,266 @@
+[09:49:12] (BLEND) INFO: Config loaded:
+{'collisions': {'groups': [], 'layers': []}, 'defaults': {'paths': {'scene_save_path': '/home/blivvie/GameDev/final-frame/goblend/scenes/', 'scene_use_same_hierarchy': False, 'material_save_path': '/home/blivvie/GameDev/final-frame/goblend/materials/', 'material_use_same_hierarchy': False, 'texture_save_path': '/home/blivvie/GameDev/final-frame/goblend/textures/', 'texture_use_same_hierarchy': False, 'animation_library_save_path': '/home/blivvie/GameDev/final-frame/goblend/animation_libraries/', 'animation_library_use_same_hierarchy': False, 'animation_save_path': '/home/blivvie/GameDev/final-frame/goblend/animations/', 'animation_use_same_hierarchy': False, 'shader_save_path': '/home/blivvie/GameDev/final-frame/goblend/shaders/', 'shader_use_same_hierarchy': False, 'mesh_save_path': '/home/blivvie/GameDev/final-frame/goblend/meshes/', 'mesh_use_same_hierarchy': False, 'same_hierarchy_target': '/home/blivvie/GameDev/final-frame/', 'collision_shapes_save_path': '/home/blivvie/GameDev/final-frame/goblend/collision_shapes/', 'reuse_collision_shapes': True, 'save_material_separately': True, 'save_animation_library_separately': True, 'save_animation_separately': True, 'save_shader_separately': True, 'save_mesh_separately': False}, 'collision_layers': [0], 'collision_masks': [0], 'render_layers': [0]}, 'godot_scenes': [], 'visuals': {'render_layers': []}}
+[10:09:18] (BLEND) INFO: ------------ STARTING EXPORT ------------
+[10:09:18] (BLEND) ERROR: Please specify the path to the Godot Executable in the Add-on preferences (Edit > Preferences > Add-ons)
+[10:14:09] (BLEND) INFO: ------------ STARTING EXPORT ------------
+[10:14:09] (BLEND) INFO: Hierarchy path: assets/blender/
+[10:14:09] (BLEND) INFO: Running export for: /home/blivvie/GameDev/final-frame/assets/blender/diningtable.blend
+[10:14:09] (BLEND) INFO: Collision Objects:
+set()
+[10:14:09] (BLEND) WARNING: Render Engine is not set to cycles, baking won't work. Changing to Cycles
+[10:14:09] (BLEND) INFO: Setting image settings: compression to 100, was: 15
+[10:14:09] (BLEND) INFO: Setting image settings: color_mode to RGB, was: RGBA
+[10:14:09] (BLEND) INFO: Setup done
+[10:14:09] (BLEND) INFO: Checking material 'PlateAndCutlery' on object 'Fork.002'
+[10:14:09] (BLEND) INFO: Baking PlateAndCutleryBaseColor... (this might take a while)
+[10:14:10] (BLEND) INFO: Baked PlateAndCutleryBaseColor
+[10:14:10] (BLEND) INFO: Baking PlateAndCutleryMetallicRoughness... (this might take a while)
+[10:14:12] (BLEND) INFO: Baked PlateAndCutleryMetallicRoughness
+[10:14:12] (BLEND) INFO: Baking PlateAndCutleryNormal... (this might take a while)
+[10:14:13] (BLEND) INFO: Baked PlateAndCutleryNormal
+[10:14:14] (BLEND) INFO: Using the same material (PlateAndCutlery) on more than one object, baking to the same image as before! If these objects have overlapping UV maps this is (potentially) bad
+[10:14:14] (BLEND) INFO: Checking material 'PlateAndCutlery' on object 'Knife.004'
+[10:14:14] (BLEND) INFO: Baking PlateAndCutleryBaseColor... (this might take a while)
+[10:14:15] (BLEND) INFO: Baked PlateAndCutleryBaseColor
+[10:14:15] (BLEND) INFO: Baking PlateAndCutleryMetallicRoughness... (this might take a while)
+[10:14:16] (BLEND) INFO: Baked PlateAndCutleryMetallicRoughness
+[10:14:16] (BLEND) INFO: Baking PlateAndCutleryNormal... (this might take a while)
+[10:14:18] (BLEND) INFO: Baked PlateAndCutleryNormal
+[10:14:18] (BLEND) INFO: Using the same material (PlateAndCutlery) on more than one object, baking to the same image as before! If these objects have overlapping UV maps this is (potentially) bad
+[10:14:18] (BLEND) INFO: Checking material 'PlateAndCutlery' on object 'Plate.002'
+[10:14:18] (BLEND) INFO: Baking PlateAndCutleryBaseColor... (this might take a while)
+[10:14:22] (BLEND) INFO: Baked PlateAndCutleryBaseColor
+[10:14:22] (BLEND) INFO: Baking PlateAndCutleryMetallicRoughness... (this might take a while)
+[10:14:25] (BLEND) INFO: Baked PlateAndCutleryMetallicRoughness
+[10:14:25] (BLEND) INFO: Baking PlateAndCutleryNormal... (this might take a while)
+[10:14:37] (BLEND) INFO: Baked PlateAndCutleryNormal
+[10:14:38] (BLEND) INFO: Using the same material (PlateAndCutlery) on more than one object, baking to the same image as before! If these objects have overlapping UV maps this is (potentially) bad
+[10:14:38] (BLEND) INFO: Checking material 'PlateAndCutlery' on object 'Fork.005'
+[10:14:38] (BLEND) INFO: Baking PlateAndCutleryBaseColor... (this might take a while)
+[10:14:39] (BLEND) INFO: Baked PlateAndCutleryBaseColor
+[10:14:39] (BLEND) INFO: Baking PlateAndCutleryMetallicRoughness... (this might take a while)
+[10:14:40] (BLEND) INFO: Baked PlateAndCutleryMetallicRoughness
+[10:14:40] (BLEND) INFO: Baking PlateAndCutleryNormal... (this might take a while)
+[10:14:42] (BLEND) INFO: Baked PlateAndCutleryNormal
+[10:14:42] (BLEND) INFO: Using the same material (PlateAndCutlery) on more than one object, baking to the same image as before! If these objects have overlapping UV maps this is (potentially) bad
+[10:14:42] (BLEND) INFO: Checking material 'PlateAndCutlery' on object 'Knife.003'
+[10:14:42] (BLEND) INFO: Baking PlateAndCutleryBaseColor... (this might take a while)
+[10:14:43] (BLEND) INFO: Baked PlateAndCutleryBaseColor
+[10:14:43] (BLEND) INFO: Baking PlateAndCutleryMetallicRoughness... (this might take a while)
+[10:14:44] (BLEND) INFO: Baked PlateAndCutleryMetallicRoughness
+[10:14:44] (BLEND) INFO: Baking PlateAndCutleryNormal... (this might take a while)
+[10:14:47] (BLEND) INFO: Baked PlateAndCutleryNormal
+[10:14:47] (BLEND) INFO: Using the same material (PlateAndCutlery) on more than one object, baking to the same image as before! If these objects have overlapping UV maps this is (potentially) bad
+[10:14:47] (BLEND) INFO: Checking material 'PlateAndCutlery' on object 'Knife.005'
+[10:14:47] (BLEND) INFO: Baking PlateAndCutleryBaseColor... (this might take a while)
+[10:14:48] (BLEND) INFO: Baked PlateAndCutleryBaseColor
+[10:14:48] (BLEND) INFO: Baking PlateAndCutleryMetallicRoughness... (this might take a while)
+[10:14:49] (BLEND) INFO: Baked PlateAndCutleryMetallicRoughness
+[10:14:49] (BLEND) INFO: Baking PlateAndCutleryNormal... (this might take a while)
+[10:14:51] (BLEND) INFO: Baked PlateAndCutleryNormal
+[10:14:52] (BLEND) INFO: Using the same material (PlateAndCutlery) on more than one object, baking to the same image as before! If these objects have overlapping UV maps this is (potentially) bad
+[10:14:52] (BLEND) INFO: Checking material 'PlateAndCutlery' on object 'Fork.007'
+[10:14:52] (BLEND) INFO: Baking PlateAndCutleryBaseColor... (this might take a while)
+[10:14:53] (BLEND) INFO: Baked PlateAndCutleryBaseColor
+[10:14:53] (BLEND) INFO: Baking PlateAndCutleryMetallicRoughness... (this might take a while)
+[10:14:54] (BLEND) INFO: Baked PlateAndCutleryMetallicRoughness
+[10:14:54] (BLEND) INFO: Baking PlateAndCutleryNormal... (this might take a while)
+[10:14:56] (BLEND) INFO: Baked PlateAndCutleryNormal
+[10:14:56] (BLEND) INFO: Using the same material (PlateAndCutlery) on more than one object, baking to the same image as before! If these objects have overlapping UV maps this is (potentially) bad
+[10:14:56] (BLEND) INFO: Checking material 'PlateAndCutlery' on object 'Plate.005'
+[10:14:56] (BLEND) INFO: Baking PlateAndCutleryBaseColor... (this might take a while)
+[10:14:59] (BLEND) INFO: Baked PlateAndCutleryBaseColor
+[10:14:59] (BLEND) INFO: Baking PlateAndCutleryMetallicRoughness... (this might take a while)
+[10:15:02] (BLEND) INFO: Baked PlateAndCutleryMetallicRoughness
+[10:15:02] (BLEND) INFO: Baking PlateAndCutleryNormal... (this might take a while)
+[10:15:17] (BLEND) INFO: Baked PlateAndCutleryNormal
+[10:15:18] (BLEND) INFO: Using the same material (PlateAndCutlery) on more than one object, baking to the same image as before! If these objects have overlapping UV maps this is (potentially) bad
+[10:15:18] (BLEND) INFO: Checking material 'PlateAndCutlery' on object 'Plate.001'
+[10:15:18] (BLEND) INFO: Baking PlateAndCutleryBaseColor... (this might take a while)
+[10:15:21] (BLEND) INFO: Baked PlateAndCutleryBaseColor
+[10:15:21] (BLEND) INFO: Baking PlateAndCutleryMetallicRoughness... (this might take a while)
+[10:15:24] (BLEND) INFO: Baked PlateAndCutleryMetallicRoughness
+[10:15:24] (BLEND) INFO: Baking PlateAndCutleryNormal... (this might take a while)
+[10:15:35] (BLEND) INFO: Baked PlateAndCutleryNormal
+[10:15:35] (BLEND) INFO: Checking material 'Chair' on object 'Chair.005'
+[10:15:35] (BLEND) INFO: Baking ChairBaseColor... (this might take a while)
+[10:15:40] (BLEND) INFO: Baked ChairBaseColor
+[10:15:40] (BLEND) INFO: Baking ChairMetallicRoughness... (this might take a while)
+[10:15:45] (BLEND) INFO: Baked ChairMetallicRoughness
+[10:15:46] (BLEND) INFO: Baking ChairNormal... (this might take a while)
+[10:16:02] (BLEND) INFO: Baked ChairNormal
+[10:16:02] (BLEND) INFO: Using the same material (Chair) on more than one object, baking to the same image as before! If these objects have overlapping UV maps this is (potentially) bad
+[10:16:02] (BLEND) INFO: Checking material 'Chair' on object 'Chair.003'
+[10:16:02] (BLEND) INFO: Baking ChairBaseColor... (this might take a while)
+[10:16:07] (BLEND) INFO: Baked ChairBaseColor
+[10:16:07] (BLEND) INFO: Baking ChairMetallicRoughness... (this might take a while)
+[10:16:11] (BLEND) INFO: Baked ChairMetallicRoughness
+[10:16:11] (BLEND) INFO: Baking ChairNormal... (this might take a while)
+[10:16:26] (BLEND) INFO: Baked ChairNormal
+[10:16:26] (BLEND) INFO: Checking material 'Table' on object 'Table'
+[10:16:26] (BLEND) INFO: Baking TableBaseColor... (this might take a while)
+[10:16:32] (BLEND) INFO: Baked TableBaseColor
+[10:16:32] (BLEND) INFO: Baking TableMetallicRoughness... (this might take a while)
+[10:16:39] (BLEND) INFO: Baked TableMetallicRoughness
+[10:16:39] (BLEND) INFO: Baking TableNormal... (this might take a while)
+[10:17:00] (BLEND) INFO: Baked TableNormal
+[10:17:00] (BLEND) INFO: Using the same material (PlateAndCutlery) on more than one object, baking to the same image as before! If these objects have overlapping UV maps this is (potentially) bad
+[10:17:00] (BLEND) INFO: Checking material 'PlateAndCutlery' on object 'Knife.008'
+[10:17:00] (BLEND) INFO: Baking PlateAndCutleryBaseColor... (this might take a while)
+[10:17:02] (BLEND) INFO: Baked PlateAndCutleryBaseColor
+[10:17:02] (BLEND) INFO: Baking PlateAndCutleryMetallicRoughness... (this might take a while)
+[10:17:03] (BLEND) INFO: Baked PlateAndCutleryMetallicRoughness
+[10:17:03] (BLEND) INFO: Baking PlateAndCutleryNormal... (this might take a while)
+[10:17:05] (BLEND) INFO: Baked PlateAndCutleryNormal
+[10:17:05] (BLEND) INFO: Using the same material (PlateAndCutlery) on more than one object, baking to the same image as before! If these objects have overlapping UV maps this is (potentially) bad
+[10:17:05] (BLEND) INFO: Checking material 'PlateAndCutlery' on object 'Fork.004'
+[10:17:05] (BLEND) INFO: Baking PlateAndCutleryBaseColor... (this might take a while)
+[10:17:06] (BLEND) INFO: Baked PlateAndCutleryBaseColor
+[10:17:06] (BLEND) INFO: Baking PlateAndCutleryMetallicRoughness... (this might take a while)
+[10:17:07] (BLEND) INFO: Baked PlateAndCutleryMetallicRoughness
+[10:17:07] (BLEND) INFO: Baking PlateAndCutleryNormal... (this might take a while)
+[10:17:09] (BLEND) INFO: Baked PlateAndCutleryNormal
+[10:17:09] (BLEND) INFO: Using the same material (PlateAndCutlery) on more than one object, baking to the same image as before! If these objects have overlapping UV maps this is (potentially) bad
+[10:17:09] (BLEND) INFO: Checking material 'PlateAndCutlery' on object 'Plate.007'
+[10:17:09] (BLEND) INFO: Baking PlateAndCutleryBaseColor... (this might take a while)
+[10:17:12] (BLEND) INFO: Baked PlateAndCutleryBaseColor
+[10:17:12] (BLEND) INFO: Baking PlateAndCutleryMetallicRoughness... (this might take a while)
+[10:17:15] (BLEND) INFO: Baked PlateAndCutleryMetallicRoughness
+[10:17:15] (BLEND) INFO: Baking PlateAndCutleryNormal... (this might take a while)
+[10:17:27] (BLEND) INFO: Baked PlateAndCutleryNormal
+[10:17:27] (BLEND) INFO: Using the same material (Chair) on more than one object, baking to the same image as before! If these objects have overlapping UV maps this is (potentially) bad
+[10:17:27] (BLEND) INFO: Checking material 'Chair' on object 'Chair.002'
+[10:17:27] (BLEND) INFO: Baking ChairBaseColor... (this might take a while)
+[10:17:31] (BLEND) INFO: Baked ChairBaseColor
+[10:17:31] (BLEND) INFO: Baking ChairMetallicRoughness... (this might take a while)
+[10:17:37] (BLEND) INFO: Baked ChairMetallicRoughness
+[10:17:37] (BLEND) INFO: Baking ChairNormal... (this might take a while)
+[10:17:54] (BLEND) INFO: Baked ChairNormal
+[10:17:54] (BLEND) INFO: Using the same material (PlateAndCutlery) on more than one object, baking to the same image as before! If these objects have overlapping UV maps this is (potentially) bad
+[10:17:54] (BLEND) INFO: Checking material 'PlateAndCutlery' on object 'Fork.008'
+[10:17:54] (BLEND) INFO: Baking PlateAndCutleryBaseColor... (this might take a while)
+[10:17:55] (BLEND) INFO: Baked PlateAndCutleryBaseColor
+[10:17:55] (BLEND) INFO: Baking PlateAndCutleryMetallicRoughness... (this might take a while)
+[10:17:56] (BLEND) INFO: Baked PlateAndCutleryMetallicRoughness
+[10:17:56] (BLEND) INFO: Baking PlateAndCutleryNormal... (this might take a while)
+[10:17:58] (BLEND) INFO: Baked PlateAndCutleryNormal
+[10:17:58] (BLEND) INFO: Using the same material (PlateAndCutlery) on more than one object, baking to the same image as before! If these objects have overlapping UV maps this is (potentially) bad
+[10:17:58] (BLEND) INFO: Checking material 'PlateAndCutlery' on object 'Fork.003'
+[10:17:58] (BLEND) INFO: Baking PlateAndCutleryBaseColor... (this might take a while)
+[10:17:59] (BLEND) INFO: Baked PlateAndCutleryBaseColor
+[10:17:59] (BLEND) INFO: Baking PlateAndCutleryMetallicRoughness... (this might take a while)
+[10:18:00] (BLEND) INFO: Baked PlateAndCutleryMetallicRoughness
+[10:18:00] (BLEND) INFO: Baking PlateAndCutleryNormal... (this might take a while)
+[10:18:02] (BLEND) INFO: Baked PlateAndCutleryNormal
+[10:18:02] (BLEND) INFO: Using the same material (PlateAndCutlery) on more than one object, baking to the same image as before! If these objects have overlapping UV maps this is (potentially) bad
+[10:18:02] (BLEND) INFO: Checking material 'PlateAndCutlery' on object 'Fork.006'
+[10:18:02] (BLEND) INFO: Baking PlateAndCutleryBaseColor... (this might take a while)
+[10:18:03] (BLEND) INFO: Baked PlateAndCutleryBaseColor
+[10:18:03] (BLEND) INFO: Baking PlateAndCutleryMetallicRoughness... (this might take a while)
+[10:18:04] (BLEND) INFO: Baked PlateAndCutleryMetallicRoughness
+[10:18:04] (BLEND) INFO: Baking PlateAndCutleryNormal... (this might take a while)
+[10:18:06] (BLEND) INFO: Baked PlateAndCutleryNormal
+[10:18:06] (BLEND) INFO: Using the same material (PlateAndCutlery) on more than one object, baking to the same image as before! If these objects have overlapping UV maps this is (potentially) bad
+[10:18:06] (BLEND) INFO: Checking material 'PlateAndCutlery' on object 'Fork.001'
+[10:18:06] (BLEND) INFO: Baking PlateAndCutleryBaseColor... (this might take a while)
+[10:18:07] (BLEND) INFO: Baked PlateAndCutleryBaseColor
+[10:18:07] (BLEND) INFO: Baking PlateAndCutleryMetallicRoughness... (this might take a while)
+[10:18:08] (BLEND) INFO: Baked PlateAndCutleryMetallicRoughness
+[10:18:08] (BLEND) INFO: Baking PlateAndCutleryNormal... (this might take a while)
+[10:18:10] (BLEND) INFO: Baked PlateAndCutleryNormal
+[10:18:10] (BLEND) INFO: Using the same material (PlateAndCutlery) on more than one object, baking to the same image as before! If these objects have overlapping UV maps this is (potentially) bad
+[10:18:10] (BLEND) INFO: Checking material 'PlateAndCutlery' on object 'Knife.001'
+[10:18:10] (BLEND) INFO: Baking PlateAndCutleryBaseColor... (this might take a while)
+[10:18:11] (BLEND) INFO: Baked PlateAndCutleryBaseColor
+[10:18:11] (BLEND) INFO: Baking PlateAndCutleryMetallicRoughness... (this might take a while)
+[10:18:12] (BLEND) INFO: Baked PlateAndCutleryMetallicRoughness
+[10:18:13] (BLEND) INFO: Baking PlateAndCutleryNormal... (this might take a while)
+[10:18:15] (BLEND) INFO: Baked PlateAndCutleryNormal
+[10:18:15] (BLEND) INFO: Using the same material (PlateAndCutlery) on more than one object, baking to the same image as before! If these objects have overlapping UV maps this is (potentially) bad
+[10:18:15] (BLEND) INFO: Checking material 'PlateAndCutlery' on object 'Plate.004'
+[10:18:15] (BLEND) INFO: Baking PlateAndCutleryBaseColor... (this might take a while)
+[10:18:18] (BLEND) INFO: Baked PlateAndCutleryBaseColor
+[10:18:18] (BLEND) INFO: Baking PlateAndCutleryMetallicRoughness... (this might take a while)
+[10:18:21] (BLEND) INFO: Baked PlateAndCutleryMetallicRoughness
+[10:18:21] (BLEND) INFO: Baking PlateAndCutleryNormal... (this might take a while)
+[10:18:33] (BLEND) INFO: Baked PlateAndCutleryNormal
+[10:18:33] (BLEND) INFO: Using the same material (PlateAndCutlery) on more than one object, baking to the same image as before! If these objects have overlapping UV maps this is (potentially) bad
+[10:18:33] (BLEND) INFO: Checking material 'PlateAndCutlery' on object 'Plate.008'
+[10:18:33] (BLEND) INFO: Baking PlateAndCutleryBaseColor... (this might take a while)
+[10:18:37] (BLEND) INFO: Baked PlateAndCutleryBaseColor
+[10:18:37] (BLEND) INFO: Baking PlateAndCutleryMetallicRoughness... (this might take a while)
+[10:18:40] (BLEND) INFO: Baked PlateAndCutleryMetallicRoughness
+[10:18:40] (BLEND) INFO: Baking PlateAndCutleryNormal... (this might take a while)
+[10:18:54] (BLEND) INFO: Baked PlateAndCutleryNormal
+[10:18:54] (BLEND) INFO: Using the same material (PlateAndCutlery) on more than one object, baking to the same image as before! If these objects have overlapping UV maps this is (potentially) bad
+[10:18:54] (BLEND) INFO: Checking material 'PlateAndCutlery' on object 'Knife.006'
+[10:18:54] (BLEND) INFO: Baking PlateAndCutleryBaseColor... (this might take a while)
+[10:18:55] (BLEND) INFO: Baked PlateAndCutleryBaseColor
+[10:18:55] (BLEND) INFO: Baking PlateAndCutleryMetallicRoughness... (this might take a while)
+[10:18:56] (BLEND) INFO: Baked PlateAndCutleryMetallicRoughness
+[10:18:56] (BLEND) INFO: Baking PlateAndCutleryNormal... (this might take a while)
+[10:18:58] (BLEND) INFO: Baked PlateAndCutleryNormal
+[10:18:58] (BLEND) INFO: Using the same material (PlateAndCutlery) on more than one object, baking to the same image as before! If these objects have overlapping UV maps this is (potentially) bad
+[10:18:58] (BLEND) INFO: Checking material 'PlateAndCutlery' on object 'Plate.003'
+[10:18:58] (BLEND) INFO: Baking PlateAndCutleryBaseColor... (this might take a while)
+[10:19:01] (BLEND) INFO: Baked PlateAndCutleryBaseColor
+[10:19:01] (BLEND) INFO: Baking PlateAndCutleryMetallicRoughness... (this might take a while)
+[10:19:04] (BLEND) INFO: Baked PlateAndCutleryMetallicRoughness
+[10:19:04] (BLEND) INFO: Baking PlateAndCutleryNormal... (this might take a while)
+[10:19:18] (BLEND) INFO: Baked PlateAndCutleryNormal
+[10:19:18] (BLEND) INFO: Using the same material (PlateAndCutlery) on more than one object, baking to the same image as before! If these objects have overlapping UV maps this is (potentially) bad
+[10:19:18] (BLEND) INFO: Checking material 'PlateAndCutlery' on object 'Knife.002'
+[10:19:18] (BLEND) INFO: Baking PlateAndCutleryBaseColor... (this might take a while)
+[10:19:19] (BLEND) INFO: Baked PlateAndCutleryBaseColor
+[10:19:19] (BLEND) INFO: Baking PlateAndCutleryMetallicRoughness... (this might take a while)
+[10:19:21] (BLEND) INFO: Baked PlateAndCutleryMetallicRoughness
+[10:19:21] (BLEND) INFO: Baking PlateAndCutleryNormal... (this might take a while)
+[10:19:23] (BLEND) INFO: Baked PlateAndCutleryNormal
+[10:19:23] (BLEND) INFO: Using the same material (PlateAndCutlery) on more than one object, baking to the same image as before! If these objects have overlapping UV maps this is (potentially) bad
+[10:19:23] (BLEND) INFO: Checking material 'PlateAndCutlery' on object 'Plate.006'
+[10:19:23] (BLEND) INFO: Baking PlateAndCutleryBaseColor... (this might take a while)
+[10:19:26] (BLEND) INFO: Baked PlateAndCutleryBaseColor
+[10:19:26] (BLEND) INFO: Baking PlateAndCutleryMetallicRoughness... (this might take a while)
+[10:19:29] (BLEND) INFO: Baked PlateAndCutleryMetallicRoughness
+[10:19:29] (BLEND) INFO: Baking PlateAndCutleryNormal... (this might take a while)
+[10:19:40] (BLEND) INFO: Baked PlateAndCutleryNormal
+[10:19:40] (BLEND) INFO: Using the same material (PlateAndCutlery) on more than one object, baking to the same image as before! If these objects have overlapping UV maps this is (potentially) bad
+[10:19:40] (BLEND) INFO: Checking material 'PlateAndCutlery' on object 'Knife.007'
+[10:19:40] (BLEND) INFO: Baking PlateAndCutleryBaseColor... (this might take a while)
+[10:19:41] (BLEND) INFO: Baked PlateAndCutleryBaseColor
+[10:19:41] (BLEND) INFO: Baking PlateAndCutleryMetallicRoughness... (this might take a while)
+[10:19:42] (BLEND) INFO: Baked PlateAndCutleryMetallicRoughness
+[10:19:43] (BLEND) INFO: Baking PlateAndCutleryNormal... (this might take a while)
+[10:19:45] (BLEND) INFO: Baked PlateAndCutleryNormal
+[10:19:45] (BLEND) INFO: Using the same material (Chair) on more than one object, baking to the same image as before! If these objects have overlapping UV maps this is (potentially) bad
+[10:19:45] (BLEND) INFO: Checking material 'Chair' on object 'Chair.006'
+[10:19:45] (BLEND) INFO: Baking ChairBaseColor... (this might take a while)
+[10:19:49] (BLEND) INFO: Baked ChairBaseColor
+[10:19:49] (BLEND) INFO: Baking ChairMetallicRoughness... (this might take a while)
+[10:19:54] (BLEND) INFO: Baked ChairMetallicRoughness
+[10:19:54] (BLEND) INFO: Baking ChairNormal... (this might take a while)
+[10:20:10] (BLEND) INFO: Baked ChairNormal
+[10:20:10] (BLEND) INFO: Checking material 'Candle' on object 'CandleStick.001'
+[10:20:10] (BLEND) INFO: Baking CandleBaseColor... (this might take a while)
+[10:20:14] (BLEND) INFO: Baked CandleBaseColor
+[10:20:14] (BLEND) INFO: Baking CandleMetallicRoughness... (this might take a while)
+[10:20:19] (BLEND) INFO: Baked CandleMetallicRoughness
+[10:20:19] (BLEND) INFO: Baking CandleNormal... (this might take a while)
+[10:20:35] (BLEND) INFO: Baked CandleNormal
+[10:20:46] (BLEND) INFO: ------------ EXPORT DONE ------------
+[18:14:39] (BLEND) INFO: Config loaded:
+{'collisions': {'groups': [], 'layers': []}, 'defaults': {'paths': {'scene_save_path': '/home/blivvie/GameDev/final-frame/goblend/scenes/', 'scene_use_same_hierarchy': False, 'material_save_path': '/home/blivvie/GameDev/final-frame/goblend/materials/', 'material_use_same_hierarchy': False, 'texture_save_path': '/home/blivvie/GameDev/final-frame/goblend/textures/', 'texture_use_same_hierarchy': False, 'animation_library_save_path': '/home/blivvie/GameDev/final-frame/goblend/animation_libraries/', 'animation_library_use_same_hierarchy': False, 'animation_save_path': '/home/blivvie/GameDev/final-frame/goblend/animations/', 'animation_use_same_hierarchy': False, 'shader_save_path': '/home/blivvie/GameDev/final-frame/goblend/shaders/', 'shader_use_same_hierarchy': False, 'mesh_save_path': '/home/blivvie/GameDev/final-frame/goblend/meshes/', 'mesh_use_same_hierarchy': False, 'same_hierarchy_target': '/home/blivvie/GameDev/final-frame/', 'collision_shapes_save_path': '/home/blivvie/GameDev/final-frame/goblend/collision_shapes/', 'reuse_collision_shapes': True, 'save_material_separately': True, 'save_animation_library_separately': True, 'save_animation_separately': True, 'save_shader_separately': True, 'save_mesh_separately': False}, 'collision_layers': [0], 'collision_masks': [0], 'render_layers': [0]}, 'godot_scenes': [], 'visuals': {'render_layers': []}}
+[18:20:20] (BLEND) INFO: Config loaded:
+{'collisions': {'groups': [], 'layers': []}, 'defaults': {'paths': {'scene_save_path': '/home/blivvie/GameDev/final-frame/goblend/scenes/', 'scene_use_same_hierarchy': False, 'material_save_path': '/home/blivvie/GameDev/final-frame/goblend/materials/', 'material_use_same_hierarchy': False, 'texture_save_path': '/home/blivvie/GameDev/final-frame/goblend/textures/', 'texture_use_same_hierarchy': False, 'animation_library_save_path': '/home/blivvie/GameDev/final-frame/goblend/animation_libraries/', 'animation_library_use_same_hierarchy': False, 'animation_save_path': '/home/blivvie/GameDev/final-frame/goblend/animations/', 'animation_use_same_hierarchy': False, 'shader_save_path': '/home/blivvie/GameDev/final-frame/goblend/shaders/', 'shader_use_same_hierarchy': False, 'mesh_save_path': '/home/blivvie/GameDev/final-frame/goblend/meshes/', 'mesh_use_same_hierarchy': False, 'same_hierarchy_target': '/home/blivvie/GameDev/final-frame/', 'collision_shapes_save_path': '/home/blivvie/GameDev/final-frame/goblend/collision_shapes/', 'reuse_collision_shapes': True, 'save_material_separately': True, 'save_animation_library_separately': True, 'save_animation_separately': True, 'save_shader_separately': True, 'save_mesh_separately': False}, 'collision_layers': [0], 'collision_masks': [0], 'render_layers': [0]}, 'godot_scenes': [], 'visuals': {'render_layers': []}}
+[08:55:32] (BLEND) INFO: Config loaded:
+{'collisions': {'groups': [], 'layers': []}, 'defaults': {'paths': {'scene_save_path': '/home/blivvie/GameDev/final-frame/goblend/scenes/', 'scene_use_same_hierarchy': False, 'material_save_path': '/home/blivvie/GameDev/final-frame/goblend/materials/', 'material_use_same_hierarchy': False, 'texture_save_path': '/home/blivvie/GameDev/final-frame/goblend/textures/', 'texture_use_same_hierarchy': False, 'animation_library_save_path': '/home/blivvie/GameDev/final-frame/goblend/animation_libraries/', 'animation_library_use_same_hierarchy': False, 'animation_save_path': '/home/blivvie/GameDev/final-frame/goblend/animations/', 'animation_use_same_hierarchy': False, 'shader_save_path': '/home/blivvie/GameDev/final-frame/goblend/shaders/', 'shader_use_same_hierarchy': False, 'mesh_save_path': '/home/blivvie/GameDev/final-frame/goblend/meshes/', 'mesh_use_same_hierarchy': False, 'same_hierarchy_target': '/home/blivvie/GameDev/final-frame/', 'collision_shapes_save_path': '/home/blivvie/GameDev/final-frame/goblend/collision_shapes/', 'reuse_collision_shapes': True, 'save_material_separately': True, 'save_animation_library_separately': True, 'save_animation_separately': True, 'save_shader_separately': True, 'save_mesh_separately': False}, 'collision_layers': [0], 'collision_masks': [0], 'render_layers': [0]}, 'godot_scenes': [], 'visuals': {'render_layers': []}}
+[11:51:49] (BLEND) INFO: Config loaded:
+{'collisions': {'groups': [], 'layers': []}, 'defaults': {'paths': {'scene_save_path': '/home/blivvie/GameDev/final-frame/goblend/scenes/', 'scene_use_same_hierarchy': False, 'material_save_path': '/home/blivvie/GameDev/final-frame/goblend/materials/', 'material_use_same_hierarchy': False, 'texture_save_path': '/home/blivvie/GameDev/final-frame/goblend/textures/', 'texture_use_same_hierarchy': False, 'animation_library_save_path': '/home/blivvie/GameDev/final-frame/goblend/animation_libraries/', 'animation_library_use_same_hierarchy': False, 'animation_save_path': '/home/blivvie/GameDev/final-frame/goblend/animations/', 'animation_use_same_hierarchy': False, 'shader_save_path': '/home/blivvie/GameDev/final-frame/goblend/shaders/', 'shader_use_same_hierarchy': False, 'mesh_save_path': '/home/blivvie/GameDev/final-frame/goblend/meshes/', 'mesh_use_same_hierarchy': False, 'same_hierarchy_target': '/home/blivvie/GameDev/final-frame/', 'collision_shapes_save_path': '/home/blivvie/GameDev/final-frame/goblend/collision_shapes/', 'reuse_collision_shapes': True, 'save_material_separately': True, 'save_animation_library_separately': True, 'save_animation_separately': True, 'save_shader_separately': True, 'save_mesh_separately': False}, 'collision_layers': [0], 'collision_masks': [0], 'render_layers': [0]}, 'godot_scenes': [], 'visuals': {'render_layers': []}}
+[11:51:57] (BLEND) INFO: Config loaded:
+{'collisions': {'groups': [], 'layers': []}, 'defaults': {'paths': {'scene_save_path': '/home/blivvie/GameDev/final-frame/goblend/scenes/', 'scene_use_same_hierarchy': False, 'material_save_path': '/home/blivvie/GameDev/final-frame/goblend/materials/', 'material_use_same_hierarchy': False, 'texture_save_path': '/home/blivvie/GameDev/final-frame/goblend/textures/', 'texture_use_same_hierarchy': False, 'animation_library_save_path': '/home/blivvie/GameDev/final-frame/goblend/animation_libraries/', 'animation_library_use_same_hierarchy': False, 'animation_save_path': '/home/blivvie/GameDev/final-frame/goblend/animations/', 'animation_use_same_hierarchy': False, 'shader_save_path': '/home/blivvie/GameDev/final-frame/goblend/shaders/', 'shader_use_same_hierarchy': False, 'mesh_save_path': '/home/blivvie/GameDev/final-frame/goblend/meshes/', 'mesh_use_same_hierarchy': False, 'same_hierarchy_target': '/home/blivvie/GameDev/final-frame/', 'collision_shapes_save_path': '/home/blivvie/GameDev/final-frame/goblend/collision_shapes/', 'reuse_collision_shapes': True, 'save_material_separately': True, 'save_animation_library_separately': True, 'save_animation_separately': True, 'save_shader_separately': True, 'save_mesh_separately': False}, 'collision_layers': [0], 'collision_masks': [0], 'render_layers': [0]}, 'godot_scenes': [], 'visuals': {'render_layers': []}}
+[10:00:06] (BLEND) INFO: Config loaded:
+{'collisions': {'groups': [], 'layers': []}, 'defaults': {'paths': {'scene_save_path': '/home/blivvie/GameDev/final-frame/goblend/scenes/', 'scene_use_same_hierarchy': False, 'material_save_path': '/home/blivvie/GameDev/final-frame/goblend/materials/', 'material_use_same_hierarchy': False, 'texture_save_path': '/home/blivvie/GameDev/final-frame/goblend/textures/', 'texture_use_same_hierarchy': False, 'animation_library_save_path': '/home/blivvie/GameDev/final-frame/goblend/animation_libraries/', 'animation_library_use_same_hierarchy': False, 'animation_save_path': '/home/blivvie/GameDev/final-frame/goblend/animations/', 'animation_use_same_hierarchy': False, 'shader_save_path': '/home/blivvie/GameDev/final-frame/goblend/shaders/', 'shader_use_same_hierarchy': False, 'mesh_save_path': '/home/blivvie/GameDev/final-frame/goblend/meshes/', 'mesh_use_same_hierarchy': False, 'same_hierarchy_target': '/home/blivvie/GameDev/final-frame/', 'collision_shapes_save_path': '/home/blivvie/GameDev/final-frame/goblend/collision_shapes/', 'reuse_collision_shapes': True, 'save_material_separately': True, 'save_animation_library_separately': True, 'save_animation_separately': True, 'save_shader_separately': True, 'save_mesh_separately': False}, 'collision_layers': [0], 'collision_masks': [0], 'render_layers': [0]}, 'godot_scenes': [], 'visuals': {'render_layers': []}}
+[10:00:12] (BLEND) INFO: Config loaded:
+{'collisions': {'groups': [], 'layers': []}, 'defaults': {'paths': {'scene_save_path': '/home/blivvie/GameDev/final-frame/goblend/scenes/', 'scene_use_same_hierarchy': False, 'material_save_path': '/home/blivvie/GameDev/final-frame/goblend/materials/', 'material_use_same_hierarchy': False, 'texture_save_path': '/home/blivvie/GameDev/final-frame/goblend/textures/', 'texture_use_same_hierarchy': False, 'animation_library_save_path': '/home/blivvie/GameDev/final-frame/goblend/animation_libraries/', 'animation_library_use_same_hierarchy': False, 'animation_save_path': '/home/blivvie/GameDev/final-frame/goblend/animations/', 'animation_use_same_hierarchy': False, 'shader_save_path': '/home/blivvie/GameDev/final-frame/goblend/shaders/', 'shader_use_same_hierarchy': False, 'mesh_save_path': '/home/blivvie/GameDev/final-frame/goblend/meshes/', 'mesh_use_same_hierarchy': False, 'same_hierarchy_target': '/home/blivvie/GameDev/final-frame/', 'collision_shapes_save_path': '/home/blivvie/GameDev/final-frame/goblend/collision_shapes/', 'reuse_collision_shapes': True, 'save_material_separately': True, 'save_animation_library_separately': True, 'save_animation_separately': True, 'save_shader_separately': True, 'save_mesh_separately': False}, 'collision_layers': [0], 'collision_masks': [0], 'render_layers': [0]}, 'godot_scenes': [], 'visuals': {'render_layers': []}}
+[10:00:18] (BLEND) INFO: Config loaded:
+{'collisions': {'groups': [], 'layers': []}, 'defaults': {'paths': {'scene_save_path': '/home/blivvie/GameDev/final-frame/goblend/scenes/', 'scene_use_same_hierarchy': False, 'material_save_path': '/home/blivvie/GameDev/final-frame/goblend/materials/', 'material_use_same_hierarchy': False, 'texture_save_path': '/home/blivvie/GameDev/final-frame/goblend/textures/', 'texture_use_same_hierarchy': False, 'animation_library_save_path': '/home/blivvie/GameDev/final-frame/goblend/animation_libraries/', 'animation_library_use_same_hierarchy': False, 'animation_save_path': '/home/blivvie/GameDev/final-frame/goblend/animations/', 'animation_use_same_hierarchy': False, 'shader_save_path': '/home/blivvie/GameDev/final-frame/goblend/shaders/', 'shader_use_same_hierarchy': False, 'mesh_save_path': '/home/blivvie/GameDev/final-frame/goblend/meshes/', 'mesh_use_same_hierarchy': False, 'same_hierarchy_target': '/home/blivvie/GameDev/final-frame/', 'collision_shapes_save_path': '/home/blivvie/GameDev/final-frame/goblend/collision_shapes/', 'reuse_collision_shapes': True, 'save_material_separately': True, 'save_animation_library_separately': True, 'save_animation_separately': True, 'save_shader_separately': True, 'save_mesh_separately': False}, 'collision_layers': [0], 'collision_masks': [0], 'render_layers': [0]}, 'godot_scenes': [], 'visuals': {'render_layers': []}}

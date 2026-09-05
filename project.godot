@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 config/name="Practice"
 run/main_scene="uid://ddwkpfsi0q6ha"
 config/features=PackedStringArray("4.7", "Forward Plus")
@@ -21,6 +22,9 @@ config/icon="res://art/icon.svg"
 global="*uid://bgeu8h8vy0kom"
 =======
 config/name="FinalFrame"
+=======
+config/name="Final Frame"
+>>>>>>> 9f6250a (Transfer Chesco folder to repo)
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 >>>>>>> 2f50d28 (Create base for 2D game)
