@@ -388,8 +388,8 @@ size = Vector3(1, 1, 0.4)
 material = SubResource("StandardMaterial3D_rsm7m")
 
 [node name="CSGBox3D" type="CSGBox3D" parent="CSGCombiner3D/CSGBox3D7" unique_id=1741639781]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0006713867, -0.0023192167, -0.30091572)
-size = Vector3(1.0452881, 1.0373535, 1)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0006713867, -0.0023192167, -0.027905464)
+size = Vector3(1.0452881, 1.0373535, 0.4539795)
 material = SubResource("StandardMaterial3D_cormy")
 
 [node name="pot32" parent="CSGCombiner3D" unique_id=1348692930 instance=ExtResource("7_efxa6")]
