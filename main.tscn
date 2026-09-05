@@ -308,6 +308,9 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wwkkb"]
+albedo_texture = ExtResource("3_5vw27")
+
 [node name="Main" type="Node3D" unique_id=1064369983]
 
 [node name="CSGCombiner3D" type="CSGCombiner3D" parent="." unique_id=701840187]
@@ -692,3 +695,23 @@ transform = Transform3D(-0.22708683, 0, -0.0049969396, 0, 0.22714181, 0, 0.00499
 
 [node name="diningChair6" parent="CSGCombiner3D" unique_id=1813562359 instance=ExtResource("35_0rl1p")]
 transform = Transform3D(-0.22641538, 0, -0.018151272, 0, 0.22714181, 0, 0.018151272, 0, -0.22641538, -3.2654214, 0.65854204, -0.9202728)
+
+[node name="CSGBox3D14" type="CSGBox3D" parent="CSGCombiner3D" unique_id=1951744399]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 4.298575, 8.10079, 2.8166647, -0.12068753)
+size = Vector3(1, 5.2250977, 1.0561523)
+material = SubResource("StandardMaterial3D_wwkkb")
+
+[node name="CSGBox3D17" type="CSGBox3D" parent="CSGCombiner3D" unique_id=1497419758]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 4.298575, -11.347557, 2.8166647, -0.12068753)
+size = Vector3(1, 5.2250977, 1.0561523)
+material = SubResource("StandardMaterial3D_wwkkb")
+
+[node name="CSGBox3D15" type="CSGBox3D" parent="CSGCombiner3D" unique_id=2057385810]
+transform = Transform3D(-0.009725103, 0, -4.298372, 0, 1, 0, 0.99995273, 0, -0.041804086, -1.6043009, 2.8166647, 8.174003)
+size = Vector3(1, 5.2250977, 1.0561523)
+material = SubResource("StandardMaterial3D_wwkkb")
+
+[node name="CSGBox3D16" type="CSGBox3D" parent="CSGCombiner3D" unique_id=1236914599]
+transform = Transform3D(-0.009725103, 0, -4.298372, 0, 1, 0, 0.99995273, 0, -0.041804086, -1.6043009, 2.8166647, -8.137407)
+size = Vector3(1, 5.2250977, 1.0561523)
+material = SubResource("StandardMaterial3D_wwkkb")
