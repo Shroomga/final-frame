@@ -41,6 +41,7 @@
 [ext_resource type="Texture2D" uid="uid://07pimdj6kq45" path="res://assets/desk/wooden_writing_desk_with_props_5.png" id="37_gngh3"]
 [ext_resource type="Texture2D" uid="uid://bp6duyku0o8b5" path="res://assets/desk/wooden_writing_desk_with_props_6.png" id="38_0n3wm"]
 [ext_resource type="Texture2D" uid="uid://dce3t7pg28yro" path="res://assets/desk/wooden_writing_desk_with_props_7.png" id="39_qnost"]
+[ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="42_0cp0l"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1bvp3"]
 albedo_texture = ExtResource("1_0xm2m")
@@ -311,6 +312,22 @@ blend_shape_mode = 0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wwkkb"]
 albedo_texture = ExtResource("3_5vw27")
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_rsm7m"]
+size = Vector3(1.1654663, 2.3162842, 0.8847656)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_higll"]
+size = Vector3(6.5309753, 1.7948608, 2.9453735)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_geg8m"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_7fjy1"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7fjy1"]
+size = Vector3(4.718994, 1.7233887, 0.9165039)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_c51u3"]
+radius = 0.26660156
+
 [node name="Main" type="Node3D" unique_id=1064369983]
 
 [node name="CSGCombiner3D" type="CSGCombiner3D" parent="." unique_id=701840187]
@@ -395,24 +412,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0006713867, -0.0023192167, 
 size = Vector3(1.0452881, 1.0373535, 0.4539795)
 material = SubResource("StandardMaterial3D_cormy")
 
-[node name="pot32" parent="CSGCombiner3D" unique_id=1348692930 instance=ExtResource("7_efxa6")]
-transform = Transform3D(3.5, 0, 0, 0, 3.5, 0, 0, 0, 3.5, 5.8, 0.49999994, -2.7999997)
-
-[node name="sanseveria2" parent="CSGCombiner3D/pot32" unique_id=1616825107 instance=ExtResource("8_5vw27")]
-transform = Transform3D(0.2857143, 0, 0, 0, 0.64114296, 0, 0, 0, 0.51428574, 0, 0.17142856, -5.9604645e-08)
-
-[node name="pot33" parent="CSGCombiner3D" unique_id=1998349748 instance=ExtResource("7_efxa6")]
-transform = Transform3D(3.5, 0, 0, 0, 3.5, 0, 0, 0, 3.5, -9.000001, 0.5, -2.8)
-
-[node name="sanseveria2" parent="CSGCombiner3D/pot33" unique_id=1071500777 instance=ExtResource("8_5vw27")]
-transform = Transform3D(0.2857143, 0, 0, 0, 0.64114296, 0, 0, 0, 0.51428574, 0, 0.17142856, -5.9604645e-08)
-
-[node name="pot35" parent="CSGCombiner3D" unique_id=1628473135 instance=ExtResource("7_efxa6")]
-transform = Transform3D(3.5, 0, 0, 0, 3.5, 0, 0, 0, 3.5, 5.8, 0.5, 2.8)
-
-[node name="sanseveria2" parent="CSGCombiner3D/pot35" unique_id=110567014 instance=ExtResource("8_5vw27")]
-transform = Transform3D(0.2857143, 0, 0, 0, 0.64114296, 0, 0, 0, 0.51428574, 0, 0.17142856, -5.9604645e-08)
-
 [node name="CSGBox3D8" type="CSGBox3D" parent="CSGCombiner3D" unique_id=968579420]
 transform = Transform3D(2.808, 0, 0, 0, 2.926, 0, 0, 0, 1, 4, 3.2, -7.1)
 material = SubResource("StandardMaterial3D_7fjy1")
@@ -434,9 +433,6 @@ material = SubResource("StandardMaterial3D_5axll")
 
 [node name="clock2" parent="CSGCombiner3D" unique_id=2100318376 instance=ExtResource("15_ryguw")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.8, 5.4, 4.4703484e-08)
-
-[node name="shelves22" parent="CSGCombiner3D" unique_id=754961718 instance=ExtResource("15_vivmo")]
-transform = Transform3D(1.6800001, 0, 0, 0, 1.3, 0, 0, 0, 1, -6.4000006, 0.59999996, 6.2)
 
 [node name="sideboard2" parent="CSGCombiner3D" unique_id=482400486 instance=ExtResource("17_yaehf")]
 transform = Transform3D(-7.693205e-08, 0, 1, 0, 1.8000001, 0, -1.7600001, 0, -4.371139e-08, -9.5, 0.5, 3.7000003)
@@ -495,9 +491,6 @@ transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.44, -9.8, 4, -2.6000001)
 [node name="radiator2" parent="CSGCombiner3D" unique_id=825433500 instance=ExtResource("20_d13ii")]
 transform = Transform3D(1.7, 0, 0, 0, 1.6577016, 0, 0, 0, 3.1274881, -9.664791, 0.50680053, -5.056818)
 
-[node name="table32" parent="CSGCombiner3D" unique_id=1024278674 instance=ExtResource("21_0odxb")]
-transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 5.7000003, 0.5, -5.8)
-
 [node name="pencilCup2" parent="CSGCombiner3D" unique_id=1738772848 instance=ExtResource("22_lswn8")]
 transform = Transform3D(1.3285058, 0, 0, 0, 1.3285058, 0, 0, 0, 1.3285058, 5.88164, 1.5671061, -5.279688)
 
@@ -533,9 +526,6 @@ transform = Transform3D(1.3, 0, 0, 0, 1.3, 0, 0, 0, 1.3, 5.7, 1.6000001, -5.8)
 
 [node name="bookStack55" parent="CSGCombiner3D" unique_id=1694991607 instance=ExtResource("22_0odxb")]
 transform = Transform3D(1.9000001, 0, 0, 0, 1.9000001, 0, 0, 0, 1.9000001, 5.1724176, 1.5772318, -6.002263)
-
-[node name="hanger22" parent="CSGCombiner3D" unique_id=917323959 instance=ExtResource("24_lswn8")]
-transform = Transform3D(2.1413333, 0, 0, 0, 2.1413333, 0, 0, 0, 2.1413333, 5.7173424, 0.45412117, 5.993329)
 
 [node name="cup22" parent="CSGCombiner3D" unique_id=1221598083 instance=ExtResource("26_a6jrf")]
 transform = Transform3D(1.3224963, 0, 0, 0, 1.3224963, 0, 0, 0, 1.3224963, 5.1351924, 1.5770185, -5.246069)
@@ -675,27 +665,6 @@ blend_shapes/morph_87 = 0.0
 blend_shapes/morph_88 = 0.0
 blend_shapes/morph_89 = 0.0
 
-[node name="tableAndCutlery" parent="CSGCombiner3D" unique_id=2041413079 instance=ExtResource("34_4k2k6")]
-transform = Transform3D(7.404983e-05, 0, 0.28512138, 0, 0.2851214, 0, -0.28512138, 0, 7.404983e-05, -1.5692571, 0.74800813, 0.3122331)
-
-[node name="diningChair" parent="CSGCombiner3D" unique_id=1614452408 instance=ExtResource("35_0rl1p")]
-transform = Transform3D(0.22714184, 0, 0, 0, 0.22714184, 0, 0, 0, 0.22714184, -1.576603, 0.65854204, 1.6351933)
-
-[node name="diningChair2" parent="CSGCombiner3D" unique_id=2074108018 instance=ExtResource("35_0rl1p")]
-transform = Transform3D(0.22617608, 0, 0.0209232, 0, 0.22714181, 0, -0.0209232, 0, 0.22617608, 0.04000628, 0.65854204, 1.6351933)
-
-[node name="diningChair3" parent="CSGCombiner3D" unique_id=1652410221 instance=ExtResource("35_0rl1p")]
-transform = Transform3D(0.22714184, 0, 0, 0, 0.22714184, 0, 0, 0, 0.22714184, -3.183057, 0.65854204, 1.5393629)
-
-[node name="diningChair4" parent="CSGCombiner3D" unique_id=448309657 instance=ExtResource("35_0rl1p")]
-transform = Transform3D(-0.22667556, 0, 0.01454639, 0, 0.22714181, 0, -0.01454639, 0, -0.22667556, -1.576603, 0.65854204, -0.9202728)
-
-[node name="diningChair5" parent="CSGCombiner3D" unique_id=1943070844 instance=ExtResource("35_0rl1p")]
-transform = Transform3D(-0.22708683, 0, -0.0049969396, 0, 0.22714181, 0, 0.0049969396, 0, -0.22708683, 0.03377354, 0.65854204, -0.8598835)
-
-[node name="diningChair6" parent="CSGCombiner3D" unique_id=1813562359 instance=ExtResource("35_0rl1p")]
-transform = Transform3D(-0.22641538, 0, -0.018151272, 0, 0.22714181, 0, 0.018151272, 0, -0.22641538, -3.2654214, 0.65854204, -0.9202728)
-
 [node name="CSGBox3D14" type="CSGBox3D" parent="CSGCombiner3D" unique_id=1951744399]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 4.298575, 8.10079, 2.8166647, -0.12068753)
 size = Vector3(1, 5.2250977, 1.0561523)
@@ -715,3 +684,139 @@ material = SubResource("StandardMaterial3D_wwkkb")
 transform = Transform3D(-0.009725103, 0, -4.298372, 0, 1, 0, 0.99995273, 0, -0.041804086, -1.6043009, 2.8166647, -8.137407)
 size = Vector3(1, 5.2250977, 1.0561523)
 material = SubResource("StandardMaterial3D_wwkkb")
+
+[node name="dining_chair" type="StaticBody3D" parent="CSGCombiner3D" unique_id=2074140524]
+
+[node name="diningChair" parent="CSGCombiner3D/dining_chair" unique_id=1614452408 instance=ExtResource("35_0rl1p")]
+transform = Transform3D(0.22714184, 0, 0, 0, 0.22714184, 0, 0, 0, 0.22714184, -1.576603, 0.65854204, 1.6351933)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CSGCombiner3D/dining_chair" unique_id=1689370335]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6164758, 2.0654218, 1.7851651)
+shape = SubResource("BoxShape3D_rsm7m")
+
+[node name="dining_chair3" type="StaticBody3D" parent="CSGCombiner3D" unique_id=2007946241]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5595803, 0, -0.17935163)
+
+[node name="diningChair" parent="CSGCombiner3D/dining_chair3" unique_id=151058999 instance=ExtResource("35_0rl1p")]
+transform = Transform3D(0.22714184, 0, 0, 0, 0.22714184, 0, 0, 0, 0.22714184, -1.576603, 0.65854204, 1.6351933)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CSGCombiner3D/dining_chair3" unique_id=54703801]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6164758, 2.0654218, 1.7851651)
+shape = SubResource("BoxShape3D_rsm7m")
+
+[node name="dining_chair4" type="StaticBody3D" parent="CSGCombiner3D" unique_id=1626965319]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -1.4404197, 0, 0.69117564)
+
+[node name="diningChair" parent="CSGCombiner3D/dining_chair4" unique_id=1338370624 instance=ExtResource("35_0rl1p")]
+transform = Transform3D(0.22714184, 0, 0, 0, 0.22714184, 0, 0, 0, 0.22714184, -1.576603, 0.65854204, 1.6351933)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CSGCombiner3D/dining_chair4" unique_id=1870895507]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6164758, 2.0654218, 1.7851651)
+shape = SubResource("BoxShape3D_rsm7m")
+
+[node name="dining_chair5" type="StaticBody3D" parent="CSGCombiner3D" unique_id=1199796482]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -3.1081533, 0, 0.5303096)
+
+[node name="diningChair" parent="CSGCombiner3D/dining_chair5" unique_id=840815214 instance=ExtResource("35_0rl1p")]
+transform = Transform3D(0.22714184, 0, 0, 0, 0.22714184, 0, 0, 0, 0.22714184, -1.576603, 0.65854204, 1.6351933)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CSGCombiner3D/dining_chair5" unique_id=137691974]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6164758, 2.0654218, 1.7851651)
+shape = SubResource("BoxShape3D_rsm7m")
+
+[node name="dining_chair6" type="StaticBody3D" parent="CSGCombiner3D" unique_id=1775740521]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -4.865303, 0, 0.7901694)
+
+[node name="diningChair" parent="CSGCombiner3D/dining_chair6" unique_id=1202692646 instance=ExtResource("35_0rl1p")]
+transform = Transform3D(0.22714184, 0, 0, 0, 0.22714184, 0, 0, 0, 0.22714184, -1.576603, 0.65854204, 1.6351933)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CSGCombiner3D/dining_chair6" unique_id=395191483]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6164758, 2.0654218, 1.7851651)
+shape = SubResource("BoxShape3D_rsm7m")
+
+[node name="dining_chair2" type="StaticBody3D" parent="CSGCombiner3D" unique_id=1395115866]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5983696, 0, 0)
+
+[node name="diningChair" parent="CSGCombiner3D/dining_chair2" unique_id=6875962 instance=ExtResource("35_0rl1p")]
+transform = Transform3D(0.22680588, 0, -0.012348944, 0, 0.22714181, 0, 0.012348944, 0, 0.22680588, -1.5766029, 0.65854204, 1.5416183)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CSGCombiner3D/dining_chair2" unique_id=1608227973]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6164758, 2.0654218, 1.7275479)
+shape = SubResource("BoxShape3D_rsm7m")
+
+[node name="dining_table" type="StaticBody3D" parent="CSGCombiner3D" unique_id=1128879115]
+
+[node name="tableAndCutlery" parent="CSGCombiner3D/dining_table" unique_id=2041413079 instance=ExtResource("34_4k2k6")]
+transform = Transform3D(7.404983e-05, 0, 0.28512138, 0, 0.2851214, 0, -0.28512138, 0, 7.404983e-05, -1.5692571, 0.74800813, 0.3122331)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CSGCombiner3D/dining_table" unique_id=1433706564]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.566391, 1.4475007, 0.31655884)
+shape = SubResource("BoxShape3D_higll")
+
+[node name="flower_pot" type="StaticBody3D" parent="CSGCombiner3D" unique_id=258089151]
+
+[node name="pot32" parent="CSGCombiner3D/flower_pot" unique_id=1348692930 instance=ExtResource("7_efxa6")]
+transform = Transform3D(3.5, 0, 0, 0, 3.5, 0, 0, 0, 3.5, 5.8, 0.49999994, -2.7999997)
+
+[node name="sanseveria2" parent="CSGCombiner3D/flower_pot/pot32" unique_id=1616825107 instance=ExtResource("8_5vw27")]
+transform = Transform3D(0.2857143, 0, 0, 0, 0.64114296, 0, 0, 0, 0.51428574, 0, 0.17142856, -5.9604645e-08)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CSGCombiner3D/flower_pot" unique_id=775513525]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.759707, 1.0830717, -2.7766294)
+shape = SubResource("BoxShape3D_geg8m")
+
+[node name="flower_pot3" type="StaticBody3D" parent="CSGCombiner3D" unique_id=902840803]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.995832, 0, 0)
+
+[node name="pot32" parent="CSGCombiner3D/flower_pot3" unique_id=823770376 instance=ExtResource("7_efxa6")]
+transform = Transform3D(3.5, 0, 0, 0, 3.5, 0, 0, 0, 3.5, 5.8, 0.49999994, -2.7999997)
+
+[node name="sanseveria2" parent="CSGCombiner3D/flower_pot3/pot32" unique_id=1355742441 instance=ExtResource("8_5vw27")]
+transform = Transform3D(0.2857143, 0, 0, 0, 0.64114296, 0, 0, 0, 0.51428574, 0, 0.17142856, -5.9604645e-08)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CSGCombiner3D/flower_pot3" unique_id=437223482]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.759707, 1.0830717, -2.7766294)
+shape = SubResource("BoxShape3D_geg8m")
+
+[node name="flower_pot2" type="StaticBody3D" parent="CSGCombiner3D" unique_id=2068363964]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5.4222813)
+
+[node name="pot32" parent="CSGCombiner3D/flower_pot2" unique_id=1444375733 instance=ExtResource("7_efxa6")]
+transform = Transform3D(3.5, 0, 0, 0, 3.5, 0, 0, 0, 3.5, 5.8, 0.49999994, -2.7999997)
+
+[node name="sanseveria2" parent="CSGCombiner3D/flower_pot2/pot32" unique_id=1925933555 instance=ExtResource("8_5vw27")]
+transform = Transform3D(0.2857143, 0, 0, 0, 0.64114296, 0, 0, 0, 0.51428574, 0, 0.17142856, -5.9604645e-08)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CSGCombiner3D/flower_pot2" unique_id=1620487341]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.759707, 1.0830717, -2.7766294)
+shape = SubResource("BoxShape3D_geg8m")
+
+[node name="corner_table" type="StaticBody3D" parent="CSGCombiner3D" unique_id=1561203295]
+
+[node name="table32" parent="CSGCombiner3D/corner_table" unique_id=1024278674 instance=ExtResource("21_0odxb")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 5.7000003, 0.5, -5.8)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CSGCombiner3D/corner_table" unique_id=403587313]
+transform = Transform3D(1.7114316, 0, 0, 0, 1, 0, 0, 0, 1.8958099, 5.683829, 1.5262041, -5.8497915)
+shape = SubResource("CylinderShape3D_7fjy1")
+
+[node name="bookrack" type="StaticBody3D" parent="CSGCombiner3D" unique_id=1044554489]
+
+[node name="shelves22" parent="CSGCombiner3D/bookrack" unique_id=754961718 instance=ExtResource("15_vivmo")]
+transform = Transform3D(1.6800001, 0, 0, 0, 1.3, 0, 0, 0, 1, -6.4000006, 0.59999996, 6.2)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CSGCombiner3D/bookrack" unique_id=938634582]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.395486, 2.0373783, 6.3019013)
+shape = SubResource("BoxShape3D_7fjy1")
+
+[node name="Hanger" type="StaticBody3D" parent="CSGCombiner3D" unique_id=94957454]
+
+[node name="hanger22" parent="CSGCombiner3D/Hanger" unique_id=917323959 instance=ExtResource("24_lswn8")]
+transform = Transform3D(2.1413333, 0, 0, 0, 2.1413333, 0, 0, 0, 2.1413333, 5.7173424, 0.45412117, 5.993329)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CSGCombiner3D/Hanger" unique_id=766512471]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.702223, 2.490612, 5.974848)
+shape = SubResource("CylinderShape3D_c51u3")
+
+[node name="ProtoController" parent="." unique_id=28197095 instance=ExtResource("42_0cp0l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.8326268, 0.7577491, -4.123904)

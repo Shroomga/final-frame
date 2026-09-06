@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://ctdrr26bsab0d" path="res://assets/House/props/bed.glb" id="3_ui2oe"]
 [ext_resource type="PackedScene" uid="uid://b8bchitk1a21c" path="res://assets/House/props/sideboard4.glb" id="4_885xx"]
 [ext_resource type="PackedScene" uid="uid://b60xoluiegkb4" path="res://assets/House/props/carpet2.glb" id="4_o412v"]
+[ext_resource type="Texture2D" uid="uid://d0agbdm728yof" path="res://textures/trak_trim24.jpg" id="5_j12bj"]
 [ext_resource type="PackedScene" uid="uid://dfqs402h62lyk" path="res://assets/desk/wooden_writing_desk_with_props.glb" id="6_j12bj"]
 [ext_resource type="PackedScene" uid="uid://bxbh0xoxsvaa3" path="res://assets/House/props/cabinetBig.glb" id="7_4ken1"]
 
@@ -25,6 +26,9 @@ albedo_texture = ExtResource("2_kpde0")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6d2g4"]
 albedo_texture = ExtResource("2_kpde0")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4ken1"]
+albedo_texture = ExtResource("5_j12bj")
 
 [node name="Bedroom" type="Node3D" unique_id=743274350]
 
@@ -70,6 +74,11 @@ transform = Transform3D(-0.024585389, 0, 3.0697315, 0, 2.3965366, 0, -2.3890116,
 
 [node name="sideboard43" parent="CSGCombiner3D" unique_id=1691026905 instance=ExtResource("4_885xx")]
 transform = Transform3D(-0.024585389, 0, 3.0697315, 0, 2.3965366, 0, -2.3890116, 0, -0.0315907, -6.437547, 0.5, -4.9450297)
+
+[node name="CSGBox3D15" type="CSGBox3D" parent="CSGCombiner3D" unique_id=875094340]
+transform = Transform3D(0.9999527, 0, -0.0418039, 0, 1, 0, 0.00972506, 0, 4.298372, 6.9673467, 2.8166647, -1.1485167)
+size = Vector3(1, 5.2250977, 1.0561523)
+material = SubResource("StandardMaterial3D_4ken1")
 
 [node name="carpet22" parent="." unique_id=1129371602 instance=ExtResource("4_o412v")]
 transform = Transform3D(3.9220212, 0, 0, 0, 1, 0, 0, 0, 3.9220212, -2.1755347, 0.45864558, -1.0690565)
