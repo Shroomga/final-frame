@@ -42,6 +42,8 @@
 [ext_resource type="Texture2D" uid="uid://bp6duyku0o8b5" path="res://assets/desk/wooden_writing_desk_with_props_6.png" id="38_0n3wm"]
 [ext_resource type="Texture2D" uid="uid://dce3t7pg28yro" path="res://assets/desk/wooden_writing_desk_with_props_7.png" id="39_qnost"]
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="42_0cp0l"]
+[ext_resource type="Texture2D" uid="uid://jny8ixd8tuhf" path="res://assets/textures/wallWood.png" id="42_gngh3"]
+[ext_resource type="PackedScene" uid="uid://cc7r8375oy8a" path="res://assets/lights/antique_chandelier.glb" id="44_gngh3"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1bvp3"]
 albedo_texture = ExtResource("1_0xm2m")
@@ -328,6 +330,9 @@ size = Vector3(4.718994, 1.7233887, 0.9165039)
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_c51u3"]
 radius = 0.26660156
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_osiyt"]
+albedo_texture = ExtResource("42_gngh3")
+
 [node name="Main" type="Node3D" unique_id=1064369983]
 
 [node name="CSGCombiner3D" type="CSGCombiner3D" parent="." unique_id=701840187]
@@ -485,8 +490,31 @@ size = Vector3(0.001, 0.63061523, 0.87402344)
 [node name="wallLight2" parent="CSGCombiner3D" unique_id=620689910 instance=ExtResource("19_ryguw")]
 transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.44, -9.8, 4, 2.3)
 
+[node name="OmniLight3D" type="OmniLight3D" parent="CSGCombiner3D/wallLight2" unique_id=174386511]
+transform = Transform3D(0.8333333, 0, 0, 0, 0.8333333, 0, 0, 0, 0.69444436, 0.119576454, -0.16270947, 0)
+light_color = Color(1, 1, 0.6509804, 1)
+
+[node name="wallLight4" parent="CSGCombiner3D" unique_id=61243875 instance=ExtResource("19_ryguw")]
+transform = Transform3D(-1.2, 0, -1.258888e-07, 0, 1.2, 0, 1.0490733e-07, 0, -1.4399999, 6.599341, 4, 2.3)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="CSGCombiner3D/wallLight4" unique_id=1443104509]
+transform = Transform3D(0.8333333, 0, 0, 0, 0.8333333, 0, 0, 0, 0.69444436, 0.119576454, -0.16270947, 0)
+light_color = Color(1, 1, 0.6509804, 1)
+
+[node name="wallLight5" parent="CSGCombiner3D" unique_id=517704833 instance=ExtResource("19_ryguw")]
+transform = Transform3D(-1.2, 0, -1.258888e-07, 0, 1.2, 0, 1.0490733e-07, 0, -1.4399999, 6.599341, 4, -2.5692565)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="CSGCombiner3D/wallLight5" unique_id=1987941503]
+transform = Transform3D(0.8333333, 0, 0, 0, 0.8333333, 0, 0, 0, 0.69444436, 0.119576454, -0.16270947, 0)
+light_color = Color(1, 1, 0.6509804, 1)
+light_specular = 0.0
+
 [node name="wallLight3" parent="CSGCombiner3D" unique_id=852563351 instance=ExtResource("19_ryguw")]
 transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.44, -9.8, 4, -2.6000001)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="CSGCombiner3D/wallLight3" unique_id=2080451013]
+transform = Transform3D(0.8333333, 0, 0, 0, 0.8333333, 0, 0, 0, 0.69444436, 0.119576454, -0.16270947, 0)
+light_color = Color(1, 1, 0.6509804, 1)
 
 [node name="radiator2" parent="CSGCombiner3D" unique_id=825433500 instance=ExtResource("20_d13ii")]
 transform = Transform3D(1.7, 0, 0, 0, 1.6577016, 0, 0, 0, 3.1274881, -9.664791, 0.50680053, -5.056818)
@@ -550,6 +578,11 @@ transform = Transform3D(3.1634815, 0, 0, 0, 3.1634815, 0, 0, 0, 3.1634815, -4.21
 
 [node name="Object_10" type="MeshInstance3D" parent="CSGCombiner3D/Candle_6" unique_id=1211251489]
 mesh = SubResource("ArrayMesh_wnkbs")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="CSGCombiner3D/Candle_6" unique_id=1990953609]
+transform = Transform3D(0.31610742, 0, 0, 0, 0.31610742, 0, 0, 0, 0.31610742, 0.0026732683, 0.19952506, -0.0016907454)
+light_color = Color(1, 1, 0.6509804, 1)
+shadow_enabled = true
 
 [node name="Candlestick_7" type="Node3D" parent="CSGCombiner3D" unique_id=1364418145]
 transform = Transform3D(3.1634815, 0, 0, 0, 3.1634815, 0, 0, 0, 3.1634815, -4.2153697, 2.268691, 1.2440097)
@@ -749,6 +782,107 @@ shape = SubResource("BoxShape3D_rsm7m")
 [node name="tableAndCutlery" parent="CSGCombiner3D/dining_table" unique_id=2041413079 instance=ExtResource("34_4k2k6")]
 transform = Transform3D(7.404983e-05, 0, 0.28512138, 0, 0.2851214, 0, -0.28512138, 0, 7.404983e-05, -1.5692571, 0.74800813, 0.3122331)
 
+[node name="Flame_10" type="Node3D" parent="CSGCombiner3D/dining_table/tableAndCutlery" unique_id=1014977971]
+transform = Transform3D(8.544302, 0, 3.958121e-09, 0, 9.136713, 0, -4.656613e-09, 0, 7.9006033, -0.004667759, 9.756723, -0.021800995)
+
+[node name="mesh_7" type="MeshInstance3D" parent="CSGCombiner3D/dining_table/tableAndCutlery/Flame_10" unique_id=702653186]
+mesh = SubResource("ArrayMesh_uypp3")
+blend_shapes/morph_0 = 0.0
+blend_shapes/morph_1 = 0.0
+blend_shapes/morph_2 = 0.0
+blend_shapes/morph_3 = 0.0
+blend_shapes/morph_4 = 0.0
+blend_shapes/morph_5 = 0.0
+blend_shapes/morph_6 = 0.0
+blend_shapes/morph_7 = 0.0
+blend_shapes/morph_8 = 0.0
+blend_shapes/morph_9 = 0.0
+blend_shapes/morph_10 = 0.0
+blend_shapes/morph_11 = 0.0
+blend_shapes/morph_12 = 0.0
+blend_shapes/morph_13 = 0.0
+blend_shapes/morph_14 = 0.0
+blend_shapes/morph_15 = 0.0
+blend_shapes/morph_16 = 0.0
+blend_shapes/morph_17 = 0.0
+blend_shapes/morph_18 = 0.0
+blend_shapes/morph_19 = 0.0
+blend_shapes/morph_20 = 0.0
+blend_shapes/morph_21 = 0.0
+blend_shapes/morph_22 = 0.0
+blend_shapes/morph_23 = 0.0
+blend_shapes/morph_24 = 0.0
+blend_shapes/morph_25 = 0.0
+blend_shapes/morph_26 = 0.0
+blend_shapes/morph_27 = 0.0
+blend_shapes/morph_28 = 0.0
+blend_shapes/morph_29 = 0.0
+blend_shapes/morph_30 = 0.0
+blend_shapes/morph_31 = 0.0
+blend_shapes/morph_32 = 0.0
+blend_shapes/morph_33 = 0.0
+blend_shapes/morph_34 = 0.0
+blend_shapes/morph_35 = 0.0
+blend_shapes/morph_36 = 0.0
+blend_shapes/morph_37 = 0.0
+blend_shapes/morph_38 = 0.0
+blend_shapes/morph_39 = 0.0
+blend_shapes/morph_40 = 0.0
+blend_shapes/morph_41 = 0.0
+blend_shapes/morph_42 = 0.0
+blend_shapes/morph_43 = 0.0
+blend_shapes/morph_44 = 0.0
+blend_shapes/morph_45 = 0.0
+blend_shapes/morph_46 = 0.0
+blend_shapes/morph_47 = 0.0
+blend_shapes/morph_48 = 0.0
+blend_shapes/morph_49 = 0.0
+blend_shapes/morph_50 = 0.0
+blend_shapes/morph_51 = 0.0
+blend_shapes/morph_52 = 0.0
+blend_shapes/morph_53 = 0.0
+blend_shapes/morph_54 = 0.0
+blend_shapes/morph_55 = 0.0
+blend_shapes/morph_56 = 0.0
+blend_shapes/morph_57 = 0.0
+blend_shapes/morph_58 = 0.0
+blend_shapes/morph_59 = 0.0
+blend_shapes/morph_60 = 0.0
+blend_shapes/morph_61 = 0.0
+blend_shapes/morph_62 = 0.0
+blend_shapes/morph_63 = 0.0
+blend_shapes/morph_64 = 0.0
+blend_shapes/morph_65 = 0.0
+blend_shapes/morph_66 = 0.0
+blend_shapes/morph_67 = 0.0
+blend_shapes/morph_68 = 0.0
+blend_shapes/morph_69 = 0.0
+blend_shapes/morph_70 = 0.0
+blend_shapes/morph_71 = 0.0
+blend_shapes/morph_72 = 0.0
+blend_shapes/morph_73 = 0.0
+blend_shapes/morph_74 = 0.0
+blend_shapes/morph_75 = 0.0
+blend_shapes/morph_76 = 0.0
+blend_shapes/morph_77 = 0.0
+blend_shapes/morph_78 = 0.0
+blend_shapes/morph_79 = 0.0
+blend_shapes/morph_80 = 0.0
+blend_shapes/morph_81 = 0.0
+blend_shapes/morph_82 = 0.0
+blend_shapes/morph_83 = 0.0
+blend_shapes/morph_84 = 0.0
+blend_shapes/morph_85 = 0.0
+blend_shapes/morph_86 = 0.0
+blend_shapes/morph_87 = 0.0
+blend_shapes/morph_88 = 0.0
+blend_shapes/morph_89 = 0.0
+
+[node name="OmniLight3D" type="OmniLight3D" parent="CSGCombiner3D/dining_table/tableAndCutlery/Flame_10" unique_id=1790203712]
+transform = Transform3D(0.41048154, 0, 2.910383e-11, 0, 0.3838665, 0, -2.1827873e-11, 0, 0.44392535, 0.0026732236, 0.020340443, -0.0016907454)
+light_color = Color(1, 1, 0.6509804, 1)
+shadow_enabled = true
+
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CSGCombiner3D/dining_table" unique_id=1433706564]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.566391, 1.4475007, 0.31655884)
 shape = SubResource("BoxShape3D_higll")
@@ -818,5 +952,49 @@ transform = Transform3D(2.1413333, 0, 0, 0, 2.1413333, 0, 0, 0, 2.1413333, 5.717
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.702223, 2.490612, 5.974848)
 shape = SubResource("CylinderShape3D_c51u3")
 
+[node name="CSGBox3D18" type="CSGBox3D" parent="CSGCombiner3D" unique_id=1459915860]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6309147, 6.58057, 0.026855469)
+size = Vector3(18.451172, 1, 15.293945)
+material = SubResource("StandardMaterial3D_osiyt")
+
 [node name="ProtoController" parent="." unique_id=28197095 instance=ExtResource("42_0cp0l")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.8326268, 0.7577491, -4.123904)
+
+[node name="Sketchfab_Scene" parent="." unique_id=897634999 instance=ExtResource("44_gngh3")]
+transform = Transform3D(0.0015999993, 0, 0, 0, 0.0015999993, 0, 0, 0, 0.0015999993, -1.5445405, 4.276301, 0.29431665)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Sketchfab_Scene" unique_id=97876867]
+transform = Transform3D(625.00024, 0, 0, 0, 625.00024, 0, 0, 0, 625.00024, -228.30475, 603.35474, -394.25668)
+light_color = Color(1, 1, 0.8509804, 1)
+light_energy = 0.2
+omni_range = 4096.0
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="Sketchfab_Scene" unique_id=101789584]
+transform = Transform3D(625.00024, 0, 0, 0, 625.00024, 0, 0, 0, 625.00024, 221.57245, 603.35474, -394.25665)
+light_color = Color(1, 1, 0.8509804, 1)
+light_energy = 0.2
+omni_range = 4096.0
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="Sketchfab_Scene" unique_id=2034465471]
+transform = Transform3D(625.00024, 0, 0, 0, 625.00024, 0, 0, 0, 625.00024, 440.4749, 603.35474, -1.9798889)
+light_color = Color(1, 1, 0.8509804, 1)
+light_energy = 0.2
+omni_range = 4096.0
+
+[node name="OmniLight3D4" type="OmniLight3D" parent="Sketchfab_Scene" unique_id=1725880991]
+transform = Transform3D(625.00024, 0, 0, 0, 625.00024, 0, 0, 0, 625.00024, 225.68597, 603.35474, 386.05963)
+light_color = Color(1, 1, 0.8509804, 1)
+light_energy = 0.2
+omni_range = 4096.0
+
+[node name="OmniLight3D5" type="OmniLight3D" parent="Sketchfab_Scene" unique_id=1419553515]
+transform = Transform3D(625.00024, 0, 0, 0, 625.00024, 0, 0, 0, 625.00024, -223.9898, 603.35474, 386.05963)
+light_color = Color(1, 1, 0.8509804, 1)
+light_energy = 0.2
+omni_range = 4096.0
+
+[node name="OmniLight3D6" type="OmniLight3D" parent="Sketchfab_Scene" unique_id=1476542275]
+transform = Transform3D(625.00024, 0, 0, 0, 625.00024, 0, 0, 0, 625.00024, -457.48395, 603.35474, -1.3394928)
+light_color = Color(1, 1, 0.8509804, 1)
+light_energy = 0.2
+omni_range = 4096.0
