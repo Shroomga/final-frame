@@ -53,6 +53,8 @@ var freeflying : bool = false
 @onready var head: Node3D = $Head
 @onready var collider: CollisionShape3D = $Collider
 
+
+
 func _ready() -> void:
 	check_input_mappings()
 	look_rotation.y = rotation.y

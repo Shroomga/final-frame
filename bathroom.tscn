@@ -26,6 +26,7 @@
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="24_8sq7k"]
 [ext_resource type="PackedScene" uid="uid://cc7r8375oy8a" path="res://assets/lights/antique_chandelier.glb" id="25_0v1m8"]
 [ext_resource type="PackedScene" uid="uid://512ylsai23gg" path="res://assets/lights/wall_candle.glb" id="26_kxn7k"]
+[ext_resource type="Script" uid="uid://dv7ynq28cxhfh" path="res://door.gd" id="27_8ymwb"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c51u3"]
 albedo_texture = ExtResource("1_4wjle")
@@ -92,6 +93,9 @@ size = Vector3(0.58740234, 0.7963867, 0.30126953)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5axll"]
 albedo_texture = ExtResource("2_bch1d")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rswuk"]
+size = Vector3(1, 4.463501, 4.7223206)
 
 [node name="Bathroom" type="Node3D" unique_id=10958702]
 
@@ -234,9 +238,6 @@ shape = SubResource("BoxShape3D_rsm7m")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.7561703, 1.6400404, 1.7917832)
 shape = SubResource("BoxShape3D_higll")
 
-[node name="ProtoController" parent="CSGCombiner3D" unique_id=402456638 instance=ExtResource("24_8sq7k")]
-transform = Transform3D(0.90220356, 0, 0, 0, 1.7346101, 0, 0, 0, 0.90220356, 2.729433, 0.55312526, 1.8909807)
-
 [node name="StaticBody3D" type="StaticBody3D" parent="CSGCombiner3D" unique_id=362456524]
 
 [node name="cabinetLow2" parent="CSGCombiner3D/StaticBody3D" unique_id=2079324375 instance=ExtResource("11_g031k")]
@@ -333,3 +334,18 @@ transform = Transform3D(-1.1792093e-08, 0, -0.26977164, 0, 0.26977164, 0, 0.2697
 [node name="OmniLight3D" type="OmniLight3D" parent="CSGCombiner3D/Sketchfab_Scene3" unique_id=344027885]
 transform = Transform3D(3.7068386, 0, 4.2632564e-14, 0, 3.7068386, 0, -4.2632564e-14, 0, 3.7068386, 0.007413864, 1.6378288, 0)
 light_color = Color(1, 1, 0.7764706, 1)
+
+[node name="player" parent="." unique_id=1994396165 groups=["player"] instance=ExtResource("24_8sq7k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.1812103, 1.666365, 1.6237259)
+axis_lock_linear_y = true
+
+[node name="SpawnPoint" type="Marker3D" parent="." unique_id=1295251143 groups=["spawn_points"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.2841902, 0.5048307, 1.148936)
+
+[node name="Area3D" type="Area3D" parent="." unique_id=738922964]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 1.9063635, 1.1601737, 4.071497)
+script = ExtResource("27_8ymwb")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=678329328]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6072388, -0.9190521)
+shape = SubResource("BoxShape3D_rswuk")
