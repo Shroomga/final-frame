@@ -1,7 +1,7 @@
 # EnemyChair.gd
 extends CharacterBody3D
 
-@export var move_speed: float = 2.5
+@export var move_speed: float = 4.5
 @export var damage_amount: int = 10
 @export var attack_cooldown: float = 1.0
 

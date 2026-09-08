@@ -359,10 +359,10 @@ albedo_texture = ExtResource("42_gngh3")
 size = Vector3(6.5309753, 1.7948608, 2.9453735)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_jic4h"]
-size = Vector3(13.36348, 1, 10.129793)
+size = Vector3(13.441272, 1, 9.941517)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_7fjy1"]
-size = Vector3(1.7966309, 1, 1.9492188)
+size = Vector3(2.2399292, 1, 2.4753418)
 
 [node name="Main" type="Node3D" unique_id=1064369983]
 
@@ -951,6 +951,7 @@ navigation_mesh = SubResource("NavigationMesh_d2t1y")
 [node name="CSGBox3D3" type="CSGBox3D" parent="NavigationRegion3D" unique_id=1064668467]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.0999994, 3.2999995, -3.874302e-07)
 material_override = SubResource("StandardMaterial3D_0n3wm")
+use_collision = true
 size = Vector3(1, 5.6, 15.400001)
 material = SubResource("StandardMaterial3D_aqlgm")
 
@@ -1140,7 +1141,7 @@ shape = SubResource("BoxShape3D_rsm7m")
 collision_layer = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="EnemyChair/DetectionArea" unique_id=1633347962]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.7493238, 1.5314887, -0.047211885)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.7210345, 1.5314887, 0.04692626)
 shape = SubResource("BoxShape3D_jic4h")
 debug_color = Color(0, 0.6506858, 0.09628076, 0.41960785)
 
@@ -1148,6 +1149,6 @@ debug_color = Color(0, 0.6506858, 0.09628076, 0.41960785)
 collision_layer = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="EnemyChair/DamageArea" unique_id=368322848]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.02746582, 1.1229064, 1.5203472)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.05545044, 1.1229064, 1.3258892)
 shape = SubResource("BoxShape3D_7fjy1")
 debug_color = Color(0.9373535, 0.24501824, 0.14903939, 0.41960785)
