@@ -41,7 +41,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7, 0)
 [node name="UI" type="CanvasLayer" parent="." unique_id=1748224908]
 
 [node name="HealthBar" type="ProgressBar" parent="UI" unique_id=2143136532]
-offset_right = 326.0
-offset_bottom = 23.0
+offset_left = 10.0
+offset_top = 14.0
+offset_right = 336.0
+offset_bottom = 38.0
 theme_override_styles/background = SubResource("StyleBoxFlat_mypif")
 theme_override_styles/fill = SubResource("StyleBoxLine_jmrrn")
