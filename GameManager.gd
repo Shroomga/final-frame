@@ -53,10 +53,18 @@ func teleport_to_random_scene(exclude: String):
 	var available = SCENES.duplicate()
 	available.erase(exclude)
 	if available.is_empty():
-		return  # no other scenes to go to
+		return
 	
 	var target = available[randi() % available.size()]
 	current_scene_name = target
-	
 	var scene_path = "res://" + target + ".tscn"
+	
+	print("Teleporting to: ", target)  # Debug
+
+	# 🔥 CRITICAL: The 'await' keywords MUST be here!
+	await TransitionManager.fade_out(0.5)
+	
 	get_tree().change_scene_to_file(scene_path)
+	
+	await TransitionManager.fade_in(0.5)
+	print("Teleport complete.")
