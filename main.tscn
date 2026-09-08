@@ -325,9 +325,6 @@ size = Vector3(6.5309753, 1.7948608, 2.9453735)
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_7fjy1"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_7fjy1"]
-size = Vector3(4.718994, 1.7233887, 0.9165039)
-
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_c51u3"]
 radius = 0.26660156
 
@@ -335,10 +332,16 @@ radius = 0.26660156
 albedo_texture = ExtResource("42_gngh3")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_c51u3"]
-size = Vector3(1.1152344, 2.121399, 1.2841797)
+size = Vector3(1.1152344, 2.121399, 1.3154297)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_j4aee"]
-size = Vector3(1.2989502, 1.3334961, 1.9447632)
+size = Vector3(1.7695923, 1.7321777, 2.0721283)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gimea"]
+size = Vector3(4.500366, 2.2929688, 0.79016113)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cormy"]
+size = Vector3(1.4712372, 1, 2.169014)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_qnost"]
 size = Vector3(1, 4.463501, 4.7223206)
@@ -371,18 +374,6 @@ transform = Transform3D(3.3, 0, 0, 0, 4.3500004, 0, 0, 0, 2.1999998, -0.20300007
 operation = 2
 size = Vector3(0.6, 1, 1.9)
 material = SubResource("StandardMaterial3D_m6uvi")
-
-[node name="bookStack22" parent="CSGCombiner3D/CSGBox3D4" unique_id=365136983 instance=ExtResource("3_kq58d")]
-transform = Transform3D(0.015808044, -0.0137160765, 1.1043406, 0.014091325, 1.1043664, 0.013514687, -1.1043359, 0.013895372, 0.015980538, 1.0859694, -0.43574142, -3.9818432)
-
-[node name="book2" parent="CSGCombiner3D/CSGBox3D4" unique_id=291017960 instance=ExtResource("4_seu75")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 1.0475764, -0.42876244, -4.581012)
-
-[node name="box2" parent="CSGCombiner3D/CSGBox3D4" unique_id=783454838 instance=ExtResource("5_0rl1p")]
-transform = Transform3D(-1.1299502, 0, 0.013621409, 0, 1.1300323, 0, -0.013621409, 0, -1.1299502, 1.0331969, -0.42710686, -6.0501633)
-
-[node name="painting32" parent="CSGCombiner3D/CSGBox3D4" unique_id=1774115851 instance=ExtResource("6_ok6jj")]
-transform = Transform3D(-0.00023074, -0.12588052, -0.9920454, 0.99999833, -0.0018330048, -6.938894e-18, -0.001818424, -0.99204373, 0.12588073, 0.9766164, -1.891399, -5.2924423)
 
 [node name="CSGBox3D3" type="CSGBox3D" parent="CSGCombiner3D" unique_id=2004483221]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.0999994, 3.2999995, -3.874302e-07)
@@ -535,30 +526,6 @@ transform = Transform3D(1.3285058, 0, 0, 0, 1.3285058, 0, 0, 0, 1.3285058, 5.881
 [node name="carpet2" parent="CSGCombiner3D" unique_id=791361965 instance=ExtResource("21_lswn8")]
 transform = Transform3D(0.0027919197, 0.0020642448, -4.6023927, 0.013034568, 0.9807742, 0.009696436, -4.1196313, 0.0031045766, -0.0030884026, -1.6363139, 0.493093, 0.24686328)
 
-[node name="bookStack2" parent="CSGCombiner3D" unique_id=788879872 instance=ExtResource("24_htxhm")]
-transform = Transform3D(-0.030087698, 0.046222955, 1.673925, -1.6743774, 0.024117017, -0.030761775, -0.024952943, -1.6740218, 0.045777094, -4.4381275, 3.14616, 6.4258585)
-
-[node name="bookStack52" parent="CSGCombiner3D" unique_id=1935912975 instance=ExtResource("22_0odxb")]
-transform = Transform3D(1.342539, 0, 0, 0, 1.342539, 0, 0, 0, 1.342539, -4.8344693, 2.8686695, 6.176068)
-
-[node name="bookStack53" parent="CSGCombiner3D" unique_id=1613916954 instance=ExtResource("22_0odxb")]
-transform = Transform3D(1.342539, 0, 0, 0, 1.342539, 0, 0, 0, 1.342539, -4.811806, 3.033387, 6.1573744)
-
-[node name="bookStack54" parent="CSGCombiner3D" unique_id=203572754 instance=ExtResource("22_0odxb")]
-transform = Transform3D(1.342539, 0, 0, 0, 1.342539, 0, 0, 0, 1.342539, -4.7977347, 3.1945376, 6.1581736)
-
-[node name="bookStack32" parent="CSGCombiner3D" unique_id=1087379528 instance=ExtResource("26_jq2sk")]
-transform = Transform3D(-1.3218391, 0, -0.009090029, 0, 1.3218702, 0, 0.009090029, 0, -1.3218391, -5.1700854, 2.8736312, 6.138182)
-
-[node name="scotch2" parent="CSGCombiner3D" unique_id=50411375 instance=ExtResource("29_facbu")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.7443914, 2.141979, 6.031331)
-
-[node name="vhs2" parent="CSGCombiner3D" unique_id=1337585978 instance=ExtResource("30_b1qrp")]
-transform = Transform3D(1.7125154, 0, 0, 0, 1.7125154, 0, 0, 0, 1.7125154, -8.206687, 1.4116403, 6.004439)
-
-[node name="vhs3" parent="CSGCombiner3D" unique_id=470642946 instance=ExtResource("30_b1qrp")]
-transform = Transform3D(-0.08289765, 0, -1.6202204, -0.2099485, 1.6086617, 0.010741893, 1.6065602, 0.21022311, -0.08219873, -8.215414, 1.4383829, 6.119586)
-
 [node name="globe2" parent="CSGCombiner3D" unique_id=306796377 instance=ExtResource("21_1u8w0")]
 transform = Transform3D(1.3, 0, 0, 0, 1.3, 0, 0, 0, 1.3, 5.7, 1.6000001, -5.8)
 
@@ -570,18 +537,6 @@ transform = Transform3D(1.3224963, 0, 0, 0, 1.3224963, 0, 0, 0, 1.3224963, 5.135
 
 [node name="teddybear2" parent="CSGCombiner3D" unique_id=1638362575 instance=ExtResource("30_4k2k6")]
 transform = Transform3D(0.29481575, 0.29119328, -1.1795591, -0.070608065, 1.2158439, 0.28250322, 1.2129171, 0, 0.30315313, 6.422292, 1.5642626, -5.655527)
-
-[node name="radio2" parent="CSGCombiner3D" unique_id=1884294274 instance=ExtResource("35_come4")]
-transform = Transform3D(-1.5456936, 0, 0.25544018, 0, 1.5666586, 0, -0.25544018, 0, -1.5456936, -8.2287035, 2.1462255, 6.173865)
-
-[node name="box32" parent="CSGCombiner3D" unique_id=1416237725 instance=ExtResource("34_4lmeg")]
-transform = Transform3D(1.0691237, 0, -1.4087147, 0, 2.4719753, 0, 2.2288194, 0, 0.67573446, -8.038389, 0.6801354, 6.188935)
-
-[node name="box33" parent="CSGCombiner3D" unique_id=54104628 instance=ExtResource("34_4lmeg")]
-transform = Transform3D(2.442567, 0, -0.24028404, 0, 2.4719753, 0, 0.38016906, 0, 1.5438126, -7.0371084, 0.6801354, 6.188935)
-
-[node name="box34" parent="CSGCombiner3D" unique_id=710965327 instance=ExtResource("34_4lmeg")]
-transform = Transform3D(2.3763258, 0, 0.43041065, 0, 2.471975, 0, -0.6809808, 0, 1.5019455, -5.5276203, 0.6801354, 6.188935)
 
 [node name="Candle_6" type="Node3D" parent="CSGCombiner3D" unique_id=430420662]
 transform = Transform3D(3.1634815, 0, 0, 0, 3.1634815, 0, 0, 0, 3.1634815, -4.2153697, 2.268691, 1.2440097)
@@ -924,15 +879,6 @@ transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 5.7000003, 0.5, -5.8)
 transform = Transform3D(1.7114316, 0, 0, 0, 1, 0, 0, 0, 1.8958099, 5.683829, 1.5262041, -5.8497915)
 shape = SubResource("CylinderShape3D_7fjy1")
 
-[node name="bookrack" type="StaticBody3D" parent="CSGCombiner3D" unique_id=1044554489]
-
-[node name="shelves22" parent="CSGCombiner3D/bookrack" unique_id=754961718 instance=ExtResource("15_vivmo")]
-transform = Transform3D(1.6800001, 0, 0, 0, 1.3, 0, 0, 0, 1, -6.4000006, 0.59999996, 6.2)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="CSGCombiner3D/bookrack" unique_id=938634582]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.395486, 2.0373783, 6.3019013)
-shape = SubResource("BoxShape3D_7fjy1")
-
 [node name="Hanger" type="StaticBody3D" parent="CSGCombiner3D" unique_id=94957454]
 
 [node name="hanger22" parent="CSGCombiner3D/Hanger" unique_id=917323959 instance=ExtResource("24_lswn8")]
@@ -1028,6 +974,76 @@ shape = SubResource("BoxShape3D_c51u3")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CSGCombiner3D/ChairPuller2/TriggerArea" unique_id=1424135930]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.05956894, 1.1004934, 3.2959454)
 shape = SubResource("BoxShape3D_j4aee")
+
+[node name="ChairPuller4" type="Node3D" parent="CSGCombiner3D" unique_id=55408513]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -4.692109, 0, 0.80812025)
+script = ExtResource("43_0n3wm")
+pull_distance = 4.5
+pull_direction = Vector3(700, 0, 0)
+pull_speed = 2.0
+
+[node name="chairCollision" type="StaticBody3D" parent="CSGCombiner3D/ChairPuller4" unique_id=742451106]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CSGCombiner3D/ChairPuller4/chairCollision" unique_id=133330753]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7501826, 2.304621, -5.3873224)
+shape = SubResource("BoxShape3D_gimea")
+
+[node name="TriggerArea" type="Area3D" parent="CSGCombiner3D/ChairPuller4" unique_id=1988169949]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CSGCombiner3D/ChairPuller4/TriggerArea" unique_id=1471734758]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5576248, 1.372157, -3.1470022)
+shape = SubResource("BoxShape3D_cormy")
+
+[node name="shelves22" parent="CSGCombiner3D/ChairPuller4" unique_id=574744288 instance=ExtResource("15_vivmo")]
+transform = Transform3D(-1.6800001, 0, -8.742278e-08, 0, 1.3, 0, 1.4687026e-07, 0, -1, 1.707891, 0.59999996, -5.3918796)
+
+[node name="bookStack2" parent="CSGCombiner3D/ChairPuller4/shelves22" unique_id=112011768 instance=ExtResource("24_htxhm")]
+transform = Transform3D(-0.017909344, 0.027513664, 0.99638397, -1.2879827, 0.018551553, -0.023662904, -0.024952943, -1.6740218, 0.045777094, 1.1677816, 1.9585847, 0.22585869)
+
+[node name="bookStack52" parent="CSGCombiner3D/ChairPuller4/shelves22" unique_id=1218084308 instance=ExtResource("22_0odxb")]
+transform = Transform3D(0.7991303, 0, 0, 0, 1.0327222, 0, 0, 0, 1.342539, 0.9318638, 1.7451304, -0.02393198)
+
+[node name="bookStack53" parent="CSGCombiner3D/ChairPuller4/shelves22" unique_id=1784809962 instance=ExtResource("22_0odxb")]
+transform = Transform3D(0.7991303, 0, 0, 0, 1.0327222, 0, 0, 0, 1.342539, 0.94535375, 1.8718361, -0.042625427)
+
+[node name="bookStack54" parent="CSGCombiner3D/ChairPuller4/shelves22" unique_id=1902668064 instance=ExtResource("22_0odxb")]
+transform = Transform3D(0.7991303, 0, 0, 0, 1.0327222, 0, 0, 0, 1.342539, 0.9537296, 1.9957982, -0.04182625)
+
+[node name="bookStack32" parent="CSGCombiner3D/ChairPuller4/shelves22" unique_id=1124012079 instance=ExtResource("26_jq2sk")]
+transform = Transform3D(-0.78680897, 0, -0.0054107313, 0, 1.0168233, 0, 0.009090029, 0, -1.3218391, 0.7320924, 1.7489473, -0.061817646)
+
+[node name="scotch2" parent="CSGCombiner3D/ChairPuller4/shelves22" unique_id=502921151 instance=ExtResource("29_facbu")]
+transform = Transform3D(0.5952381, 0, 0, 0, 0.7692308, 0, 0, 0, 1, -0.8002329, 1.1861377, -0.16866875)
+
+[node name="vhs2" parent="CSGCombiner3D/ChairPuller4/shelves22" unique_id=232345953 instance=ExtResource("30_b1qrp")]
+transform = Transform3D(1.0193543, 0, 0, 0, 1.3173195, 0, 0, 0, 1.7125154, -1.0754085, 0.62433875, -0.19556093)
+
+[node name="vhs3" parent="CSGCombiner3D/ChairPuller4/shelves22" unique_id=302172676 instance=ExtResource("30_b1qrp")]
+transform = Transform3D(-0.04934384, 0, -0.9644169, -0.16149884, 1.237432, 0.008262995, 1.6065602, 0.21022311, -0.08219873, -1.0806031, 0.64491, -0.08041382)
+
+[node name="bookStack22" parent="CSGCombiner3D/ChairPuller4/shelves22" unique_id=1695367661 instance=ExtResource("3_kq58d")]
+transform = Transform3D(-0.6573428, 0.008271055, 0.009512196, 0.010839481, 0.84951264, 0.010395913, -0.015807996, 0.013716076, -1.1043406, 0.4869988, 1.7417372, -0.08596945)
+
+[node name="book2" parent="CSGCombiner3D/ChairPuller4/shelves22" unique_id=343470455 instance=ExtResource("4_seu75")]
+transform = Transform3D(0.5952381, 0, 0, 0, 0.7692308, 0, 0, 0, 1, 0.13035083, 1.7471057, -0.04757595)
+
+[node name="box2" parent="CSGCombiner3D/ChairPuller4/shelves22" unique_id=488917748 instance=ExtResource("5_0rl1p")]
+transform = Transform3D(-0.008107953, 0, -0.67258936, 0, 0.8692556, 0, 1.1299502, 0, -0.01362136, -0.74414396, 1.7483791, -0.03319645)
+
+[node name="painting32" parent="CSGCombiner3D/ChairPuller4/shelves22" unique_id=2013035309 instance=ExtResource("6_ok6jj")]
+transform = Transform3D(-0.0010823952, -0.5905022, 0.074929036, 0.7692295, -0.0014100036, -5.3376108e-18, 0.00023074007, 0.12588057, 0.9920454, -0.2931199, 0.6220006, 0.023384094)
+
+[node name="radio2" parent="CSGCombiner3D/ChairPuller4/shelves22" unique_id=2023425797 instance=ExtResource("35_come4")]
+transform = Transform3D(-0.92005575, 0, 0.15204772, 0, 1.205122, 0, -0.25544018, 0, -1.5456936, -1.0885139, 1.1894042, -0.026134968)
+
+[node name="box32" parent="CSGCombiner3D/ChairPuller4/shelves22" unique_id=123954636 instance=ExtResource("34_4lmeg")]
+transform = Transform3D(0.6363832, 0, -0.83852065, 0, 1.9015195, 0, 2.2288194, 0, 0.67573446, -0.9752312, 0.061642647, -0.011065006)
+
+[node name="box33" parent="CSGCombiner3D/ChairPuller4/shelves22" unique_id=636968264 instance=ExtResource("34_4lmeg")]
+transform = Transform3D(1.453909, 0, -0.14302622, 0, 1.9015195, 0, 0.38016906, 0, 1.5438126, -0.37923098, 0.061642647, -0.011065006)
+
+[node name="box34" parent="CSGCombiner3D/ChairPuller4/shelves22" unique_id=1408609876 instance=ExtResource("34_4lmeg")]
+transform = Transform3D(1.4144796, 0, 0.25619683, 0, 1.9015193, 0, -0.6809808, 0, 1.5019455, 0.519274, 0.061642647, -0.011065006)
 
 [node name="player" parent="." unique_id=1422105986 groups=["player"] instance=ExtResource("42_0cp0l")]
 transform = Transform3D(0.018891247, 0, 0.99982154, 0, 1, 0, -0.99982154, 0, 0.018891247, 3.6598105, 1.658064, 0.08260232)
