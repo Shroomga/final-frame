@@ -52,6 +52,8 @@ var freeflying : bool = false
 ## IMPORTANT REFERENCES
 @onready var head: Node3D = $Head
 @onready var collider: CollisionShape3D = $Collider
+# Reference to the health bar
+@onready var health_bar: ProgressBar = $UI/HealthBar
 
 
 
@@ -59,13 +61,53 @@ func _ready() -> void:
 	check_input_mappings()
 	look_rotation.y = rotation.y
 	look_rotation.x = head.rotation.x
+	
+	# --- NEW: Sync health with GameManager ---
+	health_bar.max_value = 100
+	health_bar.value = GameManager.player_health
+	
+	# Connect to the health signal
+	GameManager.health_changed.connect(_on_health_changed)
 
+# Called whenever health changes in GameManager
+func _on_health_changed(new_health: int):
+	health_bar.value = new_health
+	
+	# Optional: if health reaches 0, handle death
+	if new_health <= 0:
+		die()
+
+# Example: damage from hazards, enemies, or a test key
+func take_damage(amount: int):
+	GameManager.take_damage(amount)  # This triggers the signal, updating the UI
+
+# Example: healing
+func heal(amount: int):
+	GameManager.heal(amount)
+
+func die():
+	# Placeholder: respawn or reload current scene
+	print("Player died!")
+	# Example: reload the current scene
+	# get_tree().reload_current_scene()
+	
+	
 func _unhandled_input(event: InputEvent) -> void:
 	# Mouse capturing
 	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
 		capture_mouse()
 	if Input.is_key_pressed(KEY_ESCAPE):
 		release_mouse()
+	
+	#
+	#For Test Purposes only
+	if event is InputEventKey and event.pressed:
+		if event.keycode == KEY_H:
+				# Press H to take 10 damage
+				take_damage(10)
+		if event.keycode == KEY_R:
+				# Press R to heal 10
+				heal(10)
 	
 	# Look around
 	if mouse_captured and event is InputEventMouseMotion:

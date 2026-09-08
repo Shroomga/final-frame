@@ -106,24 +106,6 @@ albedo_texture = ExtResource("12_2cqfq")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5axll"]
 albedo_texture = ExtResource("3_5vw27")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c51u3"]
-albedo_texture = ExtResource("3_5vw27")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_higll"]
-albedo_texture = ExtResource("12_2cqfq")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_geg8m"]
-albedo_texture = ExtResource("3_5vw27")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jic4h"]
-albedo_texture = ExtResource("3_5vw27")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j4aee"]
-albedo_texture = ExtResource("3_5vw27")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gwtrd"]
-albedo_texture = ExtResource("3_5vw27")
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v7cu2"]
 resource_name = "Candle"
 cull_mode = 2
@@ -341,10 +323,34 @@ size = Vector3(1.7695923, 1.7321777, 2.0721283)
 size = Vector3(4.500366, 2.2929688, 0.79016113)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_cormy"]
-size = Vector3(1.4712372, 1, 2.169014)
+size = Vector3(1.8054428, 1, 2.9424171)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wwkkb"]
+size = Vector3(0.59375, 1.1425781, 2.9279785)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_osiyt"]
+size = Vector3(2.0004883, 1, 2.9250488)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c51u3"]
+albedo_texture = ExtResource("3_5vw27")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_higll"]
+albedo_texture = ExtResource("12_2cqfq")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_geg8m"]
+albedo_texture = ExtResource("3_5vw27")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jic4h"]
+albedo_texture = ExtResource("3_5vw27")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j4aee"]
+albedo_texture = ExtResource("3_5vw27")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gwtrd"]
+albedo_texture = ExtResource("3_5vw27")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_qnost"]
-size = Vector3(1, 4.463501, 4.7223206)
+size = Vector3(0.7426758, 4.2140503, 4.1947403)
 
 [node name="Main" type="Node3D" unique_id=1064369983]
 
@@ -439,54 +445,6 @@ material = SubResource("StandardMaterial3D_5axll")
 
 [node name="clock2" parent="CSGCombiner3D" unique_id=2100318376 instance=ExtResource("15_ryguw")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.8, 5.4, 4.4703484e-08)
-
-[node name="sideboard2" parent="CSGCombiner3D" unique_id=482400486 instance=ExtResource("17_yaehf")]
-transform = Transform3D(-7.693205e-08, 0, 1, 0, 1.8000001, 0, -1.7600001, 0, -4.371139e-08, -9.5, 0.5, 3.7000003)
-
-[node name="CSGBox3D9" type="CSGBox3D" parent="CSGCombiner3D" unique_id=981220666]
-transform = Transform3D(0.13730034, 0.11656165, -0.05449282, 0.028203256, 3.574451e-05, 0.3014294, 0.050725352, -0.31552193, -0.020096825, -9.6394005, 2.0712612, 2.6020098)
-size = Vector3(0.1, 1, 1.2)
-material = SubResource("StandardMaterial3D_c51u3")
-
-[node name="CSGBox3D" type="CSGBox3D" parent="CSGCombiner3D/CSGBox3D9" unique_id=125541851]
-transform = Transform3D(0.17282966, 5.9604645e-08, -4.0978193e-07, 2.9802322e-08, 0.8371128, 0, -6.7520887e-09, -6.7055225e-08, 1.0045956, -0.017292023, 1.9073486e-06, 9.536743e-07)
-size = Vector3(0.8, 1, 1)
-material = SubResource("StandardMaterial3D_higll")
-
-[node name="CSGBox3D10" type="CSGBox3D" parent="CSGCombiner3D" unique_id=192236688]
-transform = Transform3D(0.039392296, -0.10418891, 0, 0.006945925, 0.5908847, 0, 0, 0, 0.64000016, -9.700001, 2.2, 3.6900003)
-material = SubResource("StandardMaterial3D_geg8m")
-
-[node name="CSGBox3D" type="CSGBox3D" parent="CSGCombiner3D/CSGBox3D10" unique_id=26494101]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.45205688, 0.00624609, 0.0032958984)
-size = Vector3(0.17102051, 0.8833618, 0.89038086)
-
-[node name="CSGBox3D11" type="CSGBox3D" parent="CSGCombiner3D" unique_id=45884944]
-transform = Transform3D(1.0063896, -0.19759539, 0, 0.3662958, 0.5428889, 0, 0, 0, 0.6599999, -9.703077, 2.0671444, 3.0750003)
-size = Vector3(0.001, 0.8, 0.7)
-material = SubResource("StandardMaterial3D_jic4h")
-
-[node name="CSGBox3D" type="CSGBox3D" parent="CSGCombiner3D/CSGBox3D11" unique_id=1560370804]
-transform = Transform3D(0.8897762, 0, 0, 5.9604645e-08, 0.8897762, 0, 0, 0, 0.6375027, 0.0002565384, 0.052049637, 0)
-size = Vector3(0.001, 0.6595459, 1)
-
-[node name="CSGBox3D12" type="CSGBox3D" parent="CSGCombiner3D" unique_id=336976908]
-transform = Transform3D(0.9848077, -0.08682409, 0, 0.17364818, 0.49240386, 0, 0, 0, 0.5, -9.7005, 2.1, 4.3)
-size = Vector3(0.001, 1, 1)
-material = SubResource("StandardMaterial3D_j4aee")
-
-[node name="CSGBox3D" type="CSGBox3D" parent="CSGCombiner3D/CSGBox3D12" unique_id=1948943678]
-transform = Transform3D(1.0000031, -2.4586916e-07, 0, 9.834766e-07, 1.0000031, 0, 0, 0, 1, 0.0005159378, 0.07268238, -0.0076904297)
-size = Vector3(0.0012207031, 0.7591095, 0.8547363)
-
-[node name="CSGBox3D13" type="CSGBox3D" parent="CSGCombiner3D" unique_id=1163345467]
-transform = Transform3D(0.3076825, -0.07484153, 0.24439763, 0.08858458, 0.38998756, 0.00790248, -0.23975866, 0.048046015, 0.31655547, -9.591818, 2.0507596, 4.7999997)
-size = Vector3(0.001, 0.8, 1)
-material = SubResource("StandardMaterial3D_gwtrd")
-
-[node name="CSGBox3D" type="CSGBox3D" parent="CSGCombiner3D/CSGBox3D13" unique_id=592955483]
-transform = Transform3D(1, -1.4901161e-07, 0, 1.4156103e-07, 1.0000316, 7.450581e-09, 5.9604645e-08, -2.0861626e-06, 1, 0.0015068054, 0.014670372, 0.0043182373)
-size = Vector3(0.001, 0.63061523, 0.87402344)
 
 [node name="wallLight2" parent="CSGCombiner3D" unique_id=620689910 instance=ExtResource("19_ryguw")]
 transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.44, -9.8, 4, 2.3)
@@ -991,7 +949,7 @@ shape = SubResource("BoxShape3D_gimea")
 [node name="TriggerArea" type="Area3D" parent="CSGCombiner3D/ChairPuller4" unique_id=1988169949]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CSGCombiner3D/ChairPuller4/TriggerArea" unique_id=1471734758]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5576248, 1.372157, -3.1470022)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.390522, 1.372157, -2.7603006)
 shape = SubResource("BoxShape3D_cormy")
 
 [node name="shelves22" parent="CSGCombiner3D/ChairPuller4" unique_id=574744288 instance=ExtResource("15_vivmo")]
@@ -1045,6 +1003,73 @@ transform = Transform3D(1.453909, 0, -0.14302622, 0, 1.9015195, 0, 0.38016906, 0
 [node name="box34" parent="CSGCombiner3D/ChairPuller4/shelves22" unique_id=1408609876 instance=ExtResource("34_4lmeg")]
 transform = Transform3D(1.4144796, 0, 0.25619683, 0, 1.9015193, 0, -0.6809808, 0, 1.5019455, 0.519274, 0.061642647, -0.011065006)
 
+[node name="ChairPuller5" type="Node3D" parent="CSGCombiner3D" unique_id=482242269]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -4.692109, 0, 0.80812025)
+script = ExtResource("43_0n3wm")
+pull_distance = 4.5
+pull_direction = Vector3(0, 0, 50)
+pull_speed = 1.0
+
+[node name="chairCollision" type="StaticBody3D" parent="CSGCombiner3D/ChairPuller5" unique_id=1520145132]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CSGCombiner3D/ChairPuller5/chairCollision" unique_id=1416038394]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.727668, 1.3442202, -2.7516894)
+shape = SubResource("BoxShape3D_wwkkb")
+
+[node name="TriggerArea" type="Area3D" parent="CSGCombiner3D/ChairPuller5" unique_id=1056593399]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CSGCombiner3D/ChairPuller5/TriggerArea" unique_id=300182466]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.20728636, 1.0726626, -3.0685425)
+shape = SubResource("BoxShape3D_osiyt")
+
+[node name="sideboard2" parent="CSGCombiner3D/ChairPuller5" unique_id=1506114786 instance=ExtResource("17_yaehf")]
+transform = Transform3D(2.3079613e-07, 0, -1, 0, 1.8000001, 0, 1.7600001, 0, 1.3113416e-07, 4.7518787, 0.5, -2.7501745)
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="CSGCombiner3D/ChairPuller5/sideboard2" unique_id=2136218]
+transform = Transform3D(-0.028821226, 0.17927381, 0.011418652, 0.015668474, 1.985806e-05, 0.16746077, 0.13730034, 0.116561666, -0.05449282, 0.62385833, 0.8729228, -0.13940048)
+size = Vector3(0.1, 1, 1.2)
+material = SubResource("StandardMaterial3D_c51u3")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="CSGCombiner3D/ChairPuller5/sideboard2/CSGBox3D9" unique_id=303144477]
+transform = Transform3D(0.17282966, 5.9604645e-08, -4.0978193e-07, 2.9802322e-08, 0.8371128, 0, -6.7520887e-09, -6.7055225e-08, 1.0045956, -0.017292023, 1.9073486e-06, 9.536743e-07)
+size = Vector3(0.8, 1, 1)
+material = SubResource("StandardMaterial3D_higll")
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="CSGCombiner3D/ChairPuller5/sideboard2" unique_id=358163407]
+transform = Transform3D(-9.783476e-10, 2.5876372e-09, -0.36363646, 0.0038588468, 0.32826924, 0, 0.039392296, -0.10418891, -2.7975295e-08, 0.0056819916, 0.9444444, -0.20000076)
+material = SubResource("StandardMaterial3D_geg8m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="CSGCombiner3D/ChairPuller5/sideboard2/CSGBox3D10" unique_id=1770219696]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.45205688, 0.00624609, 0.0032958984)
+size = Vector3(0.17102051, 0.8833618, 0.89038086)
+
+[node name="CSGBox3D11" type="CSGBox3D" parent="CSGCombiner3D/ChairPuller5/sideboard2" unique_id=347480479]
+transform = Transform3D(-2.4994707e-08, 4.907482e-09, -0.37499994, 0.20349766, 0.30160493, 0, 1.0063896, -0.19759539, -2.8849513e-08, 0.35511374, 0.87063575, -0.20307732)
+size = Vector3(0.001, 0.8, 0.7)
+material = SubResource("StandardMaterial3D_jic4h")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="CSGCombiner3D/ChairPuller5/sideboard2/CSGBox3D11" unique_id=5313468]
+transform = Transform3D(0.8897762, 0, 0, 5.9604645e-08, 0.8897762, 0, 0, 0, 0.6375027, 0.0002565384, 0.052049637, 0)
+size = Vector3(0.001, 0.6595459, 1)
+
+[node name="CSGBox3D12" type="CSGBox3D" parent="CSGCombiner3D/ChairPuller5/sideboard2" unique_id=1978097430]
+transform = Transform3D(-2.4458698e-08, 2.1563642e-09, -0.2840909, 0.096471205, 0.2735577, 0, 0.9848077, -0.08682409, -2.1855694e-08, -0.340909, 0.8888887, -0.20049953)
+size = Vector3(0.001, 1, 1)
+material = SubResource("StandardMaterial3D_j4aee")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="CSGCombiner3D/ChairPuller5/sideboard2/CSGBox3D12" unique_id=151216744]
+transform = Transform3D(1.0000031, -2.4586916e-07, 0, 9.834766e-07, 1.0000031, 0, 0, 0, 1, 0.0005159378, 0.07268238, -0.0076904297)
+size = Vector3(0.0012207031, 0.7591095, 0.8547363)
+
+[node name="CSGBox3D13" type="CSGBox3D" parent="CSGCombiner3D/ChairPuller5/sideboard2" unique_id=1937267180]
+transform = Transform3D(0.13622649, -0.02729887, -0.17986105, 0.04921365, 0.21665974, 0.0043902663, 0.3076825, -0.07484153, 0.24439761, -0.6249995, 0.86153305, -0.091817856)
+size = Vector3(0.001, 0.8, 1)
+material = SubResource("StandardMaterial3D_gwtrd")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="CSGCombiner3D/ChairPuller5/sideboard2/CSGBox3D13" unique_id=1872674497]
+transform = Transform3D(1, -1.4901161e-07, 0, 1.4156103e-07, 1.0000316, 7.450581e-09, 5.9604645e-08, -2.0861626e-06, 1, 0.0015068054, 0.014670372, 0.0043182373)
+size = Vector3(0.001, 0.63061523, 0.87402344)
+
 [node name="player" parent="." unique_id=1422105986 groups=["player"] instance=ExtResource("42_0cp0l")]
 transform = Transform3D(0.018891247, 0, 0.99982154, 0, 1, 0, -0.99982154, 0, 0.018891247, 3.6598105, 1.658064, 0.08260232)
 axis_lock_linear_y = true
@@ -1081,5 +1106,5 @@ transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -2.7
 script = ExtResource("44_0n3wm")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D4" unique_id=1720415550]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6072388, -0.9190521)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.12866211, 1.4825134, -0.9818392)
 shape = SubResource("BoxShape3D_qnost")

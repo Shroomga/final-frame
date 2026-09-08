@@ -7,6 +7,24 @@ const SCENES = ["main", "bathroom", "bedroom"]
 # Name of the currently active scene (set when changing)
 var current_scene_name: String = "main"
 
+#player health
+var player_health: int = 100:
+	set(value):
+		# Clamp between 0 and 100
+		player_health = clampi(value, 0, 100)
+		# Emit a signal so the UI updates automatically
+		health_changed.emit(player_health)
+
+signal health_changed(new_health)
+
+#call this when the player takes damage
+func take_damage(amount: int):
+	player_health -= amount
+
+#call this when the player heals
+func heal(amount: int):
+	player_health += amount
+	
 # Called when a new scene becomes active (from the scene's _ready)
 func initialize_player():
 	var tree = get_tree()
