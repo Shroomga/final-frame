@@ -44,6 +44,11 @@ extends CharacterBody3D
 ## Name of Input Action to toggle freefly mode.
 @export var input_freefly : String = "freefly"
 
+# ---------- NEW: Melee attack settings ----------
+@export var attack_range : float = 2.0
+@export var attack_damage : int = 20
+# ------------------------------------------------
+
 var mouse_captured : bool = false
 var look_rotation : Vector2
 var move_speed : float = 0.0
@@ -108,6 +113,11 @@ func _unhandled_input(event: InputEvent) -> void:
 		if event.keycode == KEY_R:
 				# Press R to heal 10
 				heal(10)
+		
+		# ---------- NEW: Melee attack on E ----------
+		if event.keycode == KEY_E:
+			perform_melee_attack()
+		# --------------------------------------------
 	
 	# Look around
 	if mouse_captured and event is InputEventMouseMotion:
@@ -119,6 +129,20 @@ func _unhandled_input(event: InputEvent) -> void:
 			enable_freefly()
 		else:
 			disable_freefly()
+
+
+# ---------- NEW: Melee attack function ----------
+func perform_melee_attack():
+	# Find all nodes in the "enemy" group
+	var enemies = get_tree().get_nodes_in_group("enemy")
+	for enemy in enemies:
+		if enemy is Node3D:
+			var distance = global_position.distance_to(enemy.global_position)
+			if distance <= attack_range:
+				# Assumes the enemy has a take_damage(amount) method
+				enemy.take_damage(attack_damage)
+				print("Attacked enemy!")
+# -------------------------------------------------
 
 func _physics_process(delta: float) -> void:
 	# If freeflying, handle freefly and nothing else
@@ -194,6 +218,8 @@ func capture_mouse():
 func release_mouse():
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	mouse_captured = false
+	
+	
 
 
 ## Checks if some Input Actions haven't been created.
