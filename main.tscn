@@ -42,6 +42,7 @@
 [ext_resource type="Texture2D" uid="uid://dce3t7pg28yro" path="res://assets/desk/wooden_writing_desk_with_props_7.png" id="39_qnost"]
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="42_0cp0l"]
 [ext_resource type="Texture2D" uid="uid://jny8ixd8tuhf" path="res://textures/wallWood.png" id="42_gngh3"]
+[ext_resource type="Script" uid="uid://cjyrnuk53uh5g" path="res://ChairPuller.gd" id="43_0n3wm"]
 [ext_resource type="Script" uid="uid://dv7ynq28cxhfh" path="res://door.gd" id="44_0n3wm"]
 [ext_resource type="PackedScene" uid="uid://cc7r8375oy8a" path="res://assets/lights/antique_chandelier.glb" id="44_gngh3"]
 
@@ -332,6 +333,12 @@ radius = 0.26660156
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_osiyt"]
 albedo_texture = ExtResource("42_gngh3")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_c51u3"]
+size = Vector3(1.1152344, 2.121399, 1.2841797)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_j4aee"]
+size = Vector3(1.2989502, 1.3334961, 1.9447632)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_qnost"]
 size = Vector3(1, 4.463501, 4.7223206)
@@ -750,16 +757,6 @@ transform = Transform3D(0.22714184, 0, 0, 0, 0.22714184, 0, 0, 0, 0.22714184, -1
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6164758, 2.0654218, 1.7851651)
 shape = SubResource("BoxShape3D_rsm7m")
 
-[node name="dining_chair5" type="StaticBody3D" parent="CSGCombiner3D" unique_id=1199796482]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -3.1081533, 0, 0.5303096)
-
-[node name="diningChair" parent="CSGCombiner3D/dining_chair5" unique_id=840815214 instance=ExtResource("35_0rl1p")]
-transform = Transform3D(0.22714184, 0, 0, 0, 0.22714184, 0, 0, 0, 0.22714184, -1.576603, 0.65854204, 1.6351933)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="CSGCombiner3D/dining_chair5" unique_id=137691974]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6164758, 2.0654218, 1.7851651)
-shape = SubResource("BoxShape3D_rsm7m")
-
 [node name="dining_chair6" type="StaticBody3D" parent="CSGCombiner3D" unique_id=1775740521]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -4.865303, 0, 0.7901694)
 
@@ -768,16 +765,6 @@ transform = Transform3D(0.22714184, 0, 0, 0, 0.22714184, 0, 0, 0, 0.22714184, -1
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CSGCombiner3D/dining_chair6" unique_id=395191483]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6164758, 2.0654218, 1.7851651)
-shape = SubResource("BoxShape3D_rsm7m")
-
-[node name="dining_chair2" type="StaticBody3D" parent="CSGCombiner3D" unique_id=1395115866]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5983696, 0, 0)
-
-[node name="diningChair" parent="CSGCombiner3D/dining_chair2" unique_id=6875962 instance=ExtResource("35_0rl1p")]
-transform = Transform3D(0.22680588, 0, -0.012348944, 0, 0.22714181, 0, 0.012348944, 0, 0.22680588, -1.5766029, 0.65854204, 1.5416183)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="CSGCombiner3D/dining_chair2" unique_id=1608227973]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6164758, 2.0654218, 1.7275479)
 shape = SubResource("BoxShape3D_rsm7m")
 
 [node name="dining_table" type="StaticBody3D" parent="CSGCombiner3D" unique_id=1128879115]
@@ -998,6 +985,49 @@ transform = Transform3D(625.00024, 0, 0, 0, 625.00024, 0, 0, 0, 625.00024, -457.
 light_color = Color(1, 1, 0.8509804, 1)
 light_energy = 0.2
 omni_range = 4096.0
+
+[node name="ChairPuller" type="Node3D" parent="CSGCombiner3D" unique_id=2111796690]
+script = ExtResource("43_0n3wm")
+pull_distance = 1.8
+pull_direction = Vector3(0, 0, 20)
+pull_speed = 0.2
+
+[node name="diningChair" parent="CSGCombiner3D/ChairPuller" unique_id=1627509024 instance=ExtResource("35_0rl1p")]
+transform = Transform3D(0.22714184, 0, 0, 0, 0.22714184, 0, 0, 0, 0.22714184, -3.0919893, 0.65854204, 1.6351933)
+
+[node name="chairCollision" type="StaticBody3D" parent="CSGCombiner3D/ChairPuller" unique_id=1800528464]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CSGCombiner3D/ChairPuller/chairCollision" unique_id=666126962]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.1376445, 1.6980966, 1.5554338)
+shape = SubResource("BoxShape3D_c51u3")
+
+[node name="TriggerArea" type="Area3D" parent="CSGCombiner3D/ChairPuller" unique_id=81619695]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CSGCombiner3D/ChairPuller/TriggerArea" unique_id=1542190131]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.05956894, 1.1004934, 3.2959454)
+shape = SubResource("BoxShape3D_j4aee")
+
+[node name="ChairPuller2" type="Node3D" parent="CSGCombiner3D" unique_id=284694292]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -4.692109, 0, 0.80812025)
+script = ExtResource("43_0n3wm")
+pull_distance = 1.8
+pull_direction = Vector3(0, 0, -20)
+pull_speed = 0.2
+
+[node name="diningChair" parent="CSGCombiner3D/ChairPuller2" unique_id=837253097 instance=ExtResource("35_0rl1p")]
+transform = Transform3D(0.22714184, 0, 0, 0, 0.22714184, 0, 0, 0, 0.22714184, -3.0919893, 0.65854204, 1.6351933)
+
+[node name="chairCollision" type="StaticBody3D" parent="CSGCombiner3D/ChairPuller2" unique_id=1210646775]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CSGCombiner3D/ChairPuller2/chairCollision" unique_id=1931841025]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.1376445, 1.6980966, 1.5554338)
+shape = SubResource("BoxShape3D_c51u3")
+
+[node name="TriggerArea" type="Area3D" parent="CSGCombiner3D/ChairPuller2" unique_id=1494722010]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CSGCombiner3D/ChairPuller2/TriggerArea" unique_id=1424135930]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.05956894, 1.1004934, 3.2959454)
+shape = SubResource("BoxShape3D_j4aee")
 
 [node name="player" parent="." unique_id=1422105986 groups=["player"] instance=ExtResource("42_0cp0l")]
 transform = Transform3D(0.018891247, 0, 0.99982154, 0, 1, 0, -0.99982154, 0, 0.018891247, 3.6598105, 1.658064, 0.08260232)
