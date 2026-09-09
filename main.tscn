@@ -260,11 +260,6 @@ albedo_texture = ExtResource("3_5vw27")
 [sub_resource type="BoxShape3D" id="BoxShape3D_rsm7m"]
 size = Vector3(1.1654663, 2.3162842, 0.8847656)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_geg8m"]
-size = Vector3(1, 2.2646484, 1.230957)
-
-[sub_resource type="CylinderShape3D" id="CylinderShape3D_7fjy1"]
-
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_c51u3"]
 radius = 0.26660156
 
@@ -275,19 +270,29 @@ albedo_texture = ExtResource("42_gngh3")
 size = Vector3(1.1152344, 2.121399, 1.3154297)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_j4aee"]
-size = Vector3(1.7695923, 1.7321777, 2.0721283)
+size = Vector3(1.7695923, 1.7321777, 13.722853)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gwtrd"]
+size = Vector3(1, 1.9223022, 1.467041)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mnsqs"]
+size = Vector3(1.6420898, 2.0327148, 1.3197021)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_gngh3"]
+height = 2.402832
+radius = 1.1049805
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_gimea"]
 size = Vector3(4.500366, 2.2929688, 0.79016113)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_cormy"]
-size = Vector3(1.8054428, 1, 3.5045338)
+size = Vector3(8.836642, 1, 8.753496)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_wwkkb"]
-size = Vector3(0.59375, 1.1425781, 2.9279785)
+size = Vector3(0.59375, 1.1425781, 3.2049103)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_osiyt"]
-size = Vector3(2.0004883, 1, 2.9250488)
+size = Vector3(2.0004883, 1, 11.281372)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c51u3"]
 albedo_texture = ExtResource("3_5vw27")
@@ -310,7 +315,7 @@ albedo_texture = ExtResource("3_5vw27")
 [sub_resource type="NavigationMesh" id="NavigationMesh_d2t1y"]
 vertices = PackedVector3Array(-0.8000002, 0.9, -6.200001, -2.0500002, 0.9, -6.200001, -2.5500002, 0.9, -5.200001, 0.19999981, 0.9, -4.950001, -3.0500002, 0.9, 5.299999, -2.5500002, 0.9, 6.299999, -1.0500002, 0.9, 6.299999, -0.05000019, 0.9, 5.049999, -4.3, 0.9, 3.2999992, -4.55, 0.9, 5.049999, 1.9499998, 0.9, 3.2999992, 4.95, 0.9, -4.950001, 2.4499998, 0.9, -2.4500008, 4.95, 0.9, -1.9500008, 4.95, 0.9, 1.5499992, 6.2, 0.9, 0.54999924, 6.2, 0.9, -0.95000076, 3.1999998, 0.9, -1.4500008, 3.1999998, 0.9, 2.0499992, 4.45, 0.9, 5.049999, -2.5500002, 0.9, -2.7000008, -5.8, 0.9, 3.0499992, -8.05, 0.9, -1.9500008, -9.3, 0.9, -0.95000076, -9.3, 0.9, 0.54999924, -8.05, 0.9, 1.5499992, -6.55, 0.9, 2.0499992, -6.55, 0.9, -1.4500008, -8.05, 0.9, 5.049999, -5.3, 0.9, -2.7000008, -8.05, 0.9, -4.950001)
 polygons = [PackedInt32Array(1, 0, 2), PackedInt32Array(2, 0, 3), PackedInt32Array(5, 4, 6), PackedInt32Array(6, 4, 7), PackedInt32Array(9, 8, 4), PackedInt32Array(4, 8, 7), PackedInt32Array(7, 8, 10), PackedInt32Array(13, 12, 11), PackedInt32Array(11, 12, 3), PackedInt32Array(15, 14, 16), PackedInt32Array(16, 14, 13), PackedInt32Array(13, 14, 17), PackedInt32Array(17, 14, 18), PackedInt32Array(10, 19, 7), PackedInt32Array(18, 14, 10), PackedInt32Array(10, 14, 19), PackedInt32Array(2, 3, 20), PackedInt32Array(20, 3, 12), PackedInt32Array(17, 12, 13), PackedInt32Array(21, 8, 9), PackedInt32Array(23, 22, 24), PackedInt32Array(24, 22, 27), PackedInt32Array(24, 27, 25), PackedInt32Array(25, 27, 26), PackedInt32Array(26, 21, 25), PackedInt32Array(25, 21, 28), PackedInt32Array(28, 21, 9), PackedInt32Array(27, 22, 29), PackedInt32Array(29, 22, 30), PackedInt32Array(20, 29, 2), PackedInt32Array(2, 29, 30)]
-agent_height = 0.1
+agent_height = 0.0
 agent_radius = 1.5
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0n3wm"]
@@ -469,23 +474,8 @@ light_color = Color(1, 1, 0.6509804, 1)
 [node name="radiator2" parent="." unique_id=87553692 instance=ExtResource("20_d13ii")]
 transform = Transform3D(1.7, 0, 0, 0, 1.6577016, 0, 0, 0, 3.1274881, -9.664791, 0.50680053, -5.056818)
 
-[node name="pencilCup2" parent="." unique_id=1193761113 instance=ExtResource("22_lswn8")]
-transform = Transform3D(1.3285058, 0, 0, 0, 1.3285058, 0, 0, 0, 1.3285058, 5.88164, 1.5671061, -5.279688)
-
 [node name="carpet2" parent="." unique_id=1628559244 instance=ExtResource("21_lswn8")]
 transform = Transform3D(0.0027919197, 0.0020642448, -4.6023927, 0.013034568, 0.9807742, 0.009696436, -4.1196313, 0.0031045766, -0.0030884026, -1.6363139, 0.493093, 0.24686328)
-
-[node name="globe2" parent="." unique_id=1665908873 instance=ExtResource("21_1u8w0")]
-transform = Transform3D(1.3, 0, 0, 0, 1.3, 0, 0, 0, 1.3, 5.7, 1.6000001, -5.8)
-
-[node name="bookStack55" parent="." unique_id=1218084308 instance=ExtResource("22_0odxb")]
-transform = Transform3D(1.9000001, 0, 0, 0, 1.9000001, 0, 0, 0, 1.9000001, 5.1724176, 1.5772318, -6.002263)
-
-[node name="cup22" parent="." unique_id=818171430 instance=ExtResource("26_a6jrf")]
-transform = Transform3D(1.3224963, 0, 0, 0, 1.3224963, 0, 0, 0, 1.3224963, 5.1351924, 1.5770185, -5.246069)
-
-[node name="teddybear2" parent="." unique_id=1062399351 instance=ExtResource("30_4k2k6")]
-transform = Transform3D(0.29481575, 0.29119328, -1.1795591, -0.070608065, 1.2158439, 0.28250322, 1.2129171, 0, 0.30315313, 6.422292, 1.5642626, -5.655527)
 
 [node name="Candle_6" type="Node3D" parent="." unique_id=181946356]
 transform = Transform3D(3.1634815, 0, 0, 0, 3.1634815, 0, 0, 0, 3.1634815, -4.2153697, 2.268691, 1.2440097)
@@ -665,53 +655,6 @@ transform = Transform3D(0.22714184, 0, 0, 0, 0.22714184, 0, 0, 0, 0.22714184, -1
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6164758, 2.0654218, 1.7851651)
 shape = SubResource("BoxShape3D_rsm7m")
 
-[node name="flower_pot" type="StaticBody3D" parent="." unique_id=651835699]
-
-[node name="pot32" parent="flower_pot" unique_id=823770376 instance=ExtResource("7_efxa6")]
-transform = Transform3D(3.5, 0, 0, 0, 3.5, 0, 0, 0, 3.5, 5.8, 0.49999994, -2.7999997)
-
-[node name="sanseveria2" parent="flower_pot/pot32" unique_id=1355742441 instance=ExtResource("8_5vw27")]
-transform = Transform3D(0.2857143, 0, 0, 0, 0.64114296, 0, 0, 0, 0.51428574, 0, 0.17142856, -5.9604645e-08)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="flower_pot" unique_id=1387328098]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.759707, 1.0830717, -2.7766294)
-shape = SubResource("BoxShape3D_geg8m")
-
-[node name="flower_pot3" type="StaticBody3D" parent="." unique_id=1465959724]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.995832, 0, 0)
-
-[node name="pot32" parent="flower_pot3" unique_id=894605499 instance=ExtResource("7_efxa6")]
-transform = Transform3D(3.5, 0, 0, 0, 3.5, 0, 0, 0, 3.5, 5.8, 0.49999994, -2.7999997)
-
-[node name="sanseveria2" parent="flower_pot3/pot32" unique_id=468044426 instance=ExtResource("8_5vw27")]
-transform = Transform3D(0.2857143, 0, 0, 0, 0.64114296, 0, 0, 0, 0.51428574, 0, 0.17142856, -5.9604645e-08)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="flower_pot3" unique_id=1905957004]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.7597065, 1.7153959, -2.661151)
-shape = SubResource("BoxShape3D_geg8m")
-
-[node name="flower_pot2" type="StaticBody3D" parent="." unique_id=744446255]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5.4222813)
-
-[node name="pot32" parent="flower_pot2" unique_id=1002636210 instance=ExtResource("7_efxa6")]
-transform = Transform3D(3.5, 0, 0, 0, 3.5, 0, 0, 0, 3.5, 5.8, 0.49999994, -2.7999997)
-
-[node name="sanseveria2" parent="flower_pot2/pot32" unique_id=368448431 instance=ExtResource("8_5vw27")]
-transform = Transform3D(0.2857143, 0, 0, 0, 0.64114296, 0, 0, 0, 0.51428574, 0, 0.17142856, -5.9604645e-08)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="flower_pot2" unique_id=802725866]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.759707, 1.0830717, -2.7766294)
-shape = SubResource("BoxShape3D_geg8m")
-
-[node name="corner_table" type="StaticBody3D" parent="." unique_id=217150855]
-
-[node name="table32" parent="corner_table" unique_id=336249391 instance=ExtResource("21_0odxb")]
-transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 5.7000003, 0.5, -5.8)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="corner_table" unique_id=2076292989]
-transform = Transform3D(1.7114316, 0, 0, 0, 1, 0, 0, 0, 1.8958099, 5.683829, 1.5262041, -5.8497915)
-shape = SubResource("CylinderShape3D_7fjy1")
-
 [node name="Hanger" type="StaticBody3D" parent="." unique_id=803567039]
 
 [node name="hanger22" parent="Hanger" unique_id=1922302891 instance=ExtResource("24_lswn8")]
@@ -783,7 +726,7 @@ shape = SubResource("BoxShape3D_c51u3")
 [node name="TriggerArea" type="Area3D" parent="ChairPuller" unique_id=1811299172]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ChairPuller/TriggerArea" unique_id=1795227324]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.05956894, 1.1004934, 3.2959454)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.05956894, 1.1004934, -8.999232)
 shape = SubResource("BoxShape3D_j4aee")
 
 [node name="ChairPuller2" type="Node3D" parent="." unique_id=1092584271]
@@ -805,8 +748,120 @@ shape = SubResource("BoxShape3D_c51u3")
 [node name="TriggerArea" type="Area3D" parent="ChairPuller2" unique_id=1600353906]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ChairPuller2/TriggerArea" unique_id=2061049849]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.05956894, 1.1004934, 3.2959454)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.059570313, 1.1004934, -8.473339)
 shape = SubResource("BoxShape3D_j4aee")
+
+[node name="ChairPuller3" type="Node3D" parent="." unique_id=567412780]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 2.9294028, 0, 2.7841957)
+script = ExtResource("43_0n3wm")
+pull_distance = 1.8
+pull_direction = Vector3(0, 0, -20)
+pull_speed = 0.2
+
+[node name="chairCollision" type="StaticBody3D" parent="ChairPuller3" unique_id=291730966]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ChairPuller3/chairCollision" unique_id=2078745094]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0214913, 1.6422849, 0.060913324)
+shape = SubResource("BoxShape3D_gwtrd")
+
+[node name="TriggerArea" type="Area3D" parent="ChairPuller3" unique_id=494333819]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ChairPuller3/TriggerArea" unique_id=1555574889]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.05956936, 1.1004934, -1.4246159)
+shape = SubResource("BoxShape3D_j4aee")
+
+[node name="pot32" parent="ChairPuller3" unique_id=512575020 instance=ExtResource("7_efxa6")]
+transform = Transform3D(3.5, 0, 0, 0, 3.5, 0, 0, 0, 3.5, -3.087952, 0.49999994, 0.12519383)
+
+[node name="sanseveria2" parent="ChairPuller3/pot32" unique_id=1270376483 instance=ExtResource("8_5vw27")]
+transform = Transform3D(0.2857143, 0, 0, 0, 0.64114296, 0, 0, 0, 0.51428574, 0, 0.17142856, -5.9604645e-08)
+
+[node name="ChairPuller6" type="Node3D" parent="." unique_id=467941789]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 2.9294028, 0, -2.8030047)
+script = ExtResource("43_0n3wm")
+pull_distance = 1.8
+pull_direction = Vector3(0, 0, 20)
+pull_speed = 0.2
+
+[node name="chairCollision" type="StaticBody3D" parent="ChairPuller6" unique_id=1835075283]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ChairPuller6/chairCollision" unique_id=1235122313]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0214913, 1.6422849, 0.060913324)
+shape = SubResource("BoxShape3D_gwtrd")
+
+[node name="TriggerArea" type="Area3D" parent="ChairPuller6" unique_id=1412347026]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ChairPuller6/TriggerArea" unique_id=1737424678]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.05956936, 1.1004934, -1.4246159)
+shape = SubResource("BoxShape3D_j4aee")
+
+[node name="pot32" parent="ChairPuller6" unique_id=823770376 instance=ExtResource("7_efxa6")]
+transform = Transform3D(3.5, 0, 0, 0, 3.5, 0, 0, 0, 3.5, -3.087952, 0.49999994, 0.12519383)
+
+[node name="sanseveria2" parent="ChairPuller6/pot32" unique_id=1355742441 instance=ExtResource("8_5vw27")]
+transform = Transform3D(0.2857143, 0, 0, 0, 0.64114296, 0, 0, 0, 0.51428574, 0, 0.17142856, -5.9604645e-08)
+
+[node name="ChairPuller8" type="Node3D" parent="." unique_id=1887815427]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -12.250638, 0, -2.8030047)
+script = ExtResource("43_0n3wm")
+pull_distance = 6.8
+pull_direction = Vector3(70, 0, -30)
+pull_speed = 0.5
+
+[node name="chairCollision" type="StaticBody3D" parent="ChairPuller8" unique_id=1302280080]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ChairPuller8/chairCollision" unique_id=1894177350]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.1339607, 1.5344532, 0.12811255)
+shape = SubResource("BoxShape3D_mnsqs")
+
+[node name="TriggerArea" type="Area3D" parent="ChairPuller8" unique_id=730071615]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ChairPuller8/TriggerArea" unique_id=276344386]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.011643, 1.1004934, 1.3526793)
+shape = SubResource("BoxShape3D_j4aee")
+
+[node name="pot32" parent="ChairPuller8" unique_id=1695924492 instance=ExtResource("7_efxa6")]
+transform = Transform3D(3.5, 0, 0, 0, 3.5, 0, 0, 0, 3.5, -3.087952, 0.49999994, 0.12519383)
+
+[node name="sanseveria2" parent="ChairPuller8/pot32" unique_id=578309420 instance=ExtResource("8_5vw27")]
+transform = Transform3D(0.2857143, 0, 0, 0, 0.64114296, 0, 0, 0, 0.51428574, 0, 0.17142856, -5.9604645e-08)
+
+[node name="ChairPuller7" type="Node3D" parent="." unique_id=1732874334]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 3.5491896, 0, -3.5083601)
+script = ExtResource("43_0n3wm")
+pull_distance = 6.2
+pull_direction = Vector3(-62, 0, 0)
+pull_speed = 0.8
+
+[node name="chairCollision" type="StaticBody3D" parent="ChairPuller7" unique_id=773297492]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ChairPuller7/chairCollision" unique_id=1520263051]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0820453, 1.2670673, 2.140708)
+shape = SubResource("CylinderShape3D_gngh3")
+
+[node name="TriggerArea" type="Area3D" parent="ChairPuller7" unique_id=588910100]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ChairPuller7/TriggerArea" unique_id=1844849791]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.05368519, 1.1004934, -3.8513453)
+shape = SubResource("BoxShape3D_j4aee")
+
+[node name="table32" parent="ChairPuller7" unique_id=336249391 instance=ExtResource("21_0odxb")]
+transform = Transform3D(-1.5, 0, 1.3113416e-07, 0, 1.5, 0, -1.3113416e-07, 0, -1.5, -2.1351202, 0.5, 2.1555727)
+
+[node name="pencilCup2" parent="ChairPuller7/table32" unique_id=1193761113 instance=ExtResource("22_lswn8")]
+transform = Transform3D(0.88567054, 0, 0, 0, 0.88567054, 0, 0, 0, 0.88567054, 0.12109327, 0.7114041, 0.3468747)
+
+[node name="globe2" parent="ChairPuller7/table32" unique_id=1665908873 instance=ExtResource("21_1u8w0")]
+transform = Transform3D(0.8666667, 0, 0, 0, 0.8666667, 0, 0, 0, 0.8666667, -2.3841858e-07, 0.73333347, 0)
+
+[node name="bookStack55" parent="ChairPuller7/table32" unique_id=1218084308 instance=ExtResource("22_0odxb")]
+transform = Transform3D(1.2666668, 0, 0, 0, 1.2666668, 0, 0, 0, 1.2666668, -0.35172176, 0.71815455, -0.13484192)
+
+[node name="cup22" parent="ChairPuller7/table32" unique_id=818171430 instance=ExtResource("26_a6jrf")]
+transform = Transform3D(0.8816642, 0, 0, 0, 0.8816642, 0, 0, 0, 0.8816642, -0.37653852, 0.71801233, 0.3692875)
+
+[node name="teddybear2" parent="ChairPuller7/table32" unique_id=1062399351 instance=ExtResource("30_4k2k6")]
+transform = Transform3D(0.19654384, 0.19412886, -0.7863728, -0.047072046, 0.8105626, 0.18833548, 0.8086114, 0, 0.2021021, 0.48152828, 0.7095084, 0.096315384)
 
 [node name="ChairPuller4" type="Node3D" parent="." unique_id=667535655]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -4.692109, 0, 0.80812025)
@@ -824,7 +879,7 @@ shape = SubResource("BoxShape3D_gimea")
 [node name="TriggerArea" type="Area3D" parent="ChairPuller4" unique_id=531074276]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ChairPuller4/TriggerArea" unique_id=1489219033]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.390522, 1.372157, -2.4792423)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6329389, 1.372157, -0.41612715)
 shape = SubResource("BoxShape3D_cormy")
 
 [node name="shelves22" parent="ChairPuller4" unique_id=574744288 instance=ExtResource("15_vivmo")]
@@ -881,20 +936,20 @@ transform = Transform3D(1.4144796, 0, 0.25619683, 0, 1.9015193, 0, -0.6809808, 0
 [node name="ChairPuller5" type="Node3D" parent="." unique_id=1614709674]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -4.692109, 0, 0.80812025)
 script = ExtResource("43_0n3wm")
-pull_distance = 3.5
-pull_direction = Vector3(0, 0, -42)
+pull_distance = 3.0
+pull_direction = Vector3(0, 0, -30)
 pull_speed = 1.0
 
 [node name="chairCollision" type="StaticBody3D" parent="ChairPuller5" unique_id=863660286]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ChairPuller5/chairCollision" unique_id=1049436244]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.727668, 1.3442202, -2.7516894)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.727668, 1.3442202, -2.8614516)
 shape = SubResource("BoxShape3D_wwkkb")
 
 [node name="TriggerArea" type="Area3D" parent="ChairPuller5" unique_id=1213962938]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ChairPuller5/TriggerArea" unique_id=642876534]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0505929, 1.3237307, -3.0685425)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0505929, 1.3237307, 1.109619)
 shape = SubResource("BoxShape3D_osiyt")
 
 [node name="sideboard2" parent="ChairPuller5" unique_id=1506114786 instance=ExtResource("17_yaehf")]
