@@ -258,7 +258,7 @@ blend_shape_mode = 0
 albedo_texture = ExtResource("3_5vw27")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_rsm7m"]
-size = Vector3(1.1654663, 2.3162842, 0.8847656)
+size = Vector3(1.1654663, 2.6918335, 1.0720215)
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_c51u3"]
 radius = 0.26660156
@@ -313,10 +313,10 @@ albedo_texture = ExtResource("3_5vw27")
 albedo_texture = ExtResource("3_5vw27")
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_d2t1y"]
-vertices = PackedVector3Array(-0.8000002, 0.9, -6.200001, -2.0500002, 0.9, -6.200001, -2.5500002, 0.9, -5.200001, 0.19999981, 0.9, -4.950001, -3.0500002, 0.9, 5.299999, -2.5500002, 0.9, 6.299999, -1.0500002, 0.9, 6.299999, -0.05000019, 0.9, 5.049999, -4.3, 0.9, 3.2999992, -4.55, 0.9, 5.049999, 1.9499998, 0.9, 3.2999992, 4.95, 0.9, -4.950001, 2.4499998, 0.9, -2.4500008, 4.95, 0.9, -1.9500008, 4.95, 0.9, 1.5499992, 6.2, 0.9, 0.54999924, 6.2, 0.9, -0.95000076, 3.1999998, 0.9, -1.4500008, 3.1999998, 0.9, 2.0499992, 4.45, 0.9, 5.049999, -2.5500002, 0.9, -2.7000008, -5.8, 0.9, 3.0499992, -8.05, 0.9, -1.9500008, -9.3, 0.9, -0.95000076, -9.3, 0.9, 0.54999924, -8.05, 0.9, 1.5499992, -6.55, 0.9, 2.0499992, -6.55, 0.9, -1.4500008, -8.05, 0.9, 5.049999, -5.3, 0.9, -2.7000008, -8.05, 0.9, -4.950001)
-polygons = [PackedInt32Array(1, 0, 2), PackedInt32Array(2, 0, 3), PackedInt32Array(5, 4, 6), PackedInt32Array(6, 4, 7), PackedInt32Array(9, 8, 4), PackedInt32Array(4, 8, 7), PackedInt32Array(7, 8, 10), PackedInt32Array(13, 12, 11), PackedInt32Array(11, 12, 3), PackedInt32Array(15, 14, 16), PackedInt32Array(16, 14, 13), PackedInt32Array(13, 14, 17), PackedInt32Array(17, 14, 18), PackedInt32Array(10, 19, 7), PackedInt32Array(18, 14, 10), PackedInt32Array(10, 14, 19), PackedInt32Array(2, 3, 20), PackedInt32Array(20, 3, 12), PackedInt32Array(17, 12, 13), PackedInt32Array(21, 8, 9), PackedInt32Array(23, 22, 24), PackedInt32Array(24, 22, 27), PackedInt32Array(24, 27, 25), PackedInt32Array(25, 27, 26), PackedInt32Array(26, 21, 25), PackedInt32Array(25, 21, 28), PackedInt32Array(28, 21, 9), PackedInt32Array(27, 22, 29), PackedInt32Array(29, 22, 30), PackedInt32Array(20, 29, 2), PackedInt32Array(2, 29, 30)]
+vertices = PackedVector3Array(-1.0500002, 0.9, -5.950001, -1.8000002, 0.9, -5.950001, -2.5500002, 0.9, -4.950001, 0.19999981, 0.9, -4.700001, -4.05, 0.9, -4.700001, -4.05, 0.9, -3.2000008, 2.1999998, 0.9, -3.2000008, 4.7, 0.9, 1.5499992, 5.95, 0.9, 0.29999924, 5.95, 0.9, -0.70000076, 3.6999998, 0.9, -1.7000008, 3.4499998, 0.9, 2.7999992, 4.7, 0.9, -1.9500008, 2.1999998, 0.9, 3.7999992, -0.8000002, 0.9, 3.7999992, -0.5500002, 0.9, 5.049999, 4.2, 0.9, 4.799999, 4.7, 0.9, -4.700001, 4.7, 0.9, 3.7999992, -2.3000002, 0.9, 6.049999, -1.3000002, 0.9, 6.049999, -3.5500002, 0.9, 4.799999, -5.8, 0.9, -2.9500008, -7.8, 0.9, -1.9500008, -9.05, 0.9, -0.70000076, -9.05, 0.9, 0.29999924, -7.8, 0.9, 1.5499992, -6.8, 0.9, 2.2999992, -6.8, 0.9, -1.7000008, -7.8, 0.9, -4.700001, -7.8, 0.9, 4.799999, -5.3, 0.9, 3.7999992)
+polygons = [PackedInt32Array(1, 0, 2), PackedInt32Array(2, 0, 3), PackedInt32Array(4, 2, 5), PackedInt32Array(5, 2, 3), PackedInt32Array(5, 3, 6), PackedInt32Array(9, 8, 7), PackedInt32Array(12, 9, 10), PackedInt32Array(10, 9, 7), PackedInt32Array(10, 7, 11), PackedInt32Array(14, 13, 15), PackedInt32Array(15, 13, 16), PackedInt32Array(12, 6, 17), PackedInt32Array(17, 6, 3), PackedInt32Array(18, 16, 11), PackedInt32Array(11, 16, 13), PackedInt32Array(12, 10, 6), PackedInt32Array(7, 18, 11), PackedInt32Array(20, 19, 15), PackedInt32Array(15, 19, 14), PackedInt32Array(14, 19, 21), PackedInt32Array(4, 5, 22), PackedInt32Array(23, 28, 24), PackedInt32Array(24, 28, 25), PackedInt32Array(25, 28, 26), PackedInt32Array(26, 28, 27), PackedInt32Array(23, 29, 22), PackedInt32Array(22, 29, 4), PackedInt32Array(27, 31, 26), PackedInt32Array(26, 31, 30), PackedInt32Array(23, 22, 28), PackedInt32Array(30, 31, 21), PackedInt32Array(21, 31, 14)]
 agent_height = 0.0
-agent_radius = 1.5
+agent_radius = 1.6
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0n3wm"]
 albedo_texture = ExtResource("42_gngh3")
@@ -361,13 +361,16 @@ albedo_texture = ExtResource("42_gngh3")
 albedo_texture = ExtResource("42_gngh3")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_higll"]
-size = Vector3(6.5309753, 1.7948608, 2.9453735)
+size = Vector3(6.7230487, 3.1521912, 3.4577417)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_jic4h"]
-size = Vector3(13.441272, 1, 9.941517)
+size = Vector3(18.573132, 1, 15.097419)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_7fjy1"]
 size = Vector3(2.2399292, 1, 2.4753418)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tvo3k"]
+size = Vector3(1.0551147, 2.6375732, 1.1889648)
 
 [node name="Main" type="Node3D" unique_id=1064369983]
 
@@ -642,7 +645,7 @@ transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -1.4
 transform = Transform3D(0.22714184, 0, 0, 0, 0.22714184, 0, 0, 0, 0.22714184, -1.576603, 0.65854204, 1.6351933)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="dining_chair4" unique_id=1938470889]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6164758, 2.0654218, 1.7851651)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.616476, 2.0654218, 1.6368496)
 shape = SubResource("BoxShape3D_rsm7m")
 
 [node name="dining_chair6" type="StaticBody3D" parent="." unique_id=1092166317]
@@ -710,7 +713,7 @@ omni_range = 4096.0
 
 [node name="ChairPuller" type="Node3D" parent="." unique_id=95167832]
 script = ExtResource("43_0n3wm")
-pull_direction = Vector3(0, 0, 5)
+pull_direction = Vector3(0, 0, 0)
 pull_speed = 0.2
 
 [node name="diningChair" parent="ChairPuller" unique_id=520825681 instance=ExtResource("35_0rl1p")]
@@ -731,7 +734,7 @@ shape = SubResource("BoxShape3D_j4aee")
 [node name="ChairPuller2" type="Node3D" parent="." unique_id=1092584271]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -4.692109, 0, 0.80812025)
 script = ExtResource("43_0n3wm")
-pull_direction = Vector3(0, 0, -10)
+pull_direction = Vector3(0, 0, 0)
 pull_speed = 0.2
 
 [node name="diningChair" parent="ChairPuller2" unique_id=291601014 instance=ExtResource("35_0rl1p")]
@@ -1170,7 +1173,7 @@ light_color = Color(1, 1, 0.6509804, 1)
 shadow_enabled = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/dining_table" unique_id=853639001]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.566391, 1.4475007, 0.31655884)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5821254, 2.1261659, 0.19619894)
 shape = SubResource("BoxShape3D_higll")
 
 [node name="EnemyChair" type="CharacterBody3D" parent="." unique_id=951789441 groups=["enemy"]]
@@ -1178,23 +1181,25 @@ collision_layer = 2
 script = ExtResource("44_qnost")
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="EnemyChair" unique_id=1482735887]
+avoidance_enabled = true
+radius = 2.0
 
 [node name="Model" type="StaticBody3D" parent="EnemyChair" unique_id=1368797324]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5595803, 0, -0.17935163)
-collision_layer = 0
+collision_layer = 2
 
 [node name="diningChair" parent="EnemyChair/Model" unique_id=1971328160 instance=ExtResource("35_0rl1p")]
 transform = Transform3D(0.22714184, 0, 0, 0, 0.22714184, 0, 0, 0, 0.22714184, -1.576603, 0.65854204, 1.6351933)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="EnemyChair/Model" unique_id=1984797768]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6164758, 2.0654218, 1.7851651)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6164758, 1.8776472, 1.5432217)
 shape = SubResource("BoxShape3D_rsm7m")
 
 [node name="DetectionArea" type="Area3D" parent="EnemyChair" unique_id=540238993]
 collision_layer = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="EnemyChair/DetectionArea" unique_id=1633347962]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.7210345, 1.5314887, 0.04692626)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5093989, 1.5314887, 0.018962145)
 shape = SubResource("BoxShape3D_jic4h")
 debug_color = Color(0, 0.6506858, 0.09628076, 0.41960785)
 
@@ -1205,3 +1210,7 @@ collision_layer = 0
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.05545044, 1.1229064, 1.3258892)
 shape = SubResource("BoxShape3D_7fjy1")
 debug_color = Color(0.9373535, 0.24501824, 0.14903939, 0.41960785)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnemyChair" unique_id=415735110]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.049224854, 1.8023996, 1.4464501)
+shape = SubResource("BoxShape3D_tvo3k")
