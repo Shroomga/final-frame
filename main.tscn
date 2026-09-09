@@ -1,5 +1,6 @@
 [gd_scene format=4 uid="uid://cewx2a1ouyef6"]
 
+[ext_resource type="Script" uid="uid://bsfa4soto0xp8" path="res://main.gd" id="1_0n3wm"]
 [ext_resource type="Texture2D" uid="uid://db38h0tuxgwie" path="res://textures/trak_floor_red.jpg" id="2_h2yge"]
 [ext_resource type="PackedScene" uid="uid://bcdd8m4eyqpyo" path="res://assets/House/props/umbrella.glb" id="3_1u8w0"]
 [ext_resource type="Texture2D" uid="uid://d0agbdm728yof" path="res://textures/trak_trim24.jpg" id="3_5vw27"]
@@ -372,7 +373,17 @@ size = Vector3(2.2399292, 1, 2.4753418)
 [sub_resource type="BoxShape3D" id="BoxShape3D_tvo3k"]
 size = Vector3(1.0551147, 2.6375732, 1.1889648)
 
+[sub_resource type="Theme" id="Theme_c51u3"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rsm7m"]
+bg_color = Color(1, 0.35552463, 0.19016796, 1)
+border_color = Color(0.8011965, 0.803507, 0.77154607, 1)
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_higll"]
+content_margin_left = 440.0
+
 [node name="Main" type="Node3D" unique_id=1064369983]
+script = ExtResource("1_0n3wm")
 
 [node name="player" parent="." unique_id=1422105986 groups=["player"] instance=ExtResource("42_0cp0l")]
 transform = Transform3D(0.018891247, 0, 0.99982154, 0, 1, 0, -0.99982154, 0, 0.018891247, 3.6598105, 1.658064, 0.08260232)
@@ -1214,3 +1225,16 @@ debug_color = Color(0.9373535, 0.24501824, 0.14903939, 0.41960785)
 [node name="CollisionShape3D" type="CollisionShape3D" parent="EnemyChair" unique_id=415735110]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.049224854, 1.8023996, 1.4464501)
 shape = SubResource("BoxShape3D_tvo3k")
+
+[node name="EnemyUI" type="CanvasLayer" parent="." unique_id=1412896599]
+
+[node name="HealthBar" type="ProgressBar" parent="EnemyUI" unique_id=1432888757]
+offset_left = 403.0
+offset_top = 605.0
+offset_right = 843.0
+offset_bottom = 632.0
+size_flags_vertical = 8
+theme = SubResource("Theme_c51u3")
+theme_override_styles/background = SubResource("StyleBoxFlat_rsm7m")
+theme_override_styles/fill = SubResource("StyleBoxLine_higll")
+max_value = 50.0

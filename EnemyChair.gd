@@ -1,6 +1,6 @@
 # EnemyChair.gd
 extends CharacterBody3D
-
+signal health_changed(new_health) 
 @export var move_speed: float = 5.5
 @export var damage_amount: int = 10
 @export var attack_cooldown: float = 1.0
@@ -9,7 +9,10 @@ extends CharacterBody3D
 @onready var detection_area: Area3D = $DetectionArea
 @onready var damage_area: Area3D = $DamageArea
 
-var health: int = 50
+var health: int = 50:
+	set(value):
+		health = value
+		health_changed.emit(health) 
 var is_chasing: bool = false
 var can_attack: bool = true
 
