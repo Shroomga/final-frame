@@ -39,6 +39,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7, 0)
 [node name="Camera3D" type="Camera3D" parent="Head" unique_id=995141188]
 
 [node name="UI" type="CanvasLayer" parent="." unique_id=1748224908]
+layer = 10
 
 [node name="HealthBar" type="ProgressBar" parent="UI" unique_id=2143136532]
 offset_left = 10.0
@@ -47,3 +48,23 @@ offset_right = 336.0
 offset_bottom = 38.0
 theme_override_styles/background = SubResource("StyleBoxFlat_mypif")
 theme_override_styles/fill = SubResource("StyleBoxLine_jmrrn")
+show_percentage = false
+
+[node name="Label" type="Label" parent="UI/HealthBar" unique_id=297092475]
+layout_mode = 0
+offset_left = 130.0
+offset_right = 182.0
+offset_bottom = 23.0
+text = "Streamer"
+
+[node name="FlashTimer" type="Timer" parent="UI" unique_id=347940586]
+wait_time = 0.2
+one_shot = true
+
+[node name="DamageFlash" type="ColorRect" parent="UI" unique_id=1436204448]
+visible = false
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(1, 0, 0, 0)
