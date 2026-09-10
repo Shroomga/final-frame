@@ -392,35 +392,35 @@ axis_lock_linear_y = true
 [node name="SpawnPoint" type="Marker3D" parent="." unique_id=2074421990 groups=["spawn_points"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.069858, 0.5631347, -0.046273172)
 
-[node name="Area3D" type="Area3D" parent="." unique_id=1193862150]
+[node name="DoorCollider1" type="Area3D" parent="." unique_id=1193862150]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.052335, 1.1601737, 0.970382)
 script = ExtResource("44_0n3wm")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1910474836]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DoorCollider1" unique_id=1910474836]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6072388, -0.9190521)
 shape = SubResource("BoxShape3D_qnost")
 
-[node name="Area3D2" type="Area3D" parent="." unique_id=289824095]
+[node name="DoorCollider2" type="Area3D" parent="." unique_id=289824095]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.322522, 1.1601737, 0.970382)
 script = ExtResource("44_0n3wm")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D2" unique_id=141210580]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DoorCollider2" unique_id=141210580]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6072388, -0.9190521)
 shape = SubResource("BoxShape3D_qnost")
 
-[node name="Area3D3" type="Area3D" parent="." unique_id=703632329]
+[node name="DoorCollider3" type="Area3D" parent="." unique_id=703632329]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -2.3104718, 1.1601737, -7.1842484)
 script = ExtResource("44_0n3wm")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D3" unique_id=2031025062]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DoorCollider3" unique_id=2031025062]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6072388, -0.9190521)
 shape = SubResource("BoxShape3D_qnost")
 
-[node name="Area3D4" type="Area3D" parent="." unique_id=1117707740]
+[node name="DoorCollider4" type="Area3D" parent="." unique_id=1117707740]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -2.7365785, 1.1601737, 7.198938)
 script = ExtResource("44_0n3wm")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D4" unique_id=1720415550]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DoorCollider4" unique_id=1720415550]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.12866211, 1.4825134, -0.9818392)
 shape = SubResource("BoxShape3D_qnost")
 
@@ -489,7 +489,7 @@ light_color = Color(1, 1, 0.6509804, 1)
 transform = Transform3D(1.7, 0, 0, 0, 1.6577016, 0, 0, 0, 3.1274881, -9.664791, 0.50680053, -5.056818)
 
 [node name="carpet2" parent="." unique_id=1628559244 instance=ExtResource("21_lswn8")]
-transform = Transform3D(0.0027919197, 0.0020642448, -4.6023927, 0.013034568, 0.9807742, 0.009696436, -4.1196313, 0.0031045766, -0.0030884026, -1.6363139, 0.493093, 0.24686328)
+transform = Transform3D(0.0027919197, 0.0020642448, -4.6023927, 0.013034568, 0.9807742, 0.009696436, -4.1196313, 0.0031045766, -0.0030884026, -1.635192, 0.4817767, 0.25424042)
 
 [node name="Candle_6" type="Node3D" parent="." unique_id=181946356]
 transform = Transform3D(3.1634815, 0, 0, 0, 3.1634815, 0, 0, 0, 3.1634815, -4.2153697, 2.268691, 1.2440097)
@@ -679,7 +679,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.702223, 2.490612, 5.974848)
 shape = SubResource("CylinderShape3D_c51u3")
 
 [node name="CSGBox3D18" type="CSGBox3D" parent="." unique_id=1573460650]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6309147, 6.58057, 0.026855469)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6615674, 6.5681734, 0.028401375)
 size = Vector3(18.451172, 1, 15.293945)
 material = SubResource("StandardMaterial3D_osiyt")
 
@@ -1200,7 +1200,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5595803, 0, -0.17935163)
 collision_layer = 2
 
 [node name="diningChair" parent="EnemyChair/Model" unique_id=1971328160 instance=ExtResource("35_0rl1p")]
-transform = Transform3D(0.22714184, 0, 0, 0, 0.22714184, 0, 0, 0, 0.22714184, -1.576603, 0.65854204, 1.6351933)
+transform = Transform3D(0.22714181, 0, 0, 0, 0.22714181, 0, 0, 0, 0.22714181, -1.576603, 0.65854204, 1.6351933)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="EnemyChair/Model" unique_id=1984797768]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6164758, 1.8776472, 1.5432217)
@@ -1218,7 +1218,7 @@ debug_color = Color(0, 0.6506858, 0.09628076, 0.41960785)
 collision_layer = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="EnemyChair/DamageArea" unique_id=368322848]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.05545044, 1.1229064, 1.3258892)
+transform = Transform3D(0.9999925, 0.0037508965, -0.00097638334, -0.0037499233, 0.9999925, 0.0009995463, 0.0009801149, -0.0009958876, 0.99999905, 0.06563258, 1.1229063, 1.3231798)
 shape = SubResource("BoxShape3D_7fjy1")
 debug_color = Color(0.9373535, 0.24501824, 0.14903939, 0.41960785)
 
