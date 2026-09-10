@@ -397,6 +397,8 @@ size = Vector3(18.573132, 1, 15.097419)
 size = Vector3(3.5014496, 1, 4.3448486)
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_0syjp"]
+radius = 1.1933594
+height = 3.149414
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0n3wm"]
 border_color = Color(0, 0, 0, 1)
@@ -1419,6 +1421,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5047328, 2.1261659, 0.3137
 shape = SubResource("BoxShape3D_0n3wm")
 
 [node name="EnemyChair" type="CharacterBody3D" parent="." unique_id=951789441 groups=["enemy"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.8113313)
 collision_layer = 2
 script = ExtResource("44_qnost")
 
@@ -1430,7 +1433,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5595803, 0, -0.17935163)
 collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="EnemyChair/Model" unique_id=1984797768]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6164758, 1.8776472, 1.5432217)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6164758, 1.8776472, 2.2377775)
 shape = SubResource("BoxShape3D_rsm7m")
 
 [node name="diningChair" parent="EnemyChair/Model" unique_id=627045229 instance=ExtResource("48_rnkwl")]
@@ -1453,7 +1456,7 @@ shape = SubResource("BoxShape3D_7fjy1")
 debug_color = Color(0.9373535, 0.24501824, 0.14903939, 0.41960785)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="EnemyChair" unique_id=415735110]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.049224854, 1.8023996, 1.4464501)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.22161889, 1.8023996, 2.0237036)
 shape = SubResource("CapsuleShape3D_0syjp")
 
 [node name="EnemyUI" type="CanvasLayer" parent="." unique_id=1412896599]
