@@ -351,8 +351,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.7727246, 1.4600657, 1.8026
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.42020082, 1.494089, 2.9264035)
 
 [node name="CSGBox3D10" type="CSGBox3D" parent="CSGCombiner3D" unique_id=459293579]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.7776637, 3.5062861, -4.167572)
-visible = false
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -2.2694583, 4.6202884, 3.4975407)
 size = Vector3(1.9901733, 2.182373, 0.018066406)
 material = SubResource("StandardMaterial3D_oy3if")
 
@@ -602,7 +601,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.06407043, 0.0002565384, 2.8
 mesh = SubResource("ArrayMesh_oy3if")
 
 [node name="wallwe" type="MeshInstance3D" parent="CSGCombiner3D2/wallza6" unique_id=879583645]
-transform = Transform3D(1.0000001, 0, 8.4703295e-22, 0, 1.0000001, 0, 0, 0, 1, 0, -0.066310644, 0)
+transform = Transform3D(1.0000004, 0, 8.4703295e-22, 0, 1.0000001, 0, 1.6940659e-21, 0, 1, 0, -0.01597023, 0)
 mesh = SubResource("ArrayMesh_jc3rf")
 
 [node name="������_001__0" type="MeshInstance3D" parent="CSGCombiner3D2/wallza6" unique_id=59100223]
