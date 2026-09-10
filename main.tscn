@@ -45,6 +45,7 @@
 [ext_resource type="Script" uid="uid://dv7ynq28cxhfh" path="res://door.gd" id="44_0n3wm"]
 [ext_resource type="PackedScene" uid="uid://cc7r8375oy8a" path="res://assets/lights/antique_chandelier.glb" id="44_gngh3"]
 [ext_resource type="Script" uid="uid://esjc6b0xrl1a" path="res://EnemyChair.gd" id="44_qnost"]
+[ext_resource type="PackedScene" uid="uid://uq35wdoytvqg" path="res://assets/enemies/spiderchair.glb" id="46_qnost"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_qnost"]
 size = Vector3(0.7426758, 4.2140503, 4.1947403)
@@ -1204,6 +1205,9 @@ transform = Transform3D(0.22714181, 0, 0, 0, 0.22714181, 0, 0, 0, 0.22714181, -1
 [node name="CollisionShape3D" type="CollisionShape3D" parent="EnemyChair/Model" unique_id=1984797768]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6164758, 1.8776472, 1.5432217)
 shape = SubResource("BoxShape3D_rsm7m")
+
+[node name="spiderchair" parent="EnemyChair/Model" unique_id=1933646679 instance=ExtResource("46_qnost")]
+transform = Transform3D(0.09834589, 0, 0, 0, 0.09834589, 0, 0, 0, 0.09834589, -1.0427883, 1.6662457, 3.916056)
 
 [node name="DetectionArea" type="Area3D" parent="EnemyChair" unique_id=540238993]
 collision_layer = 0
