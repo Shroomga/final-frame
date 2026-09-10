@@ -368,10 +368,9 @@ size = Vector3(6.414551, 1, 2.9577026)
 size = Vector3(18.573132, 1, 15.097419)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_7fjy1"]
-size = Vector3(2.2399292, 1, 2.4753418)
+size = Vector3(3.5014496, 1, 4.3448486)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_tvo3k"]
-size = Vector3(1.0551147, 2.6375732, 1.1889648)
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_0syjp"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0n3wm"]
 border_color = Color(0, 0, 0, 1)
@@ -1216,13 +1215,13 @@ debug_color = Color(0, 0.6506858, 0.09628076, 0.41960785)
 collision_layer = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="EnemyChair/DamageArea" unique_id=368322848]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.05545044, 1.1229064, 1.3258892)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.050941467, 1.1229064, 1.0188214)
 shape = SubResource("BoxShape3D_7fjy1")
 debug_color = Color(0.9373535, 0.24501824, 0.14903939, 0.41960785)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="EnemyChair" unique_id=415735110]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.049224854, 1.8023996, 1.4464501)
-shape = SubResource("BoxShape3D_tvo3k")
+shape = SubResource("CapsuleShape3D_0syjp")
 
 [node name="EnemyUI" type="CanvasLayer" parent="." unique_id=1412896599]
 
