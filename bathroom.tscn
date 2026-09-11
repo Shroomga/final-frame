@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://d170pla8i73a"]
 
 [ext_resource type="Texture2D" uid="uid://i383yq6a4ivj" path="res://textures/GreenCarpet2_S.jpg" id="1_4wjle"]
+[ext_resource type="Script" uid="uid://ceu7yx2mkqahe" path="res://bathroom.gd" id="1_jc3rf"]
 [ext_resource type="Texture2D" uid="uid://jny8ixd8tuhf" path="res://textures/wallWood.png" id="2_bch1d"]
 [ext_resource type="PackedScene" uid="uid://cqe2k2fi25sxp" path="res://assets/House/props/hanger.glb" id="3_2ykvt"]
 [ext_resource type="Texture2D" uid="uid://dv3x43y5u0ke4" path="res://textures/painting4.jpg" id="3_j74pf"]
@@ -33,6 +34,7 @@
 [ext_resource type="Texture2D" uid="uid://fmmockvoh458" path="res://assets/wall/old_wood_walls_free_2.png" id="30_g31bg"]
 [ext_resource type="PackedScene" uid="uid://bnqkfjmpfaocm" path="res://assets/wall/realistic_old_wooden_window.glb" id="31_vjyp3"]
 [ext_resource type="AudioStream" uid="uid://dpxvl7hkmdlpr" path="res://audio/songs/universfield-scary-horror-atmosphere-176754.mp3" id="33_b5v4u"]
+[ext_resource type="PackedScene" uid="uid://cr5yoi4r7sffh" path="res://pause_menu.tscn" id="34_oy3if"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c51u3"]
 albedo_texture = ExtResource("1_4wjle")
@@ -101,6 +103,7 @@ size = Vector3(0.58740234, 0.7963867, 0.30126953)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5axll"]
 albedo_texture = ExtResource("2_bch1d")
+albedo_texture_force_srgb = true
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_rswuk"]
 size = Vector3(1, 4.463501, 4.7223206)
@@ -247,6 +250,7 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_gcrjd")
 
 [node name="Bathroom" type="Node3D" unique_id=10958702]
+script = ExtResource("1_jc3rf")
 
 [node name="CSGCombiner3D" type="CSGCombiner3D" parent="." unique_id=586603103]
 use_collision = true
@@ -489,7 +493,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.1812103, 1.666365, 1.623725
 axis_lock_linear_y = true
 
 [node name="SpawnPoint" type="Marker3D" parent="." unique_id=1295251143 groups=["spawn_points"]]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.2841902, 0.5048307, 1.148936)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.2841902, 1.9107016, 1.148936)
 
 [node name="Area3D" type="Area3D" parent="." unique_id=738922964]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 1.9063635, 1.1601737, 4.071497)
@@ -712,3 +716,5 @@ volume_db = -25.0
 unit_size = 2.0
 max_db = -15.0
 autoplay = true
+
+[node name="PauseMenu" parent="." unique_id=167693304 instance=ExtResource("34_oy3if")]
