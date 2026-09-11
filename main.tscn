@@ -53,6 +53,7 @@
 [ext_resource type="PackedScene" uid="uid://ie5vni8ivfrr" path="res://dining_chair.tscn" id="48_rnkwl"]
 [ext_resource type="AudioStream" uid="uid://cmywyi03chjqo" path="res://audio/spider/dragon-studio-breaking-wood-356120.mp3" id="49_rm4vd"]
 [ext_resource type="Texture2D" uid="uid://dt70unnl3bv6s" path="res://assets/wall/old_wood_walls_free_0.png" id="50_blkrb"]
+[ext_resource type="AudioStream" uid="uid://u4nyt6yq6y2p" path="res://audio/spider/spider attack.mp3" id="50_pjyto"]
 [ext_resource type="Texture2D" uid="uid://deydumia17ga" path="res://assets/wall/old_wood_walls_free_1.png" id="51_abqjc"]
 [ext_resource type="Texture2D" uid="uid://fmmockvoh458" path="res://assets/wall/old_wood_walls_free_2.png" id="52_6iyjs"]
 [ext_resource type="Texture2D" uid="uid://smx5ll8besc1" path="res://assets/wall/classic_modular_walls_ceiling_fixed_3.png" id="53_4w656"]
@@ -1469,6 +1470,12 @@ volume_db = -5.0
 unit_size = 5.0
 max_db = -1.0
 autoplay = true
+
+[node name="AttackSound" type="AudioStreamPlayer3D" parent="EnemyChair" unique_id=638785810]
+stream = ExtResource("50_pjyto")
+volume_db = 1.0
+unit_size = 6.0
+max_db = 1.0
 
 [node name="EnemyUI" type="CanvasLayer" parent="." unique_id=1412896599]
 

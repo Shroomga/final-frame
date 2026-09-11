@@ -13,6 +13,7 @@ signal enemy_died
 @onready var damage_area: Area3D = $DamageArea
 @onready var animation_player: AnimationPlayer = $Model/diningChair/AnimationPlayer
 @onready var audio_player: AudioStreamPlayer3D = $AudioStreamPlayer3D
+@onready var attack_sound: AudioStreamPlayer3D = $AttackSound
 
 var health: int = 50:
 	set(value):
@@ -101,6 +102,11 @@ func _on_attack_timer_timeout():
 func _attack_player():
 	if is_dead:
 		return
+	
+	# Play the attack sound
+	if attack_sound:
+		attack_sound.play()
+	
 	var player = get_tree().get_first_node_in_group("player")
 	if player:
 		player.take_damage(damage_amount)
@@ -130,9 +136,11 @@ func _die():
 	attack_timer.stop()
 	velocity = Vector3.ZERO
 	
-	# Stop the footstep sound immediately
+	# Stop all sounds immediately
 	if audio_player:
 		audio_player.stop()
+	if attack_sound:
+		attack_sound.stop()
 	
 	if animation_player:
 		animation_player.play("Armature|spider_dead")

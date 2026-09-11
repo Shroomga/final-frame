@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://u4nyt6yq6y2p"
+path="res://.godot/imported/spider attack.mp3-496d852505dda9abb538d9a7c8841ed1.mp3str"
+
+[deps]
+
+source_file="res://audio/spider/spider attack.mp3"
+dest_files=["res://.godot/imported/spider attack.mp3-496d852505dda9abb538d9a7c8841ed1.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
