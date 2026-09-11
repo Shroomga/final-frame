@@ -23,6 +23,8 @@
 [ext_resource type="Texture2D" uid="uid://dqp8v4jbko37k" path="res://assets/wall/wall__woden_9_mb_0.png" id="21_vndsm"]
 [ext_resource type="Texture2D" uid="uid://dbowdr0jmhqhi" path="res://assets/wall/wall__woden_9_mb_1.png" id="22_f3ja0"]
 [ext_resource type="Texture2D" uid="uid://ctbp3ihvci82x" path="res://assets/wall/wall__woden_9_mb_2.png" id="23_7rl8g"]
+[ext_resource type="PackedScene" uid="uid://cr5yoi4r7sffh" path="res://pause_menu.tscn" id="24_f3ja0"]
+[ext_resource type="AudioStream" uid="uid://dpxvl7hkmdlpr" path="res://audio/songs/universfield-scary-horror-atmosphere-176754.mp3" id="25_7rl8g"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c51u3"]
 albedo_texture = ExtResource("1_iw0c1")
@@ -432,3 +434,13 @@ mesh = SubResource("ArrayMesh_bjg55")
 [node name="������_002__5" type="MeshInstance3D" parent="." unique_id=1188656313]
 transform = Transform3D(-2.3676681e-07, 2.4720993e-07, -0.9999999, -0.99999976, -2.9824557e-07, 2.3676662e-07, -2.974376e-07, 1.0027162, 2.465401e-07, 5.5711966, 4.822989, -0.9033438)
 mesh = SubResource("ArrayMesh_wkv2s")
+
+[node name="PauseMenu" parent="." unique_id=167693304 instance=ExtResource("24_f3ja0")]
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=1906942389]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1706028, 5.0245314, 0)
+stream = ExtResource("25_7rl8g")
+volume_db = -25.0
+unit_size = 2.0
+max_db = -15.0
+autoplay = true

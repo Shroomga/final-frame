@@ -51,6 +51,7 @@
 [ext_resource type="Texture2D" uid="uid://dbowdr0jmhqhi" path="res://assets/wall/wall__woden_9_mb_1.png" id="47_0cbny"]
 [ext_resource type="Texture2D" uid="uid://ctbp3ihvci82x" path="res://assets/wall/wall__woden_9_mb_2.png" id="48_hrvbo"]
 [ext_resource type="PackedScene" uid="uid://ie5vni8ivfrr" path="res://dining_chair.tscn" id="48_rnkwl"]
+[ext_resource type="AudioStream" uid="uid://cmywyi03chjqo" path="res://audio/spider/dragon-studio-breaking-wood-356120.mp3" id="49_rm4vd"]
 [ext_resource type="Texture2D" uid="uid://dt70unnl3bv6s" path="res://assets/wall/old_wood_walls_free_0.png" id="50_blkrb"]
 [ext_resource type="Texture2D" uid="uid://deydumia17ga" path="res://assets/wall/old_wood_walls_free_1.png" id="51_abqjc"]
 [ext_resource type="Texture2D" uid="uid://fmmockvoh458" path="res://assets/wall/old_wood_walls_free_2.png" id="52_6iyjs"]
@@ -58,6 +59,8 @@
 [ext_resource type="Texture2D" uid="uid://cav3vmxj1fxs7" path="res://assets/wall/classic_modular_walls_ceiling_fixed_4.png" id="54_e71vb"]
 [ext_resource type="Texture2D" uid="uid://btaym7g1kfwak" path="res://assets/wall/classic_modular_walls_ceiling_fixed_5.png" id="55_rnkwl"]
 [ext_resource type="PackedScene" uid="uid://cr5yoi4r7sffh" path="res://pause_menu.tscn" id="58_vke2r"]
+[ext_resource type="AudioStream" uid="uid://dl0acfuwaedtt" path="res://audio/songs/supa soke.mp3" id="59_uit24"]
+[ext_resource type="AudioStream" uid="uid://dfs1qr8rdhrqi" path="res://audio/random/freesound_community-ghost-whispers-6030.mp3" id="60_ruth0"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_qnost"]
 size = Vector3(0.7426758, 4.2140503, 4.1947403)
@@ -1459,6 +1462,14 @@ debug_color = Color(0.9373535, 0.24501824, 0.14903939, 0.41960785)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.22161889, 1.8023996, 2.0237036)
 shape = SubResource("CapsuleShape3D_0syjp")
 
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="EnemyChair" unique_id=319548027]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4570203, 1.9527025)
+stream = ExtResource("49_rm4vd")
+volume_db = -5.0
+unit_size = 5.0
+max_db = -1.0
+autoplay = true
+
 [node name="EnemyUI" type="CanvasLayer" parent="." unique_id=1412896599]
 
 [node name="HealthBar" type="ProgressBar" parent="EnemyUI" unique_id=1908073977]
@@ -1688,3 +1699,16 @@ layout_mode = 2
 text = "Go to Main Menu"
 
 [node name="PauseMenu" parent="." unique_id=167693304 instance=ExtResource("58_vke2r")]
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=1218793478]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.161823, 4.52027, 0.044673443)
+stream = ExtResource("59_uit24")
+volume_db = -20.0
+autoplay = true
+
+[node name="AudioStreamPlayer3D2" type="AudioStreamPlayer3D" parent="." unique_id=1134749655]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.6725855, 3.777904, -6.4742365)
+stream = ExtResource("60_ruth0")
+volume_db = -30.0
+max_db = -9.178
+autoplay = true

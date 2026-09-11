@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cp0fa8f3bvi8l"]
 
 [ext_resource type="Script" uid="uid://y7tebnblp7mb" path="res://main_menu.gd" id="1_06t4h"]
+[ext_resource type="AudioStream" uid="uid://bpudfa8vwst0y" path="res://audio/songs/game.mp3" id="2_7vrkn"]
 
 [node name="MainMenu" type="Control" unique_id=1766159021]
 layout_mode = 3
@@ -58,3 +59,7 @@ text = "Settings"
 [node name="ExitButton" type="Button" parent="VBoxContainer" unique_id=1522043562]
 layout_mode = 2
 text = "Exit Game"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=583639800]
+stream = ExtResource("2_7vrkn")
+autoplay = true

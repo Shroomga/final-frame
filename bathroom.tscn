@@ -32,6 +32,7 @@
 [ext_resource type="Texture2D" uid="uid://deydumia17ga" path="res://assets/wall/old_wood_walls_free_1.png" id="29_vjyp3"]
 [ext_resource type="Texture2D" uid="uid://fmmockvoh458" path="res://assets/wall/old_wood_walls_free_2.png" id="30_g31bg"]
 [ext_resource type="PackedScene" uid="uid://bnqkfjmpfaocm" path="res://assets/wall/realistic_old_wooden_window.glb" id="31_vjyp3"]
+[ext_resource type="AudioStream" uid="uid://dpxvl7hkmdlpr" path="res://audio/songs/universfield-scary-horror-atmosphere-176754.mp3" id="33_b5v4u"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c51u3"]
 albedo_texture = ExtResource("1_4wjle")
@@ -703,3 +704,11 @@ transform = Transform3D(-1.3101644e-07, 2.9973066, 0, -2.9973066, -1.3101644e-07
 
 [node name="Sketchfab_Scene2" parent="." unique_id=129231395 instance=ExtResource("31_vjyp3")]
 transform = Transform3D(5.7269096e-15, -1.3101642e-07, 2.9973063, -2.9973063, -1.3101642e-07, 0, 1.3101642e-07, -2.9973063, -1.3101642e-07, -5.2003145, 4.2070208, 1.4744186)
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=1362372221]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.73178434, 5.0245314, 0)
+stream = ExtResource("33_b5v4u")
+volume_db = -25.0
+unit_size = 2.0
+max_db = -15.0
+autoplay = true
