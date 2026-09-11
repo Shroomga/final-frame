@@ -397,7 +397,7 @@ size = Vector3(18.573132, 1, 15.097419)
 size = Vector3(3.5014496, 1, 4.3448486)
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_0syjp"]
-radius = 1.1933594
+radius = 0.9824219
 height = 3.149414
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0n3wm"]
@@ -619,7 +619,6 @@ script = ExtResource("1_0n3wm")
 [node name="player" parent="." unique_id=1422105986 groups=["player"] instance=ExtResource("42_0cp0l")]
 transform = Transform3D(0.018891247, 0, 0.99982154, 0, 1, 0, -0.99982154, 0, 0.018891247, 3.6598105, 1.658064, 0.08260232)
 axis_lock_linear_y = true
-base_speed = 5.0
 
 [node name="SpawnPoint" type="Marker3D" parent="." unique_id=2074421990 groups=["spawn_points"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.069858, 0.5631347, -0.046273172)

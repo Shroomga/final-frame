@@ -37,14 +37,14 @@ func _ready():
 	
 	# Start in walk animation (looping)
 	if animation_player:
-		animation_player.play("Armature|spider_walk_fast_2")
+		animation_player.play("Armature|spider_walk_fast_3")
 
 func _physics_process(delta):
 	if is_dead:
 		return
 	
 	if not is_chasing:
-		if animation_player and animation_player.current_animation == "Armature|spider_walk_fast_2":
+		if animation_player and animation_player.current_animation == "Armature|spider_walk_fast_3":
 			animation_player.stop()
 		return
 	
@@ -61,8 +61,8 @@ func _physics_process(delta):
 	move_and_slide()
 	
 	# Keep the walk animation playing
-	if animation_player and animation_player.current_animation != "Armature|spider_walk_fast_2":
-		animation_player.play("Armature|spider_walk_fast_2")
+	if animation_player and animation_player.current_animation != "Armature|spider_walk_fast_3":
+		animation_player.play("Armature|spider_walk_fast_3")
 
 func _on_detection_entered(body):
 	if body.is_in_group("player"):
@@ -116,7 +116,7 @@ func take_damage(amount: int):
 			if is_dead:
 				return
 			if is_chasing:
-				animation_player.play("Armature|spider_walk_fast_2")
+				animation_player.play("Armature|spider_walk_fast_3")
 
 func _die():
 	is_dead = true

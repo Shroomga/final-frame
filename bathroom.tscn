@@ -72,7 +72,7 @@ albedo_texture = ExtResource("23_g031k")
 albedo_texture = ExtResource("20_b5v4u")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_c51u3"]
-size = Vector3(6.299347, 1, 2.4069824)
+size = Vector3(6.299347, 3.5496826, 2.4069824)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_rsm7m"]
 size = Vector3(0.50476074, 0.3466797, 0.4810791)
@@ -295,10 +295,10 @@ transform = Transform3D(-1.1933209e-07, 0, -3.2759998, 0, 2.7299998, 0, 2.729999
 transform = Transform3D(-5.6824803e-08, 0, -1.3, 0, 1.3, 0, 1.3, 0, -5.6824803e-08, -3.9, 2, -4.2)
 
 [node name="trashBin2" parent="CSGCombiner3D" unique_id=526727486 instance=ExtResource("7_uisx3")]
-transform = Transform3D(1.1, 0, 0, 0, 1.1, 0, 0, 0, 1.1, -5.047814, 0.5, -1.8000001)
+transform = Transform3D(1.1, 0, 0, 0, 1.1, 0, 0, 0, 1.1, -4.9236193, 0.5, -1.8000001)
 
 [node name="trashBin3" parent="CSGCombiner3D" unique_id=1204317905 instance=ExtResource("7_uisx3")]
-transform = Transform3D(-0.008544236, 0, -1.0999668, 0, 1.1, 0, 1.0999668, 0, -0.008544236, 4.412646, 0.5, -3.881772)
+transform = Transform3D(-0.008544236, 0, -1.0999668, 0, 1.1, 0, 1.0999668, 0, -0.008544236, 4.4180493, 0.5, -3.7779174)
 
 [node name="wallShelf22" parent="CSGCombiner3D" unique_id=1834652154 instance=ExtResource("8_quu23")]
 transform = Transform3D(1.1, 0, 0, 0, 1.1, 0, 0, 0, 1.1, -5.2045355, 3, -2.9)
@@ -357,7 +357,7 @@ size = Vector3(1.9901733, 2.182373, 0.018066406)
 material = SubResource("StandardMaterial3D_oy3if")
 
 [node name="bucket2" parent="CSGCombiner3D" unique_id=1305608504 instance=ExtResource("21_b5v4u")]
-transform = Transform3D(2.2485623, 0, 0, 0, 2.2485623, 0, 0, 0, 2.2485623, 1.4508106, 0.5017444, -3.689862)
+transform = Transform3D(2.2485623, 0, 0, 0, 2.2485623, 0, 0, 0, 2.2485623, 1.4508106, 0.5017444, -3.6138601)
 
 [node name="CSGBox3D11" type="CSGBox3D" parent="CSGCombiner3D" unique_id=999687183]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.7764595, 3.4999828, -4.204029)
@@ -375,7 +375,7 @@ material = SubResource("StandardMaterial3D_8sq7k")
 transform = Transform3D(-6.119594e-08, 0, 1.4, 0, 1.4, 0, -1.4, 0, -6.119594e-08, -2.2, 0.5, 2.5315635)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CSGCombiner3D/Bathtub" unique_id=1718805155]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2433014, 1.0130839, 2.5002244)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2433014, 2.2879252, 2.5002244)
 shape = SubResource("BoxShape3D_c51u3")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="CSGCombiner3D/Bathtub" unique_id=337303405]
@@ -431,7 +431,7 @@ size = Vector3(12.522461, 1, 9.80394)
 material = SubResource("StandardMaterial3D_5axll")
 
 [node name="Sketchfab_Scene" parent="CSGCombiner3D" unique_id=897634999 instance=ExtResource("25_0v1m8")]
-transform = Transform3D(0.0015999993, 0, 0, 0, 0.0015999993, 0, 0, 0, 0.0015999993, -0.009739995, 4.276301, -0.16284847)
+transform = Transform3D(0.0015999993, 0, 0, 0, 0.0015999993, 0, 0, 0, 0.0015999993, -0.009739995, 4.09307, -0.16284847)
 
 [node name="OmniLight3D" type="OmniLight3D" parent="CSGCombiner3D/Sketchfab_Scene" unique_id=522388731]
 transform = Transform3D(625.00024, 0, 0, 0, 625.00024, 0, 0, 0, 625.00024, -228.30475, 603.35474, -394.25668)
