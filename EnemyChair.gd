@@ -1,7 +1,9 @@
 # EnemyChair.gd
 extends CharacterBody3D
+
 signal health_changed(new_health) 
 signal enemy_died
+
 @export var move_speed: float = 4.5
 @export var damage_amount: int = 10
 @export var attack_cooldown: float = 2.0
@@ -10,11 +12,13 @@ signal enemy_died
 @onready var detection_area: Area3D = $DetectionArea
 @onready var damage_area: Area3D = $DamageArea
 @onready var animation_player: AnimationPlayer = $Model/diningChair/AnimationPlayer
+@onready var audio_player: AudioStreamPlayer3D = $AudioStreamPlayer3D
 
 var health: int = 50:
 	set(value):
 		health = value
 		health_changed.emit(health) 
+
 var is_chasing: bool = false
 var player_in_damage_area: bool = false
 var is_dead: bool = false
@@ -125,6 +129,10 @@ func _die():
 	player_in_damage_area = false
 	attack_timer.stop()
 	velocity = Vector3.ZERO
+	
+	# Stop the footstep sound immediately
+	if audio_player:
+		audio_player.stop()
 	
 	if animation_player:
 		animation_player.play("Armature|spider_dead")
