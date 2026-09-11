@@ -1,6 +1,7 @@
 # EnemyChair.gd
 extends CharacterBody3D
 signal health_changed(new_health) 
+signal enemy_died
 @export var move_speed: float = 4.5
 @export var damage_amount: int = 10
 @export var attack_cooldown: float = 2.0
@@ -128,5 +129,8 @@ func _die():
 	if animation_player:
 		animation_player.play("Armature|spider_dead")
 		await animation_player.animation_finished
+	
+	# Tell the scene we died
+	enemy_died.emit()
 	
 	queue_free()

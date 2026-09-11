@@ -1647,3 +1647,41 @@ mesh = SubResource("ArrayMesh_uit24")
 
 [node name="Object_8" type="MeshInstance3D" parent="CSGCombiner3D/Object_7/Object_7" unique_id=1289938076]
 mesh = SubResource("ArrayMesh_ruth0")
+
+[node name="StageCompleteUI" type="CanvasLayer" parent="." unique_id=786223991]
+layer = 22
+visible = false
+
+[node name="DimBackground" type="ColorRect" parent="StageCompleteUI" unique_id=1912193423]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="CenterContainer" type="CenterContainer" parent="StageCompleteUI" unique_id=1807003847]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="StageCompleteUI/CenterContainer" unique_id=440801314]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="TitleLabel" type="Label" parent="StageCompleteUI/CenterContainer/VBoxContainer" unique_id=1085563770]
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+text = "StAge OnE COmPLeTE"
+horizontal_alignment = 1
+
+[node name="PlayAgainButton" type="Button" parent="StageCompleteUI/CenterContainer/VBoxContainer" unique_id=58227125]
+layout_mode = 2
+text = "Play Again"
+
+[node name="MainMenuButton" type="Button" parent="StageCompleteUI/CenterContainer/VBoxContainer" unique_id=1314164397]
+layout_mode = 2
+text = "Go to Main Menu"
