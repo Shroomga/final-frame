@@ -68,3 +68,53 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 mouse_filter = 2
 color = Color(1, 0, 0, 0)
+
+[node name="GameOverUI" type="Control" parent="UI" unique_id=1454215775]
+process_mode = 2
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="DimBackground" type="ColorRect" parent="UI/GameOverUI" unique_id=1754370711]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="CenterContainer" type="CenterContainer" parent="UI/GameOverUI" unique_id=1063707878]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/GameOverUI/CenterContainer" unique_id=2104252409]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="TitleLabel" type="Label" parent="UI/GameOverUI/CenterContainer/VBoxContainer" unique_id=838524930]
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+text = "gAme OvEr"
+horizontal_alignment = 1
+
+[node name="PlayAgainButton" type="Button" parent="UI/GameOverUI/CenterContainer/VBoxContainer" unique_id=321714395]
+layout_mode = 2
+text = "Play Again"
+
+[node name="MainMenuButton" type="Button" parent="UI/GameOverUI/CenterContainer/VBoxContainer" unique_id=1031390614]
+layout_mode = 2
+text = "Got to Main Menu"
+
+[node name="TitleLabel2" type="Label" parent="UI/GameOverUI/CenterContainer/VBoxContainer" unique_id=79135739]
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "So you let a simple chair kill you...Skill Issue"
+horizontal_alignment = 1

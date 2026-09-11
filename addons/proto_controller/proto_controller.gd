@@ -58,6 +58,9 @@ var freeflying : bool = false
 @onready var collider: CollisionShape3D = $Collider
 @onready var health_bar: ProgressBar = $UI/HealthBar
 @onready var ui_canvas: CanvasLayer = $UI
+@onready var game_over_ui: Control = $UI/GameOverUI
+@onready var play_again_button: Button = $UI/GameOverUI/CenterContainer/VBoxContainer/PlayAgainButton
+@onready var main_menu_button: Button = $UI/GameOverUI/CenterContainer/VBoxContainer/MainMenuButton
 
 func _ready() -> void:
 	check_input_mappings()
@@ -68,15 +71,22 @@ func _ready() -> void:
 	health_bar.max_value = 100
 	health_bar.value = GameManager.player_health
 	GameManager.health_changed.connect(_on_health_changed)
+	game_over_ui.visible = false
+	play_again_button.pressed.connect(_on_play_again_pressed)
+	main_menu_button.pressed.connect(_on_main_menu_pressed)
 	
 	# Force the CanvasLayer to be on top
 	ui_canvas.layer = 128
+	
+var is_dead: bool = false
 
 # Called whenever health changes in GameManager
 func _on_health_changed(new_health: int):
 	health_bar.value = new_health
-	if new_health <= 0:
+	if new_health <= 0 and not is_dead:
+		is_dead = true
 		die()
+
 
 # ---------- DAMAGE FLASH (Translucent + Slower) ----------
 func flash_red():
@@ -114,6 +124,12 @@ func heal(amount: int):
 
 func die():
 	print("Player died!")
+	# Show the game over menu
+	game_over_ui.visible = true
+	# Release the mouse so buttons can be clicked
+	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+	# Optional: pause the game so nothing else moves
+	get_tree().paused = true
 
 func _unhandled_input(event: InputEvent) -> void:
 	# Mouse capturing
@@ -185,6 +201,17 @@ func _physics_process(delta: float) -> void:
 		velocity.y = 0
 	
 	move_and_slide()
+	
+func _on_play_again_pressed():
+	get_tree().paused = false
+	is_dead = false
+	GameManager.player_health = 100
+	GameManager.current_scene_name = "bathroom"
+	get_tree().change_scene_to_file("res://bathroom.tscn")
+
+func _on_main_menu_pressed():
+	get_tree().paused = false
+	get_tree().change_scene_to_file("res://main_menu.tscn")
 
 func rotate_look(rot_input : Vector2):
 	look_rotation.x -= rot_input.y * look_speed

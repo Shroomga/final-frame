@@ -68,3 +68,5 @@ func teleport_to_random_scene(exclude: String):
 	
 	await TransitionManager.fade_in(0.5)
 	print("Teleport complete.")
+	
+	

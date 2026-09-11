@@ -316,7 +316,7 @@ size = Vector3(4.500366, 2.2929688, 0.79016113)
 size = Vector3(8.836642, 1, 8.753496)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_wwkkb"]
-size = Vector3(0.59375, 1.1425781, 3.2049103)
+size = Vector3(0.59375, 1.1425781, 3.5412178)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_osiyt"]
 size = Vector3(2.0004883, 1, 11.281372)
@@ -1048,9 +1048,9 @@ transform = Transform3D(0.2857143, 0, 0, 0, 0.64114296, 0, 0, 0, 0.51428574, 0, 
 [node name="ChairPuller8" type="Node3D" parent="." unique_id=1887815427]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -12.250638, 0, -2.8030047)
 script = ExtResource("43_0n3wm")
-pull_distance = 1.0
-pull_direction = Vector3(0, 0, 10)
-pull_speed = 20.0
+pull_distance = 8.0
+pull_direction = Vector3(25, 0, -15)
+pull_speed = 1.0
 
 [node name="chairCollision" type="StaticBody3D" parent="ChairPuller8" unique_id=1302280080]
 
@@ -1180,14 +1180,14 @@ transform = Transform3D(1.4144796, 0, 0.25619683, 0, 1.9015193, 0, -0.6809808, 0
 [node name="ChairPuller5" type="Node3D" parent="." unique_id=1614709674]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -4.692109, 0, 0.80812025)
 script = ExtResource("43_0n3wm")
-pull_distance = 3.0
-pull_direction = Vector3(0, 0, -30)
+pull_distance = 3.5
+pull_direction = Vector3(0, 0, -40)
 pull_speed = 1.0
 
 [node name="chairCollision" type="StaticBody3D" parent="ChairPuller5" unique_id=863660286]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ChairPuller5/chairCollision" unique_id=1049436244]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.727668, 1.3442202, -2.8614516)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.727668, 1.3442202, -2.7516885)
 shape = SubResource("BoxShape3D_wwkkb")
 
 [node name="TriggerArea" type="Area3D" parent="ChairPuller5" unique_id=1213962938]
