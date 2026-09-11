@@ -111,7 +111,7 @@ text = "Play Again"
 
 [node name="MainMenuButton" type="Button" parent="UI/GameOverUI/CenterContainer/VBoxContainer" unique_id=1031390614]
 layout_mode = 2
-text = "Got to Main Menu"
+text = "Go to Main Menu"
 
 [node name="TitleLabel2" type="Label" parent="UI/GameOverUI/CenterContainer/VBoxContainer" unique_id=79135739]
 layout_mode = 2

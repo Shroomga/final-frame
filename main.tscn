@@ -57,6 +57,7 @@
 [ext_resource type="Texture2D" uid="uid://smx5ll8besc1" path="res://assets/wall/classic_modular_walls_ceiling_fixed_3.png" id="53_4w656"]
 [ext_resource type="Texture2D" uid="uid://cav3vmxj1fxs7" path="res://assets/wall/classic_modular_walls_ceiling_fixed_4.png" id="54_e71vb"]
 [ext_resource type="Texture2D" uid="uid://btaym7g1kfwak" path="res://assets/wall/classic_modular_walls_ceiling_fixed_5.png" id="55_rnkwl"]
+[ext_resource type="PackedScene" uid="uid://cr5yoi4r7sffh" path="res://pause_menu.tscn" id="58_vke2r"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_qnost"]
 size = Vector3(0.7426758, 4.2140503, 4.1947403)
@@ -388,7 +389,7 @@ albedo_texture = ExtResource("42_gngh3")
 albedo_texture = ExtResource("42_gngh3")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_0n3wm"]
-size = Vector3(6.414551, 1, 2.9577026)
+size = Vector3(5.901001, 1, 2.9577026)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_jic4h"]
 size = Vector3(18.573132, 1, 15.097419)
@@ -1416,7 +1417,7 @@ light_color = Color(1, 1, 0.6509804, 1)
 shadow_enabled = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/dining_table" unique_id=853639001]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5047328, 2.1261659, 0.31372213)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.454623, 2.1261659, 0.31372213)
 shape = SubResource("BoxShape3D_0n3wm")
 
 [node name="EnemyChair" type="CharacterBody3D" parent="." unique_id=951789441 groups=["enemy"]]
@@ -1685,3 +1686,5 @@ text = "Play Again"
 [node name="MainMenuButton" type="Button" parent="StageCompleteUI/CenterContainer/VBoxContainer" unique_id=1314164397]
 layout_mode = 2
 text = "Go to Main Menu"
+
+[node name="PauseMenu" parent="." unique_id=167693304 instance=ExtResource("58_vke2r")]
