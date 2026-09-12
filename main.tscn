@@ -45,6 +45,7 @@
 [ext_resource type="Texture2D" uid="uid://jny8ixd8tuhf" path="res://textures/wallWood.png" id="42_gngh3"]
 [ext_resource type="Script" uid="uid://cjyrnuk53uh5g" path="res://ChairPuller.gd" id="43_0n3wm"]
 [ext_resource type="Script" uid="uid://dv7ynq28cxhfh" path="res://door.gd" id="44_0n3wm"]
+[ext_resource type="Texture2D" uid="uid://xs6ept4neyxc" path="res://textures/painting-03.jpg" id="44_1vm84"]
 [ext_resource type="PackedScene" uid="uid://cc7r8375oy8a" path="res://assets/lights/antique_chandelier.glb" id="44_gngh3"]
 [ext_resource type="Script" uid="uid://esjc6b0xrl1a" path="res://EnemyChair.gd" id="44_qnost"]
 [ext_resource type="Texture2D" uid="uid://dqp8v4jbko37k" path="res://assets/wall/wall__woden_9_mb_0.png" id="46_f6a44"]
@@ -342,6 +343,10 @@ albedo_texture = ExtResource("3_5vw27")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jic4h"]
 albedo_texture = ExtResource("3_5vw27")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7vrkn"]
+albedo_texture = ExtResource("44_1vm84")
+proximity_fade_enabled = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j4aee"]
 albedo_texture = ExtResource("3_5vw27")
@@ -1238,6 +1243,7 @@ material = SubResource("StandardMaterial3D_jic4h")
 [node name="CSGBox3D" type="CSGBox3D" parent="ChairPuller5/sideboard2/CSGBox3D11" unique_id=850946229]
 transform = Transform3D(0.8897762, 0, 0, 5.9604645e-08, 0.8897762, 0, 0, 0, 0.6375027, 0.0002565384, 0.052049637, 0)
 size = Vector3(0.001, 0.6595459, 1)
+material = SubResource("StandardMaterial3D_7vrkn")
 
 [node name="CSGBox3D12" type="CSGBox3D" parent="ChairPuller5/sideboard2" unique_id=613841094]
 transform = Transform3D(-2.4458698e-08, 2.1563642e-09, -0.2840909, 0.096471205, 0.2735577, 0, 0.9848077, -0.08682409, -2.1855694e-08, -0.340909, 0.8888887, -0.20049953)
