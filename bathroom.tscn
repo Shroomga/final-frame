@@ -35,6 +35,9 @@
 [ext_resource type="PackedScene" uid="uid://bnqkfjmpfaocm" path="res://assets/wall/realistic_old_wooden_window.glb" id="31_vjyp3"]
 [ext_resource type="AudioStream" uid="uid://dpxvl7hkmdlpr" path="res://audio/songs/universfield-scary-horror-atmosphere-176754.mp3" id="33_b5v4u"]
 [ext_resource type="PackedScene" uid="uid://cr5yoi4r7sffh" path="res://pause_menu.tscn" id="34_oy3if"]
+[ext_resource type="Script" uid="uid://bcvki3wutohpg" path="res://flash_trigger.gd" id="36_gxdr1"]
+[ext_resource type="Texture2D" uid="uid://c7hsl8lue4kr0" path="res://assets/images/IMG_1783.png" id="37_5jfdn"]
+[ext_resource type="AudioStream" uid="uid://ceuja5ukg2yo8" path="res://audio/random/scare bells.mp3" id="37_6e61r"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c51u3"]
 albedo_texture = ExtResource("1_4wjle")
@@ -248,6 +251,9 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_gcrjd")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cormy"]
+size = Vector3(3.552124, 2.6430664, 1.324707)
 
 [node name="Bathroom" type="Node3D" unique_id=10958702]
 script = ExtResource("1_jc3rf")
@@ -718,3 +724,30 @@ max_db = -15.0
 autoplay = true
 
 [node name="PauseMenu" parent="." unique_id=167693304 instance=ExtResource("34_oy3if")]
+
+[node name="FlashTrigger" type="Area3D" parent="." unique_id=517344654 node_paths=PackedStringArray("flash_image")]
+script = ExtResource("36_gxdr1")
+flash_image = NodePath("../FlashUI/FlashImage")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="FlashTrigger" unique_id=832606367]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3284144, 1.8886836, 0.9984653)
+shape = SubResource("BoxShape3D_cormy")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="FlashTrigger" unique_id=26803837]
+stream = ExtResource("37_6e61r")
+volume_db = -2.0
+unit_size = 2.0
+max_db = -3.0
+
+[node name="FlashUI" type="CanvasLayer" parent="." unique_id=187840815]
+layer = 100
+
+[node name="FlashImage" type="TextureRect" parent="FlashUI" unique_id=947499884]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("37_5jfdn")
+expand_mode = 1

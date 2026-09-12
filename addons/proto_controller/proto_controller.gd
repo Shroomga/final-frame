@@ -210,6 +210,7 @@ func _on_play_again_pressed():
 	get_tree().change_scene_to_file("res://bathroom.tscn")
 
 func _on_main_menu_pressed():
+	GameManager.player_health = 100
 	get_tree().paused = false
 	get_tree().change_scene_to_file("res://main_menu.tscn")
 

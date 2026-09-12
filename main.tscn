@@ -64,6 +64,9 @@
 [ext_resource type="PackedScene" uid="uid://cr5yoi4r7sffh" path="res://pause_menu.tscn" id="58_vke2r"]
 [ext_resource type="AudioStream" uid="uid://dl0acfuwaedtt" path="res://audio/songs/supa soke.mp3" id="59_uit24"]
 [ext_resource type="AudioStream" uid="uid://dfs1qr8rdhrqi" path="res://audio/random/freesound_community-ghost-whispers-6030.mp3" id="60_ruth0"]
+[ext_resource type="Script" uid="uid://bcvki3wutohpg" path="res://flash_trigger.gd" id="65_rqtf5"]
+[ext_resource type="AudioStream" uid="uid://ceuja5ukg2yo8" path="res://audio/random/scare bells.mp3" id="66_1vm84"]
+[ext_resource type="Texture2D" uid="uid://bynm02daljlqb" path="res://assets/images/image.png" id="67_wu3dr"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_qnost"]
 size = Vector3(0.7426758, 4.2140503, 4.1947403)
@@ -619,6 +622,9 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_shgk3")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cyx1q"]
+size = Vector3(3.552124, 2.6430664, 2.558838)
 
 [node name="Main" type="Node3D" unique_id=1064369983]
 script = ExtResource("1_0n3wm")
@@ -1475,14 +1481,20 @@ autoplay = true
 
 [node name="AttackSound" type="AudioStreamPlayer3D" parent="EnemyChair" unique_id=638785810]
 stream = ExtResource("50_pjyto")
-volume_db = -3.0
-unit_size = 4.0
+volume_db = -8.0
+unit_size = 2.0
 
 [node name="HurtSound" type="AudioStreamPlayer3D" parent="EnemyChair" unique_id=1457090244]
 stream = ExtResource("51_sm6fg")
+volume_db = -3.0
+unit_size = 2.0
+max_db = 1.0
 
 [node name="DeathSound" type="AudioStreamPlayer3D" parent="EnemyChair" unique_id=312849317]
 stream = ExtResource("52_b17eg")
+volume_db = -8.0
+unit_size = 1.0
+max_db = -5.0
 
 [node name="EnemyUI" type="CanvasLayer" parent="." unique_id=1412896599]
 
@@ -1726,3 +1738,30 @@ stream = ExtResource("60_ruth0")
 volume_db = -30.0
 max_db = -9.178
 autoplay = true
+
+[node name="FlashTrigger" type="Area3D" parent="." unique_id=1412127316 node_paths=PackedStringArray("flash_image")]
+script = ExtResource("65_rqtf5")
+flash_image = NodePath("../FlashUI/FlashImage")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="FlashTrigger" unique_id=1524626046]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.3473916, 1.8886836, -4.384455)
+shape = SubResource("BoxShape3D_cyx1q")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="FlashTrigger" unique_id=371345608]
+stream = ExtResource("66_1vm84")
+volume_db = -2.0
+unit_size = 2.0
+max_db = -3.0
+
+[node name="FlashUI" type="CanvasLayer" parent="." unique_id=1885924280]
+layer = 100
+
+[node name="FlashImage" type="TextureRect" parent="FlashUI" unique_id=1996542952]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("67_wu3dr")
+expand_mode = 1
