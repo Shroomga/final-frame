@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://8bhqlunrvctw"]
+
+[ext_resource type="Script" uid="uid://cassmf7mvyriu" path="res://part_2.gd" id="1_0i0fi"]
+
+[node name="part 2" type="Control" unique_id=362202354]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0i0fi")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=723477521]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.008202022, 0.008202025, 0.008202025, 1)
+
+[node name="Passage" type="Label" parent="." unique_id=547480549]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 203.0
+offset_top = -2.0
+offset_right = -201.0
+offset_bottom = -83.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 24
+text = "Or so it used to be. Now, the people who had once looked at the imposing gates of the manor with envy, admiration and pride, see nothing but a source of danger, fear and discomfort. Some thought it a bit odd. The Ashbrook family had all left this place, one way or another, and supposedly, the manor had been abandoned for more than a decade. What was there to fear?"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1123782624]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+alignment = 2
+
+[node name="Continue" type="Button" parent="VBoxContainer" unique_id=1823364729]
+layout_mode = 2
+text = "Next"

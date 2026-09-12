@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://dicjop8yfw64e"]
+
+[ext_resource type="Script" uid="uid://kqr4fbv7x2h0" path="res://part_4.gd" id="1_ant3t"]
+
+[node name="part 4" type="Control" unique_id=1490689039]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ant3t")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=513088523]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.008202022, 0.008202025, 0.008202025, 1)
+
+[node name="Passage" type="Label" parent="." unique_id=1247562741]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 203.0
+offset_top = -2.0
+offset_right = -201.0
+offset_bottom = -83.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 24
+text = "The name of the Lady of the Ashworth manor, Eleanor Ashworth is spoken in hushed whispers and resigned sighs amongst everyone in the town. Stories of missing people, seen approaching her manor days before. Gossip of a miserable child who had passed away, never seeing the world past the confines of his home, all under that woman’s supervision. 
+
+Whether they’re aware of her circumstances, or ignorant to her terror. Whether they label her a child-poisoning witch, or a poor, lamentable soul. Not a single one of them dares to go near to the manor’s grounds, nor disturb the peace she so vehemently seems to protect against even time itself."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1919686558]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+alignment = 2
+
+[node name="Continue" type="Button" parent="VBoxContainer" unique_id=1086143768]
+layout_mode = 2
+text = "Next"

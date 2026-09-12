@@ -11,4 +11,4 @@ func _ready() -> void:
 
 func _on_play_pressed() -> void:
 	# Change to your gameplay scene
-	get_tree().change_scene_to_file("res://part2.tscn")
+	get_tree().change_scene_to_file("res://part5.tscn")

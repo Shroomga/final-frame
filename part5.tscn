@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://ew8587jci8wc"]
+
+[ext_resource type="Script" uid="uid://dbo86j5aqfvm5" path="res://part_5.gd" id="1_rd6mm"]
+
+[node name="part 5" type="Control" unique_id=545910335]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_rd6mm")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1134249568]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.008202022, 0.008202025, 0.008202025, 1)
+
+[node name="Passage" type="Label" parent="." unique_id=1118866152]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 203.0
+offset_top = -2.0
+offset_right = -201.0
+offset_bottom = -83.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 24
+text = "Well, most of them at least. As for the ones that do... Haha... I hope you find the manor welcoming to your tastes. You won’t be leaving any time soon after all.
+A good host has to take care of her guests, yes?
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1150274979]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+alignment = 2
+
+[node name="Continue" type="Button" parent="VBoxContainer" unique_id=1987279971]
+layout_mode = 2
+text = "Continue"

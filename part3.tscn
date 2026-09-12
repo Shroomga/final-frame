@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://yrjdbtirbwm0"]
+
+[ext_resource type="Script" uid="uid://ddt1bp82y4avm" path="res://part_3.gd" id="1_p8xo0"]
+
+[node name="part 3" type="Control" unique_id=342511603]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_p8xo0")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1090670118]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.008202022, 0.008202025, 0.008202025, 1)
+
+[node name="Passage" type="Label" parent="." unique_id=2027915047]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 203.0
+offset_top = -2.0
+offset_right = -201.0
+offset_bottom = -83.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 24
+text = "Of course, the townspeople who remained from the days of the Ashbrook family’s prosperity would find that to be a truly silly question. After all, the manor had never been abandoned. Not completely. Something had been residing in that place to this day. Someone."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=672848174]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+alignment = 2
+
+[node name="Continue" type="Button" parent="VBoxContainer" unique_id=2051878558]
+layout_mode = 2
+text = "Next"
