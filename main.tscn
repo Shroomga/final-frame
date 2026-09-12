@@ -55,7 +55,9 @@
 [ext_resource type="Texture2D" uid="uid://dt70unnl3bv6s" path="res://assets/wall/old_wood_walls_free_0.png" id="50_blkrb"]
 [ext_resource type="AudioStream" uid="uid://u4nyt6yq6y2p" path="res://audio/spider/spider attack.mp3" id="50_pjyto"]
 [ext_resource type="Texture2D" uid="uid://deydumia17ga" path="res://assets/wall/old_wood_walls_free_1.png" id="51_abqjc"]
+[ext_resource type="AudioStream" uid="uid://vvgfch81tbqv" path="res://audio/spider/spider taking damage.mp3" id="51_sm6fg"]
 [ext_resource type="Texture2D" uid="uid://fmmockvoh458" path="res://assets/wall/old_wood_walls_free_2.png" id="52_6iyjs"]
+[ext_resource type="AudioStream" uid="uid://cgpcw2o6jjr1j" path="res://audio/spider/spider dies.mp3" id="52_b17eg"]
 [ext_resource type="Texture2D" uid="uid://smx5ll8besc1" path="res://assets/wall/classic_modular_walls_ceiling_fixed_3.png" id="53_4w656"]
 [ext_resource type="Texture2D" uid="uid://cav3vmxj1fxs7" path="res://assets/wall/classic_modular_walls_ceiling_fixed_4.png" id="54_e71vb"]
 [ext_resource type="Texture2D" uid="uid://btaym7g1kfwak" path="res://assets/wall/classic_modular_walls_ceiling_fixed_5.png" id="55_rnkwl"]
@@ -1473,9 +1475,14 @@ autoplay = true
 
 [node name="AttackSound" type="AudioStreamPlayer3D" parent="EnemyChair" unique_id=638785810]
 stream = ExtResource("50_pjyto")
-volume_db = 1.0
-unit_size = 6.0
-max_db = 1.0
+volume_db = -3.0
+unit_size = 4.0
+
+[node name="HurtSound" type="AudioStreamPlayer3D" parent="EnemyChair" unique_id=1457090244]
+stream = ExtResource("51_sm6fg")
+
+[node name="DeathSound" type="AudioStreamPlayer3D" parent="EnemyChair" unique_id=312849317]
+stream = ExtResource("52_b17eg")
 
 [node name="EnemyUI" type="CanvasLayer" parent="." unique_id=1412896599]
 

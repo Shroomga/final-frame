@@ -14,6 +14,8 @@ signal enemy_died
 @onready var animation_player: AnimationPlayer = $Model/diningChair/AnimationPlayer
 @onready var audio_player: AudioStreamPlayer3D = $AudioStreamPlayer3D
 @onready var attack_sound: AudioStreamPlayer3D = $AttackSound
+@onready var hurt_sound: AudioStreamPlayer3D = $HurtSound
+@onready var death_sound: AudioStreamPlayer3D = $DeathSound
 
 var health: int = 50:
 	set(value):
@@ -33,7 +35,6 @@ func _ready():
 	damage_area.body_exited.connect(_on_damage_body_exited)
 	nav_agent.target_position = global_position
 	
-	# Create the attack timer in code (repeating)
 	attack_timer = Timer.new()
 	attack_timer.wait_time = attack_cooldown
 	attack_timer.one_shot = false
@@ -41,7 +42,6 @@ func _ready():
 	attack_timer.timeout.connect(_on_attack_timer_timeout)
 	add_child(attack_timer)
 	
-	# Start in walk animation (looping)
 	if animation_player:
 		animation_player.play("Armature|spider_walk_fast_3")
 
@@ -66,7 +66,6 @@ func _physics_process(delta):
 	velocity = direction * move_speed
 	move_and_slide()
 	
-	# Keep the walk animation playing
 	if animation_player and animation_player.current_animation != "Armature|spider_walk_fast_3":
 		animation_player.play("Armature|spider_walk_fast_3")
 
@@ -79,31 +78,25 @@ func _on_detection_exited(body):
 		is_chasing = false
 		nav_agent.target_position = global_position
 
-# Player enters the damage area – start the damage timer
 func _on_damage_body_entered(body):
 	if body.is_in_group("player"):
 		player_in_damage_area = true
-		# Immediately attack once, then the timer keeps firing
 		_attack_player()
 		attack_timer.start()
 
-# Player leaves the damage area – stop the damage timer
 func _on_damage_body_exited(body):
 	if body.is_in_group("player"):
 		player_in_damage_area = false
 		attack_timer.stop()
 
-# Called every attack_cooldown seconds while the player is inside the damage area
 func _on_attack_timer_timeout():
 	if player_in_damage_area:
 		_attack_player()
 
-# Deals damage to the player
 func _attack_player():
 	if is_dead:
 		return
 	
-	# Play the attack sound
 	if attack_sound:
 		attack_sound.play()
 	
@@ -120,7 +113,10 @@ func take_damage(amount: int):
 	if health <= 0:
 		_die()
 	else:
-		# Briefly play take_damage, then return to walk
+		if hurt_sound:
+			hurt_sound.pitch_scale = randf_range(0.9, 1.1)
+			hurt_sound.play()
+		
 		if animation_player:
 			animation_player.play("Armature|spider_walk_slow")
 			await animation_player.animation_finished
@@ -136,17 +132,21 @@ func _die():
 	attack_timer.stop()
 	velocity = Vector3.ZERO
 	
-	# Stop all sounds immediately
+	# Stop looping sounds immediately
 	if audio_player:
 		audio_player.stop()
 	if attack_sound:
 		attack_sound.stop()
+	if hurt_sound:
+		hurt_sound.stop()
+	
+	# Play the death sound
+	if death_sound:
+		death_sound.play()
 	
 	if animation_player:
 		animation_player.play("Armature|spider_dead")
 		await animation_player.animation_finished
 	
-	# Tell the scene we died
 	enemy_died.emit()
-	
 	queue_free()
