@@ -1744,7 +1744,7 @@ script = ExtResource("65_rqtf5")
 flash_image = NodePath("../FlashUI/FlashImage")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="FlashTrigger" unique_id=1524626046]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.3473916, 1.8886836, -4.384455)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.3473916, 1.8886836, -6.926024)
 shape = SubResource("BoxShape3D_cyx1q")
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="FlashTrigger" unique_id=371345608]

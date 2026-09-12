@@ -21,6 +21,7 @@ color = Color(0.98039216, 0, 0, 1)
 thickness = 24
 
 [node name="ProtoController" type="CharacterBody3D" unique_id=610039898]
+visible = false
 script = ExtResource("1_ucva2")
 
 [node name="Mesh" type="MeshInstance3D" parent="." unique_id=1033199640]
@@ -37,6 +38,7 @@ shape = SubResource("CapsuleShape3D_iof21")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7, 0)
 
 [node name="Camera3D" type="Camera3D" parent="Head" unique_id=995141188]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.14404106, -0.15540755)
 
 [node name="UI" type="CanvasLayer" parent="." unique_id=1748224908]
 layer = 10

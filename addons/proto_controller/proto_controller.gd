@@ -159,14 +159,42 @@ func _unhandled_input(event: InputEvent) -> void:
 			disable_freefly()
 
 # Melee attack
+# Add this with your other @onready vars
+@onready var camera: Camera3D = $Head/Camera3D
+
+# Add this near var is_dead
+var shake_intensity: float = 2.0
+@export var shake_decay: float = 15.0
+
+# Replace perform_melee_attack() with this
 func perform_melee_attack():
+	shake_camera(0.5)   # small shake on every swing
+	
+	var hit_something := false
 	var enemies = get_tree().get_nodes_in_group("enemy")
 	for enemy in enemies:
 		if enemy is Node3D:
 			var distance = global_position.distance_to(enemy.global_position)
 			if distance <= attack_range:
 				enemy.take_damage(attack_damage)
+				hit_something = true
 				print("Attacked enemy!")
+	
+	if hit_something:
+		shake_camera(0.15)   # bigger shake when it connects
+
+# Add these two functions anywhere in the script
+func shake_camera(intensity: float) -> void:
+	shake_intensity = max(shake_intensity, intensity)
+
+func _process(delta: float) -> void:
+	if shake_intensity > 0.0:
+		camera.h_offset = randf_range(-shake_intensity, shake_intensity)
+		camera.v_offset = randf_range(-shake_intensity, shake_intensity)
+		shake_intensity = move_toward(shake_intensity, 0.0, shake_decay * delta)
+		if shake_intensity <= 0.0:
+			camera.h_offset = 0.0
+			camera.v_offset = 0.0
 
 func _physics_process(delta: float) -> void:
 	if can_freefly and freeflying:
