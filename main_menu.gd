@@ -13,11 +13,11 @@ func _ready() -> void:
 
 func _on_play_pressed() -> void:
 	# Change to your gameplay scene
-	get_tree().change_scene_to_file("res://bathroom.tscn")
+	get_tree().change_scene_to_file("res://story.tscn")
 
 func _on_settings_pressed() -> void:
 	# Open settings as overlay or new scene
-	get_tree().change_scene_to_file("res://settings.tscn")
+	get_tree().change_scene_to_file("res://controls.tscn")
 
 func _on_exit_pressed() -> void:
 	get_tree().quit()

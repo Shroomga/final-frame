@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://2sso7f22gsll"]
+
+[ext_resource type="Script" uid="uid://b35d43l8jptte" path="res://story.gd" id="1_76aiv"]
+
+[node name="Story" type="Control" unique_id=1593143284]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_76aiv")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=2068574725]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.008202022, 0.008202025, 0.008202025, 1)
+
+[node name="Title" type="Label" parent="." unique_id=856334435]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -67.0
+offset_right = 67.0
+offset_bottom = 23.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 34
+text = "Title place holder"
+horizontal_alignment = 1
+
+[node name="Passage" type="Label" parent="." unique_id=2035376713]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "jvndg dfdfb sdhfbd hdbfhdb dhfb dhfbdf dhfb fhdb fhfb dhfb hfb dhfbd df bdsfdf
+fdfvbdhfb
+fdsfd
+
+dfdfsdfsfsd
+sdfdfdfsdfsfddfgfd fdgdfg fg dfgdfgdfg gdfg dfdfg dfdfg fddfgdfg dfgd fgdfgdf gdfg df
+dfg dfgdfgfd gdfgdfg dfg df"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=418821885]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+alignment = 2
+
+[node name="Continue" type="Button" parent="VBoxContainer" unique_id=928969959]
+layout_mode = 2
+text = "Continue>>"

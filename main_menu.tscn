@@ -54,7 +54,8 @@ text = "Play"
 
 [node name="SettingsButton" type="Button" parent="VBoxContainer" unique_id=1030136632]
 layout_mode = 2
-text = "Settings"
+text = "Controls
+"
 
 [node name="ExitButton" type="Button" parent="VBoxContainer" unique_id=1522043562]
 layout_mode = 2

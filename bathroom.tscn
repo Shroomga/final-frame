@@ -90,19 +90,19 @@ size = Vector3(0.34814453, 0.47265625, 0.28100586)
 size = Vector3(2.0927124, 1.7199707, 1.6740723)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_jic4h"]
-size = Vector3(1.4476929, 1, 0.7314453)
+size = Vector3(1.4476929, 2.6810303, 0.7314453)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_7fjy1"]
-size = Vector3(0.5280762, 0.75305176, 0.5566406)
+size = Vector3(0.5280762, 2.6514282, 0.5566406)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_j4aee"]
 size = Vector3(1.65979, 1.7596436, 1.3713379)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_gwtrd"]
-size = Vector3(0.8027344, 0.6719971, 0.79248047)
+size = Vector3(0.8027344, 3.173767, 0.79248047)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_5axll"]
-size = Vector3(0.58740234, 0.7963867, 0.30126953)
+size = Vector3(0.58740234, 2.998352, 0.30126953)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5axll"]
 albedo_texture = ExtResource("2_bch1d")
@@ -412,11 +412,11 @@ shape = SubResource("BoxShape3D_geg8m")
 transform = Transform3D(1.32, 0, 0, 0, 1.32, 0, 0, 0, 1.32, -4.365897, 0.5, -2.8999999)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CSGCombiner3D/Toilet" unique_id=1455704437]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4134593, 1.3050587, -2.8798122)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4134593, 2.1455739, -2.8798122)
 shape = SubResource("BoxShape3D_jic4h")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="CSGCombiner3D/Toilet" unique_id=1216336581]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.9904623, 0.9612293, -1.8250619)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.9904623, 1.9104176, -1.8250619)
 shape = SubResource("BoxShape3D_7fjy1")
 
 [node name="Basin" type="StaticBody3D" parent="CSGCombiner3D" unique_id=1981412587]
@@ -429,11 +429,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.8509898, 1.4134955, -3.5923
 shape = SubResource("BoxShape3D_j4aee")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="CSGCombiner3D/Basin" unique_id=704806863]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4615914, 0.9025036, -3.6628716)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4615914, 2.1533885, -3.6628716)
 shape = SubResource("BoxShape3D_gwtrd")
 
 [node name="CollisionShape3D3" type="CollisionShape3D" parent="CSGCombiner3D/Basin" unique_id=1720262332]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.4180818, 0.9911264, -3.8005104)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.4180818, 2.0921092, -3.8005104)
 shape = SubResource("BoxShape3D_5axll")
 
 [node name="CSGBox3D12" type="CSGBox3D" parent="CSGCombiner3D" unique_id=1219702352]
